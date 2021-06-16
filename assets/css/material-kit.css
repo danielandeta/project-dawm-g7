@@ -19109,7 +19109,14 @@ footer .pull-center {
   width: 50%;
   height: auto;
   margin-left: 32%;
+  margin-bottom: 10%;
   
   
+}
+
+#logoNat{
+  width: 60%;
+  height: auto;
+  vertical-align: top;
 }
 
