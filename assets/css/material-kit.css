@@ -14656,8 +14656,8 @@ textarea {
   border-radius: 3px;
   padding: 0.625rem 0;
   margin-bottom: 20px;
-  color: #555;
-  background-color: #ffffff !important;
+  color: rgb(255, 255, 255);
+  background-color: #00c2cb !important;
   box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -16905,10 +16905,10 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .purple-filter:after {
-  background: rgba(101, 47, 142, 0.64);
-  background: linear-gradient(45deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
-  background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
-  background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+  background: rgba(148, 238, 230, 0.64);
+  background: linear-gradient(45deg, rgba(47, 142, 134, 0.88) 0%, rgba(46, 152, 185, 0.45) 100%);
+  background: -moz-linear-gradient(135deg, rgba(47, 128, 142, 0.88) 0%, rgba(46, 152, 185, 0.45) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(47, 115, 142, 0.88) 0%, rgba(46, 146, 185, 0.45) 100%);
 }
 
 footer {
