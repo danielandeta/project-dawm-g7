@@ -1,17 +1,4 @@
-/*!
 
- =========================================================
- * Material Kit - v2.0.7
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2020 Creative Tim (http://www.creative-tim.com)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
 /*     brand Colors              */
 .carousel.carousel-full-navigation .left {
   cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
@@ -19093,3 +19080,36 @@ footer .pull-center {
 }
 
 /*# sourceMappingURL=kit-free.css.map */
+
+
+
+#right{
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#cont{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  
+}
+
+#left{
+  text-align: justify;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.gabriela{
+
+  width: 50%;
+  height: auto;
+  margin-left: 32%;
+  
+  
+}
+
