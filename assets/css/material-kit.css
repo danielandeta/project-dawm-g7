@@ -19120,3 +19120,24 @@ footer .pull-center {
   vertical-align: top;
 }
 
+.name-title {
+  color:white;
+}
+
+.profile.ml-auto.mr-auto {
+  background: rgba(0,0,0,0.0);
+  z-index: 2;
+  position: absolute;
+  top: 25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card-hover {
+  transition: ease-in-out 0.2s;
+}
+
+.card-hover:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+}
