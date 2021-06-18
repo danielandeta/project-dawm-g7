@@ -15,22 +15,20 @@ This new design has elements that have been the result of research regarding ink
 **Material Kit** is based on the Github Repo from Fezvrasta who did an amazing job creating the backbone for the material effects, animations, and transitions. Big thanks to his team for their forward-thinking efforts.
 
 
-## Table of Contents
+## Contenido
 
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Upgrade to Pro Version](#upgrade-to-pro-version)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
+* [Integrantes](#integrantes)
+* [Introducción](#introducción)
+* [Principal](#principal)
+* [Catálogo](#catálogo)
+* [B'Saludable](#noticias)
+* [Recetas](#recetas)
+* [Encuéntranos](#encuéntranos)
+* [Administración](#administración)
 
 
-## Versions
+
+## Integrantes
 
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-native-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react-native)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/figma-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-kit-figma/presentation.html)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/wordpress-logo.jpg?raw=true" width="60" height="60" />](https://themeisle.com/themes/hestia/?ref=creativetim)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/photoshop-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/photoshop)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/sketch)
 
@@ -47,7 +45,7 @@ This new design has elements that have been the result of research regarding ink
 | ---  | --- | --- |
 | [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react-native/opt_mkrn_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native) | [![Material Kit Figma](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-figma/material-kit-figma.jpg?raw=true)](https://demos.creative-tim.com/material-kit-figma/presentation.html) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia/?ref=creativetim)
 
-## Demo
+## Introducción
 
 | Buttons | Inputs | Navbars  |
 | --- | --- | ---  |
@@ -60,7 +58,7 @@ This new design has elements that have been the result of research regarding ink
 [View More](https://demos.creative-tim.com/material-kit/index.html)
 
 
-## Quick start
+## Principal
 
 - `npm i material-kit`
 - [Download from Github](https://github.com/creativetimofficial/material-kit/archive/master.zip).
@@ -69,11 +67,11 @@ This new design has elements that have been the result of research regarding ink
 - Clone the repo: `git clone https://github.com/creativetimofficial/material-kit.git`.
 
 
-## Documentation
+## Catálogo
 The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html).
 
 
-## File Structure
+## Noticias
 Within the download you'll find the following directories and files:
 
 ```
@@ -117,7 +115,7 @@ material-kit/
 ```
 
 
-## Browser Support
+## Recetas
 
 At present, we officially aim to support the last two versions of the following browsers:
 
@@ -125,7 +123,7 @@ At present, we officially aim to support the last two versions of the following 
 
 
 
-## Resources
+## Encuéntranos
 - Demo: <https://demos.creative-tim.com/material-kit/index.html>
 - Download Page: <https://www.creative-tim.com/product/material-kit>
 - Documentation: <https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html>
@@ -142,7 +140,7 @@ At present, we officially aim to support the last two versions of the following 
 | --- | --- |
 | [![Material Dashboard Dark](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-dark/material-dashboard-dark.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-dark) | [![Material Dashboard Vuetify](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg?raw=true)](https://www.creative-tim.com/product/vuetify-material-dashboard)
 
-## Reporting Issues
+## Administración
 
 We use GitHub Issues as the official bug tracker for the Material Kit. Here are some advices for our users that want to report an issue:
 
