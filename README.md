@@ -1,21 +1,17 @@
 # ERROR404❌
 
-
-## Contenido
-
-* [Introducción](#introducción)
-* [Principal](#principal)
-* [Catálogo](#catálogo)
-* [B'Saludable](#noticias)
-* [Recetas](#recetas)
-* [Encuéntranos](#encuéntranos)
-* [Administración](#administración)
-* [Integrantes](#integrantes)
+> 
+![GitHub repo size](https://img.shields.io/github/repo-size/dannilandeta/project-dawm-g7)
+[![language][language-shield]][language-url]
+[![Contributors][contributors-shield]][contributors-url]
 
 
 
 
-## Introducción
+[language-shield]: https://img.shields.io/badge/Language-HTML-blue?style=plastic
+[language-url]: https://www.java.com/es/download/
+[contributors-shield]: https://img.shields.io/badge/contributors-4-success?style=plastic
+[contributors-url]: https://github.com/dannilandeta/project-dawm-g7/graphs/contributors
 
 En este proyecto vamos a diseñar un sitio web para el emprendimiento B'natural', usaremos HTML y CSS como bases para poder llevar  
 llevar a cabo este proyecto. Este sitio web estara conformado por varias paginas, que se mencionan mas adelante. Es importante  
@@ -25,6 +21,16 @@ con la vendedora y una pagina donde habra un formulario que permitira al usuario
 Es importante resaltar que nuestro grupo selecciono determinadas plantillas de Interner para usarlas como base. Sin emabrgo, a cada  
 una de ellas les hicimos los respectivos cambios para adaptarlas a nuestro estilo y necesidades. A continuacion de detallara cada  
 pagina con sus respectivas caracteristicas y funciones:
+
+## Contenido
+
+* [Principal](#principal)
+* [Catálogo](#catálogo)
+* [B'Saludable](#noticias)
+* [Recetas](#recetas)
+* [Encuéntranos](#encuéntranos)
+* [Administración](#administración)
+* [Integrantes](#integrantes)
 
 ## Principal
 
@@ -36,111 +42,47 @@ pagina con sus respectivas caracteristicas y funciones:
 -	DESCRIPCION DE LA MARCA
 -	FOOTER
 
-
+![image](https://user-images.githubusercontent.com/54828392/122517536-c4b34a00-cfd5-11eb-8ad6-240e3852987c.png)
+**DESCRIPCION** Esta página muestra información acerca de B' Natural, además nos enseña un poco acerca de la creadora del emprendimiento. Finalmente  
+hay una sección de más información donde se nos muestra cómo nació ese deseo de hacer mermeladas orgánicas, entre otros detalles. Cabe destacar que  
+la página consta de una barra de navegación, el logo, foto de portada y demás elementos que nos permiten decir que está casi lista.  
+  
+  
 
 ## Catálogo
-The documentation for the Material Kit is hosted at our [website](https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html).
-
+![image](https://user-images.githubusercontent.com/54828392/122517637-e44a7280-cfd5-11eb-91dc-3f863d7abea0.png)
+**DESCRIPCION** En esta pagina muestra varias cartas las cuales contienen las diferentes mermeladas que se ofrecen al público, el usuario podrá interactuar  
+con cada una de ellas, viendo sus fotos, información, y un botón el cuál le permitirá comprar la mermelada que seleccione.
+![image](https://user-images.githubusercontent.com/54828392/122517838-1d82e280-cfd6-11eb-8dfc-31753b02b9c4.png)
+**DESCRIPCION** El botón anteriormente mencionado nos redirigirá a la página de formulario, en la cuál el usuario procederá a poner los datos que se le  
+requiere para ponerse en contacto con la vendedora. Cabe resaltar que esta página aún no está terminada, si bien el diseño está casi listo, la parte del  
+formulario aún no está definido, puesto que se necesita la aprobación de la vendedora para definir qué información se le va a requerir ingresar al  
+usuario, y cómo va a ser el método de pago y entrega.  
+  
+  
 
 ## Noticias
-Within the download you'll find the following directories and files:
-
-```
-material-kit/
-├── CHANGELOG.md
-├── LICENSE.md
-├── README.md
-├── assets
-│   ├── assets-for-demo
-│   ├── css
-│   │   ├── material-kit.css
-│   │   ├── material-kit.css.map
-│   │   └── material-kit.min.css
-│   ├── img
-│   ├── js
-│   │   ├── bootstrap-material-design.js
-│   │   ├── bootstrap-material-design.min.js
-│   │   ├── core
-│   │   │   ├── jquery.min.js
-│   │   │   └── popper.min.js
-│   │   ├── material-kit.js
-│   │   ├── material-kit.min.js
-│   │   └── plugins
-│   │       ├── bootstrap-datetimepicker.min.js
-│   │       ├── jasny-bootstrap.min.js
-│   │       ├── moment.min.js
-│   │       └── nouislider.min.js
-│   └── scss
-│       ├── bootstrap
-│       ├── core
-│       ├── material-kit.scss
-│       └── plugins
-├── bower.json
-├── docs
-│   └── documentation.html
-├── examples
-│   ├── landing-page.html
-│   ├── profile-page.html
-│   └── signup-page.html
-└── index.html
-```
+![image](https://user-images.githubusercontent.com/54828392/122517903-2ffd1c00-cfd6-11eb-8b7e-8051a6f29ac9.png)
+**DESCRIPCION** En esta sección se nos muestra una serie de cartas en las cuales el usuario podrá observar diferentes consejos que nos brinda B Natural  
+con el objetivo de enseñar a las personas sobre maneras de cuidar su salud a través de alimentos orgánicos. Cabe destacar que esta página aún no está  
+completa, sin embargo, el estilo y la ubicación de los diferentes objetos ya está definido, faltan pulir ciertos detalles con respecto a las mermeladas.
 
 
 ## Recetas
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64">
-
+![image](https://user-images.githubusercontent.com/54828392/122517697-f88e6f80-cfd5-11eb-97a3-89decd929305.png)
+**DESCRIPCION** En esta sección podremos observar las recetas para las diferentes mermeladas que B Natural ofrece, esta página está formada por varias  
+cartas las cuales contienen la información de las mermeladas. Cuando se de clic sobre alguna de estas mermeladas, se abrirá una nueva página donde  
+se detalla la receta de dicha mermelada.
 
 
 ## Encuéntranos
-- Demo: <https://demos.creative-tim.com/material-kit/index.html>
-- Download Page: <https://www.creative-tim.com/product/material-kit>
-- Documentation: <https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html>
-- License Agreement: <https://www.creative-tim.com/license>
-- Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-kit/issues)
-- **Dashboards:**
+![image](https://user-images.githubusercontent.com/54828392/122517617-ddbbfb00-cfd5-11eb-912d-d055b7c764b7.png)
+**DESCRIPCION** En esta página el usuario podrá acceder a un mapa de Google, el cual vendrá con la dirección de B Natural pre cargada, además el usuario  
+podrá acceder a la sección de redes sociales, en esta parte el usuario podrá interactuar con B Natural a través de Facebook, Instagram o WhatsApp.
 
-| HTML | React | Vue  | Angular |
-| --- | --- | ---  | ---  |
-| [![Material Dashboard  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-html/material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard  React](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-react/material-dashboard-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-dashboard/vue-material-dashboard.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-dashboard)  | [![ Material Dashboard Angular](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-angular/material-dashboard-angular.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-angular2)
-
-| HTML Dark | Vuetify  |
-| --- | --- |
-| [![Material Dashboard Dark](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-dark/material-dashboard-dark.jpg?raw=true)](https://www.creative-tim.com/product/material-dashboard-dark) | [![Material Dashboard Vuetify](https://github.com/creativetimofficial/public-assets/blob/master/material-dashboard-vuetify/material-dashboard-vuetify.jpg?raw=true)](https://www.creative-tim.com/product/vuetify-material-dashboard)
 
 ## Administración
-
-We use GitHub Issues as the official bug tracker for the Material Kit. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Material Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=mk-github-readme).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Upgrade to PRO Version
-
-Are you looking for more components? Please check our Premium Version of Material Kit right [here](https://www.creative-tim.com/product/material-kit-pro).
-
-## Licensing
-
-- Copyright 2020 Creative Tim (https://www.creative-tim.com/?ref=mk-github-readme)
-
-- Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-## Useful Links
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=mk-github-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=mk-github-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=mk-github-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=mk-github-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=mk-github-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=mk-github-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=mk-github-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=mk-github-readme)
+**DESCRIPCION** En proceso...
 
 
 ## Integrantes
