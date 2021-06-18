@@ -103,10 +103,10 @@ body {
 .card .user{
     border-radius: 50%;
     display: block;
-    height: 120px;
+    height: 191px;
     margin: -55px auto 0;
     overflow: hidden;
-    width: 120px;
+    width: 190px;
 }
 .card .user img{
     background: none repeat scroll 0 0 #FFFFFF;
@@ -126,8 +126,8 @@ body {
     height: 215px;
 }
 .card .name {
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 40px;
+    line-height: 35px;
     margin: 10px 0 0;
     text-align: center;
     text-transform: capitalize;
@@ -141,6 +141,8 @@ body {
     color: #999999;
     text-align: center;
     margin-bottom: 20px;
+    line-height: 35px;
+    font-size: 20px;
 }
 .card .footer {
     border-top: 1px solid #EEEEEE;
