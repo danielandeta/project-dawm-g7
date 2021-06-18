@@ -19145,9 +19145,9 @@ footer .pull-center {
 
 .mobile-container {
   border-top: 2em solid rgba(230, 230, 230, 0.7);
+  border-radius: 20px;
   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
   position: relative;
-  border-radius: 3px 3px 0 0;
   width: 600px;
   height: 320px;
   margin: 0 auto;
