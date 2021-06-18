@@ -1032,6 +1032,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  align-content: center;
 }
 
 .no-gutters {
@@ -15464,6 +15465,7 @@ small,
 .media .media-heading a {
   color: #000000;
   text-decoration: none;
+  justify-content: center;
 }
 
 h2.title {
