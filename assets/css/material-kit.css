@@ -1032,7 +1032,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  align-content: center;
+  
 }
 
 .no-gutters {
@@ -19145,11 +19145,23 @@ footer .pull-center {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
 }
 
+/* REDES SOCIALES-------------------------------------------------- */
+
+.social-icons li a:before {
+  font-family: FontAwesome;
+}
+
+/* Default link icon - keep this icon first */
+.social-icons li a[href*="http"]:before,
+.social-icons li a[href*="#"]:before {
+	content: "\f0c1";
+}
+
 .mobile-container {
   border-top: 2em solid rgba(230, 230, 230, 0.7);
-  border-radius: 20px;
   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
   position: relative;
+  border-radius: 3px 3px 0 0;
   width: 600px;
   height: 320px;
   margin: 0 auto;
@@ -19237,7 +19249,7 @@ ul.menu-social li a[href*="facebook.com"] {
 ul.menu-social li a[href*="twitter.com"] {
   background-color: #43d2e4;
 }
-ul.menu-social li a[href*="pinterest.com"] {
+ul.menu-social li a[href*="instagram.com"] {
   background-color: #ff7e56;
 }
 ul.menu-social li a[href*="whatsapp://send"] {
@@ -19285,8 +19297,8 @@ ul.menu-social li a[href*="facebook.com"]::before {
 ul.menu-social li a[href*="twitter.com"]::before {
   content: "\f099";
 }
-ul.menu-social li a[href*="pinterest.com"]::before {
-  content: "\f231";
+.social-icons li a[href*="instagram.com"]:before {
+	content: "\f16d";
 }
 ul.menu-social li a[href*="whatsapp://send"]::before {
   content: "\f232";
