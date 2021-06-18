@@ -1,9 +1,8 @@
-
+# ERROR404❌
 
 
 ## Contenido
 
-* [Integrantes](#integrantes)
 * [Introducción](#introducción)
 * [Principal](#principal)
 * [Catálogo](#catálogo)
@@ -11,46 +10,32 @@
 * [Recetas](#recetas)
 * [Encuéntranos](#encuéntranos)
 * [Administración](#administración)
+* [Integrantes](#integrantes)
 
 
 
-## Integrantes
-
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-kit)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react-native-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react-native)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/figma-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/material-kit-figma/presentation.html)[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/wordpress-logo.jpg?raw=true" width="60" height="60" />](https://themeisle.com/themes/hestia/?ref=creativetim)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/photoshop-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/photoshop)[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/sketch-logo.jpg" width="60" height="60" />](https://github.com/creativetimofficial/material-kit/tree/sketch)
-
-
-
-
-
-
-| HTML | React | Vue  |
-| --- | --- | ---  |
-| [![Material Kit  HTML](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit)  | [![Material Kit  React](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react/material-kit-react.jpeg?raw=true)](https://www.creative-tim.com/product/material-kit-react)  | [![Vue Material Kit](https://github.com/creativetimofficial/public-assets/blob/master/vue-material-kit/vue-material-kit.jpeg?raw=true)](https://www.creative-tim.com/product/vue-material-kit)
-
-| React Native | Figma | WordPress |
-| ---  | --- | --- |
-| [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-react-native/opt_mkrn_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native) | [![Material Kit Figma](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-figma/material-kit-figma.jpg?raw=true)](https://demos.creative-tim.com/material-kit-figma/presentation.html) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia/?ref=creativetim)
 
 ## Introducción
 
-| Buttons | Inputs | Navbars  |
-| --- | --- | ---  |
-| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/buttons.png?raw=true)](https://demos.creative-tim.com/material-kit/index.html#buttons)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/inputs.png?raw=true)](https://demos.creative-tim.com/material-kit/index.html#inputs)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/navbar-section.png?raw=true)](https://demos.creative-tim.com/material-kit/index.html#navigation)
-
-| Login Page | Landing Page | Profile Page  |
-| --- | --- | ---  |
-| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit/login-page.png)](https://demos.creative-tim.com/material-kit/index.html#carousel)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/landing-page.png?raw=true)](https://demos.creative-tim.com/material-kit/examples/landing-page.html)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/material-kit/profile-page.png?raw=true)](https://demos.creative-tim.com/material-kit/examples/profile-page.html)
-
-[View More](https://demos.creative-tim.com/material-kit/index.html)
-
+En este proyecto vamos a diseñar un sitio web para el emprendimiento B'natural', usaremos HTML y CSS como bases para poder llevar  
+llevar a cabo este proyecto. Este sitio web estara conformado por varias paginas, que se mencionan mas adelante. Es importante  
+destacar que todas las paginas cuentan con la misma barra de navegacion, la cual permitira al usuario navegar entre paginas en  
+todo momento, el sitio web contara con informacion del emprendimiento, recetas, tips, una seccion donde el usuario podra contactar  
+con la vendedora y una pagina donde habra un formulario que permitira al usuario realizar una compra.  
+Es importante resaltar que nuestro grupo selecciono determinadas plantillas de Interner para usarlas como base. Sin emabrgo, a cada  
+una de ellas les hicimos los respectivos cambios para adaptarlas a nuestro estilo y necesidades. A continuacion de detallara cada  
+pagina con sus respectivas caracteristicas y funciones:
 
 ## Principal
 
-- `npm i material-kit`
-- [Download from Github](https://github.com/creativetimofficial/material-kit/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/material-kit).
-- Install with [Bower](https://bower.io/): ```bower install material-kit```.
-- Clone the repo: `git clone https://github.com/creativetimofficial/material-kit.git`.
+-	PORTADA
+-	LOGO
+-	BARRA DE NAVEGACION
+-	FOTO DE ELLA
+-	DESCRIPCION DE ELLA
+-	DESCRIPCION DE LA MARCA
+-	FOOTER
+
 
 
 ## Catálogo
@@ -157,12 +142,11 @@ Are you looking for more components? Please check our Premium Version of Materia
 - [More products](https://www.creative-tim.com/bootstrap-themes?ref=mk-github-readme) from Creative Tim
 - Check our Bundles [here](https://www.creative-tim.com/bundles?ref=mk-github-readme)
 
-### Social Media
 
-Twitter: <https://twitter.com/CreativeTim>
+## Integrantes
+* **Daniela Landeta**
+* **William Venegas**
+* **Ana Briones**
+* **Edwin Veloz**
 
-Facebook: <https://www.facebook.com/CreativeTim>
 
-Dribbble: <https://dribbble.com/creativetim>
-
-Instagram: <https://www.instagram.com/CreativeTimOfficial>
