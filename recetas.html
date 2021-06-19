@@ -19,48 +19,47 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
 </head>
-
-<body class="profile-page sidebar-collapse">
+<body class="index-page sidebar-collapse">
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+        <a class="navbar-brand" href="index.html">
           <img src="assets\img\logo_natural.png" alt="logo" id="logoNat" width="min-width" class="rounded-circle">
-        </a>
+         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" onclick="location.href='catalogo.html';">
-                  <i class="material-icons">cloud_download</i> Catálogo
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" onclick="location.href='noticias.html';">
-                <i class="material-icons">cloud_download</i> B' Saludable
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" onclick="location.href='recetas.html';">
-                <i class="material-icons">cloud_download</i> Recetas
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" onclick="location.href='encuentranosBeta.html';">
-                <i class="material-icons">cloud_download</i> Encuéntranos
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)" onclick="location.href='recetas.html';">
-                <i class="material-icons">cloud_download</i> Administración
-              </a>
-            </li>
-          
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="location.href='catalogo.html';">
+                Catálogo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="location.href='noticias.html';">
+              B' Saludable
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="location.href='recetas.html';">
+              Recetas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="location.href='encuentranosBeta.html';">
+              Encuéntranos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" onclick="location.href='recetas.html';">
+              Administración
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -107,13 +106,24 @@
           <div class="tab-pane active text-center gallery" id="studio">
             <div class="row">
               <div class="col-md-3 ml-auto">
-                <img src="./assets/img/brownie.jpg" class="rounded" id="brownies">
-                <img src="./assets/img/cheesecake.jpg" class="rounded" id="cheesecake">
-                <img src="./assets/img/quesocrema.jpg" class="rounded" id="quesocrema">
+                <img src="./assets/img/brownie.jpg" class="rounded" class="postres">
+                
+               <!-- <figcaption class="texto1">Brownie de manzana</figcaption>-->
+               
+                <img src="./assets/img/cheesecake.jpg"  class="postres">
+            
+                <div class="texto">Cheescake de Frutilla</div>
+          
+                <img src="./assets/img/quesocrema.jpg" class="rounded" class="postres">
+             
+                <!--<figcaption class="texto3">Queso crema con mermelada</figcaption>-->
+               
               </div>
               <div class="col-md-3 mr-auto">
-                <img src="./assets/img/cookies.jpg" class="rounded" id="cookies">
-                <img src="./assets/img/postre.jpg" class="rounded" id="postre">
+                <img src="./assets/img/cookies.jpg" class="rounded" class="postres">
+               <!-- <figcaption class="texto4">Galletas con mermelada</figcaption>-->
+                <img src="./assets/img/postre.jpg" class="rounded" class="postres">
+                <!--<figcaption class="texto5">Postre de queso crema</figcaption>-->
               </div>
             </div>
           </div>
