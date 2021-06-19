@@ -73,6 +73,7 @@ completa, sin embargo, el estilo y la ubicación de los diferentes objetos ya es
 **DESCRIPCION** En esta sección podremos observar las recetas para las diferentes mermeladas que B Natural ofrece, esta página está formada por varias  
 cartas las cuales contienen la información de las mermeladas. Cuando se de clic sobre alguna de estas mermeladas, se abrirá una nueva página donde  
 se detalla la receta de dicha mermelada.
+![image](https://github.com/dannilandeta/project-dawm-g7/blob/903907b78de111dd708bdbae02683cf0cdc1c4b5/recetaportada.png)
 
 
 ## Encuéntranos
