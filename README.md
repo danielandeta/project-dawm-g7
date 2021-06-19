@@ -72,9 +72,7 @@ completa, sin embargo, el estilo y la ubicación de los diferentes objetos ya es
 ![image](https://github.com/dannilandeta/project-dawm-g7/blob/903907b78de111dd708bdbae02683cf0cdc1c4b5/recetaportada.png)
 ##
 ![image](https://github.com/dannilandeta/project-dawm-g7/blob/main/recetas2.png)
-**DESCRIPCION** En esta sección podremos observar las recetas para las diferentes mermeladas que B Natural ofrece, esta página está formada por varias  
-cartas las cuales contienen la información de las mermeladas. Se podrá observar el nombre de la receta cuando pase el cursor encima de la imagen, se mostrará la foto con opacidad y el nombre encima de la imagen. Cuando se de clic sobre alguna de estas mermeladas, se abrirá una nueva página donde  
-se detalla la preparación e ingredientes de dicha mermelada.
+**DESCRIPCION** En esta sección podremos observar las recetas para las diferentes mermeladas que B Natural ofrece, esta página está formada por varias cartas las cuales contienen la información de las mermeladas. Se podrá observar información de la receta cuando pase el cursor encima de la imagen ya que, se mostrará la foto con opacidad y el nombre de la receta encima de la imagen. Cuando se de clic sobre alguna de estas imagenes, se abrirá una nueva página donde se detalla la preparación e ingredientes de dicha receta.
 
 
 
