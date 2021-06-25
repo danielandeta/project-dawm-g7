@@ -1,52 +1,49 @@
 {
-  "name": "material-kit",
-  "version": "2.0.7",
-  "description": "Material Kit, a Google Material Desgin. Coded by Creative Tim",
-  "main": "index.html",
-  "directories": {
-    "example": "root"
+  "name": "now-ui-kit-react",
+  "version": "1.5.0",
+  "private": true,
+  "dependencies": {
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.9",
+    "moment": "2.29.1",
+    "node-sass": "6.0.0",
+    "nouislider": "15.1.0",
+    "react": "17.0.2",
+    "react-bootstrap-switch": "15.5.3",
+    "react-datetime": "3.0.4",
+    "react-dom": "17.0.2",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.3",
+    "reactstrap": "8.9.0"
   },
   "scripts": {
-    "open-app": "gulp open-app",
-    "start": "npm run open-app",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "gulp-watch"
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp licenses",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
+    "minify-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css --source-map true"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-kit.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "material kit",
-    "bootstrap material admin",
-    "bootstrap material kit",
-    "material design admin",
-    "material design",
-    "creative tim",
-    "html kit",
-    "html css kit",
-    "web kit",
-    "freebie",
-    "free bootstrap kit",
-    "css3 kit",
-    "bootstrap admin",
-    "bootstrap kit",
-    "frontend",
-    "responsive bootstrap kit"
-  ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/material-kit/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean": "^0.4.0",
-    "gulp-install": "^1.1.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-open": "^3.0.1"
-  },
-  "homepage": "https://demos.creative-tim.com/material-kit/index.html"
+  "optionalDependencies": {
+    "@babel/core": "7.14.3",
+    "typescript": "4.2.4"
+  }
 }
