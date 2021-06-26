@@ -1,10 +1,10 @@
 import React from "react";
 
 // reactstrap components
-import { Alert, Container } from "reactstrap";
+//import { Alert, Container } from "reactstrap";
 
 // core components
-
+/*
 function Notifications() {
   const [alert1, setAlert1] = React.useState(true);
   const [alert2, setAlert2] = React.useState(true);
@@ -88,6 +88,37 @@ function Notifications() {
       </div>
     </>
   );
+}*/
+
+function Receta(){
+  return(
+    <div className="section-recipe">
+            <div className="row">
+                <div className="img_cont">
+                  <img src={"assets/img/brownie.jpg"} />
+                  <div className="overlay">
+                   <figcaption className="texto">Brownie de manzana</figcaption>
+                  </div>
+                 </div>
+                <div className="img_cont">
+                <img src={"assets/img/cheesecake.jpg"} />
+               <div className="overlay">
+                <figcaption className="texto1">Cheescake de Frutilla</figcaption>
+              </div>
+            </div>
+              <div className="img_cont">
+                <img src={"assets/img/quesocrema.jpg"} />
+                <div className="overlay">
+                <figcaption className="texto3">Queso crema con mermelada</figcaption>
+                </div>
+              </div>
+         </div>
+     </div>
+
+);
+
 }
 
-export default Notifications;
+
+
+export default Receta;

@@ -35,13 +35,8 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/now-logo.png").default}
-            ></img>
-            <h1 className="h1-seo">Now UI Kit.</h1>
-            <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+            <h1 className="h1-seo">B' Natural</h1>
+            <h3>Te enseño a cuidar tu alimentación, endulzantes 100% orgánicos.</h3>
           </div>
         </Container>
       </div>

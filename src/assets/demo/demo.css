@@ -449,9 +449,10 @@
 }
 
 .brand .h1-seo {
-  font-size: 2.8em;
+  font-size: 3em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 700;
+  padding-bottom: 5%;
 }
 
 .brand .n-logo {
