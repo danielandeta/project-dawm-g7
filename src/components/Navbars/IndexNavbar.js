@@ -98,6 +98,22 @@ function IndexNavbar() {
                   <p>Home</p>
                 </NavLink>
               </NavItem>
+
+              <NavItem>
+                <NavLink
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("download-section")
+                      .scrollIntoView();
+                  }}
+                >
+                  <i className=""></i>
+                  <Link to="/Catalogo"><p>Catálogo</p></Link>
+                </NavLink>
+              </NavItem>
+
               <NavItem>
                 <NavLink
                   href="#"
