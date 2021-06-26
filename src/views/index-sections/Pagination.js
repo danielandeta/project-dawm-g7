@@ -214,7 +214,9 @@ function PaginationSection() {
           </Row>
           <br></br>
           <div className="space"></div>
-          <h4>Notifications</h4>
+          <div className="recipe-title">         
+          <h4>Recetas</h4><span></span>
+          </div> 
         </Container>
       </div>
     </>
