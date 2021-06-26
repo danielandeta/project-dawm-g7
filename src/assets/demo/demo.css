@@ -563,6 +563,8 @@
 .img_cont{
   position: relative;
   width: 20%;
+  padding-top: 10px;
+
 }
 
 
@@ -577,18 +579,20 @@
   opacity: 0;
   transition: .5s ease;
   background-color: #3be4db;
+  border-radius: 50px;
 }
 .img-recipe{
-  display: block;
+  display:block;
   width: 100%;
   height: auto;
+
 } 
 
 
 .row{
   display: flex;
   justify-content: space-evenly;
-  margin-left: 20px;
+  margin-top:10px;
 }
 
 .recipe-title{
@@ -600,8 +604,10 @@
 }
 
 .section-recipe{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-bottom: 20px;;
+  padding-top:20px;
 }
