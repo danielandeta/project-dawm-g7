@@ -10,7 +10,8 @@ import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
-import Images from "./index-sections/Information.js";
+import Information from "./index-sections/Information.js";
+import Images from "./index-sections/Images.js";
 import BasicElements from "./index-sections/BasicElements.js";
 import Navbars from "./index-sections/Navbars.js";
 import Tabs from "./index-sections/Tabs.js";
@@ -44,6 +45,7 @@ function Index() {
         <IndexHeader />
         <div className="main">
           <Images />
+          <Information/>
           <BasicElements />
           <Navbars />
           <Tabs />
