@@ -129,9 +129,8 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    component="img"
 
-                    image= {sabores[card-1]+".jpg"}
+                    image= {"/assets/"+sabores[card-1]+".jpg"}
                     title={"Mermelada de "+sabores[card-1]}
                   />
                   <CardContent className={classes.cardContent}>
