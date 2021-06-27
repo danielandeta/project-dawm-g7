@@ -13,7 +13,11 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+<<<<<<< HEAD
+import Encuentranos from "views/index-sections/encuentranos.js";
+=======
 import Catalogo from "views/index-sections/Catalogo.js";
+>>>>>>> a842f1164eab2d33f51686fb0e4a5d1c34320197
 
 ReactDOM.render(
   <BrowserRouter>
@@ -37,8 +41,13 @@ ReactDOM.render(
           render={(props) => <LoginPage {...props} />}
         />
         <Route
+<<<<<<< HEAD
+          path="/encuentranos"
+          render={(props) => <Encuentranos {...props} />}
+=======
           path="/Catalogo"
           render={(props)=> <Catalogo {...props}/>}
+>>>>>>> a842f1164eab2d33f51686fb0e4a5d1c34320197
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
