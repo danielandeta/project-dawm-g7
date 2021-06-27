@@ -1,0 +1,7 @@
+.wrapper_card {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 3rem;
+  justify-content: center;
+}

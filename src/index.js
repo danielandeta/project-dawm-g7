@@ -40,7 +40,7 @@ ReactDOM.render(
         />
         <Route
           path="/news"
-          render={(props) => <News {...props} />}
+          render={(nutiTips) => <News {...nutiTips} />}
           />
         <Route
           path="/Catalogo"
@@ -57,3 +57,5 @@ ReactDOM.render(
   </BrowserRouter>,
   document.getElementById("root")
 );
+
+

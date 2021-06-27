@@ -23,6 +23,9 @@ $black-hr:                   #444444 !default;
 $light-gray:                 #E3E3E3 !default;
 $medium-gray:                #DDDDDD !default;
 $dark-gray:                  #9A9A9A !default;
+$clr-gray150:                #f4f6fb !default;
+$clr-gray300:                #e1e5ee !default;
+$clr-gray700:                #161d34 !default;
 
 $opacity-gray-3:             rgba(222,222,222, .3) !default;
 $opacity-gray-5:             rgba(222,222,222, .5) !default;
@@ -133,6 +136,8 @@ $border-radius-large-top:      $border-radius-large $border-radius-large 0 0 !de
 $border-radius-large-bottom:   0 0 $border-radius-large $border-radius-large !default;
 
 $btn-round-radius:             30px         !default;
+$radius:                       0.2rem       !default;
+
 
 $height-base:                  55px         !default;
 
