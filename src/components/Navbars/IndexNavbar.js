@@ -18,11 +18,13 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
-function IndexNavbar() {
+function IndexNavbar(props) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
-  React.useEffect(() => {
-    const updateNavbarColor = () => {
+  
+    React.useEffect(() => {
+    if (!props.color) {
+      const updateNavbarColor = () => {
       if (
         document.documentElement.scrollTop > 399 ||
         document.body.scrollTop > 399
@@ -35,10 +37,15 @@ function IndexNavbar() {
         setNavbarColor("navbar-transparent");
       }
     };
-    window.addEventListener("scroll", updateNavbarColor);
-    return function cleanup() {
+      window.addEventListener("scroll", updateNavbarColor);
+      return function cleanup() {
       window.removeEventListener("scroll", updateNavbarColor);
-    };
+      };
+    } else {
+      setNavbarColor("");
+    }
+      
+    
   });
   return (
     <>
@@ -98,6 +105,22 @@ function IndexNavbar() {
                   <p>Home</p>
                 </NavLink>
               </NavItem>
+
+              <NavItem>
+                <NavLink
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById("download-section")
+                      .scrollIntoView();
+                  }}
+                >
+                  <i className=""></i>
+                  <Link to="/Catalogo"><p>Catálogo</p></Link>
+                </NavLink>
+              </NavItem>
+
               <NavItem>
                 <NavLink
                   href="#"
@@ -114,7 +137,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     document
@@ -122,11 +145,21 @@ function IndexNavbar() {
                       .scrollIntoView();
                   }}
                 >
+                  
                   <i className="bi bi-newspaper"></i>
                   <Link to="/news"><p>Noticias</p></Link>
                 </NavLink>
-
-          
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="/encuentranos"
+                  target="_blank"
+                  id="twitter-tooltip"
+                >
+                  
+                  <i className="bi bi-newspaper"></i>
+                  <Link to="/encuentranos"><p>Encuentranos</p></Link>
+                </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink

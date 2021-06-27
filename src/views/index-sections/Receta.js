@@ -92,33 +92,43 @@ function Notifications() {
 
 function Receta(){
   return(
-    <div className="section-recipe">
+
+    <div className="section-recipe"
+      
+       style={{
+          backgroundImage:
+            "url(" + require("assets/img/pattern1.png").default + ")",
+          backgroundSize: "cover",
+          backgroundPosition: "top center",
+          minHeight: "700px",
+         
+        }}
+      >  
             <div className="row">
                 <div className="img_cont">
-                  <img src={"assets/img/brownie.jpg"} />
+                  <img className="img-recipe" className="rounded-circle" src={require("assets/img/brownie.jpg").default} />
                   <div className="overlay">
                    <figcaption className="texto">Brownie de manzana</figcaption>
                   </div>
                  </div>
                 <div className="img_cont">
-                <img src={"assets/img/cheesecake.jpg"} />
+                <img className="img-recipe" className="rounded-circle"  src={require("assets/img/cheesecake.jpg").default} />
                <div className="overlay">
                 <figcaption className="texto1">Cheescake de Frutilla</figcaption>
               </div>
             </div>
               <div className="img_cont">
-                <img src={"assets/img/quesocrema.jpg"} />
+                <img className="img-recipe"className="rounded-circle"  src={require("assets/img/quesocrema.jpg").default} />
                 <div className="overlay">
-                <figcaption className="texto3">Queso crema con mermelada</figcaption>
+                <figcaption className="texto2">Queso crema con mermelada</figcaption>
                 </div>
               </div>
          </div>
      </div>
-
+     
+    
 );
 
 }
-
-
 
 export default Receta;
