@@ -123,8 +123,10 @@ function IndexNavbar() {
                   }}
                 >
                   <i className="bi bi-newspaper"></i>
-                  <p>Noticias</p>
+                  <Link to="/news"><p>Noticias</p></Link>
                 </NavLink>
+
+          
               </NavItem>
               <NavItem>
                 <NavLink
