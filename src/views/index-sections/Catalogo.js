@@ -28,6 +28,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+//import sabor from "assets/img/sabores";
+
 
 function Copyright() {
   return (
@@ -127,9 +129,10 @@ export default function Album() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    
-                    image = {"../assets/img/sabores/"+sabores[card-1]}
-                    title={"Mermelada "+sabores[card-1]}
+                    component="img"
+
+                    image= {sabores[card-1]+".jpg"}
+                    title={"Mermelada de "+sabores[card-1]}
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
