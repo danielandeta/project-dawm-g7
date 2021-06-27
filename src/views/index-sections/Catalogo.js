@@ -79,8 +79,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5, 6];
-const sabores=["Frutilla", "Frutimora", "Manzana", "Mora", "Piña", "Zapallo"]
+const cards = [1, 2];
+const sabores=["Frutimora.jpg", "Frutilla.png"]
 export default function Catalogo() {
   const classes = useStyles();
 
@@ -99,15 +99,15 @@ export default function Catalogo() {
                   <CardMedia
                     className={classes.cardMedia}
 
-                    image= {"/assets/"+sabores[card-1]+".jpg"}
-                    title={"Mermelada de "+sabores[card-1]}
+                    image={require("assets/img/"+sabores[card-1]).default}
+                    title={"Mermelada de "+sabores[card-1].slice(0, sabores[card-1].length - 4)}
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      {sabores[card-1]}
+                      {sabores[card-1].slice(0, sabores[card-1].length - 4)}
                     </Typography>
                     <Typography>
-                      Mermelada de {sabores[card-1]} con endulzante orgánico, sin preservantes ni colorante artificial.
+                      Mermelada de {sabores[card-1].slice(0, sabores[card-1].length - 4)} con endulzante orgánico, sin preservantes ni colorante artificial.
                     </Typography>
                   </CardContent>
                   <CardActions>
