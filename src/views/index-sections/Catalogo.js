@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
@@ -16,7 +18,7 @@ import Link from '@material-ui/core/Link';
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import CarouselSection from "./Carousel.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-//import sabor from "assets/img/sabores";
+import Formulario from "views/index-sections/Formulario.js";
 
 
 function Copyright() {
@@ -29,6 +31,24 @@ function Copyright() {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
+  );
+}
+
+function _onPressButton(){
+  ReactDOM.render(
+    <BrowserRouter>
+      <Switch>
+        <Switch>
+          <Route
+            path="/Formulario"
+            render={(props) => <Formulario {...props} />}
+          />
+          <Redirect to="/index" />
+          <Redirect from="/" to="/index" />
+        </Switch>
+      </Switch>
+    </BrowserRouter>,
+    document.getElementById("root")
   );
 }
 
@@ -96,7 +116,7 @@ export default function Catalogo() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" onPress={this._onPressButton}>
                       Más info
                     </Button>
                   </CardActions>
