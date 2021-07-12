@@ -16,6 +16,7 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import News from "views/index-sections/News.js";
 import Encuentranos from "views/index-sections/encuentranos.js";
 import Catalogo from "views/index-sections/Catalogo.js";
+import Formulario from "views/index-sections/Formulario.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -49,6 +50,10 @@ ReactDOM.render(
         <Route
           path="/encuentranos"
           render={(props) => <Encuentranos {...props} />}
+        />
+        <Route
+          path="/Formulario"
+          render={(props) => <Formulario {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />

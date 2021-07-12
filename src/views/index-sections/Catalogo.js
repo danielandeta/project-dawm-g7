@@ -34,23 +34,6 @@ function Copyright() {
   );
 }
 
-function _onPressButton(){
-  ReactDOM.render(
-    <BrowserRouter>
-      <Switch>
-        <Switch>
-          <Route
-            path="/Formulario"
-            render={(props) => <Formulario {...props} />}
-          />
-          <Redirect to="/index" />
-          <Redirect from="/" to="/index" />
-        </Switch>
-      </Switch>
-    </BrowserRouter>,
-    document.getElementById("root")
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -116,7 +99,7 @@ export default function Catalogo() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary" onPress={this._onPressButton}>
+                    <Button size="small" color="primary" component={Link} to="/Formulario">
                       Más info
                     </Button>
                   </CardActions>
