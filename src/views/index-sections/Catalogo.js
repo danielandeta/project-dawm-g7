@@ -1,18 +1,3 @@
-/*import React from 'react';
-import IndexNavbar from 'components/Navbars/IndexNavbar.js';
-import IndexHeader from 'components/Headers/IndexHeader.js';
-import Information from "./Information.js";
-import Images from './Information.js';
-
-function Catalogo(){
-    return (
-        <div>
-            <h1>hello</h1>
-        </div>
-    );
-}
-
-export default Catalogo;*/
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
@@ -79,8 +64,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2];
-const sabores=["Frutimora.jpg", "Frutilla.png"]
+const cards = [1, 2, 3, 4, 5];
+const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
 export default function Catalogo() {
   const classes = useStyles();
 
