@@ -10,6 +10,7 @@
     "google-maps-react": "^2.0.6",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
+    "material-ui": "^0.20.2",
     "moment": "2.29.1",
     "node-sass": "^6.0.1",
     "nouislider": "15.1.0",
