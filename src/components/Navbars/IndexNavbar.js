@@ -99,8 +99,7 @@ function IndexNavbar(props) {
               </NavItem>
 
               <NavItem>
-                <NavLink
-                >
+                <NavLink>
                   <i className=""></i>
                   <Link to="/Catalogo"><p>Catálogo</p></Link>
                 </NavLink>
@@ -136,7 +135,7 @@ function IndexNavbar(props) {
                 >
                   
                   <i className="bi bi-newspaper"></i>
-                  <Link to="/encuentranos"><p>Encuentranos</p></Link>
+                  <Link to="/encuentranos"><p>Encuéntranos</p></Link>
                 </NavLink>
               </NavItem>
               <NavItem>

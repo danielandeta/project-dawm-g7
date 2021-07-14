@@ -14,7 +14,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+import { Link } from "react-router-dom";
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import CarouselSection from "./Carousel.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
@@ -99,8 +99,8 @@ export default function Catalogo() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary" component={Link} to="/Formulario">
-                      Más info
+                    <Button size="small" color="primary" >
+                      <Link to="/Formulario"><p>Más info</p></Link>
                     </Button>
                   </CardActions>
                 </Card>

@@ -3,6 +3,17 @@ import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import Catalogo from "views/index-sections/Catalogo.js";
+import {
+  Button,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
 
 function Copyright() {
   return (
@@ -25,27 +36,26 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Formulario() {
-    const classes = useStyles();
-  
-    return( <>
-      <IndexNavbar color='1' />
-      <React.Fragment>
-        <main className="navbar_separation">
-          {/* Hero unit */}
-          
-        </main>
-        {/* Footer */}
-        <footer className={classes.footer}>
-            <Typography variant="h6" align="center" gutterBottom>
-            Footer
-            </Typography>
-            <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-            Something here to give the footer a purpose!
-            </Typography>
-            <Copyright />
-        </footer>
-        {/* End footer */}
-        </React.Fragment>
+  const classes = useStyles();
+
+  return( 
+    <>
+      <IndexNavbar color="1"/>
+        <div className="section section-about-us">
+          <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="8">
+                <h2 className="title">Encuentranos</h2>
+                <h5 className="description">
+                  Aquí podrás encontrar la dirección donde estamos ubicados
+                  y te mostramos las maneras de ponerte en contacto con
+                  nosotros para realizarnos consultas y realizar alguna compra.
+                  ¡Gracias por elegirnos!
+                </h5>
+              </Col>
+            </Row>
+          </Container>
+        </div>
     </>
-    );
+  );
 }
