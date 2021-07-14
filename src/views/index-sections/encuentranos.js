@@ -1,4 +1,5 @@
 import React from "react";
+import Iframe from "react-iframe";
 // reactstrap components
 import {
   Button,
@@ -11,37 +12,12 @@ import {
   Col,
 } from "reactstrap";
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import DarkFooter from "components/Footers/DarkFooter.js";
-import Redes from "./Redes.js";
-import Map from "./Map.js";
-import credentials from "./credentials.js"
-
-const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${credentials.mapsKey}`;
-
 
 function LandingPage() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
-  React.useEffect(() => {
-    document.body.classList.add("landing-page");
-    document.body.classList.add("sidebar-collapse");
-    document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-    return function cleanup() {
-      document.body.classList.remove("landing-page");
-      document.body.classList.remove("sidebar-collapse");
-    };
-  }, []);
   return (
     <>
-      <ExamplesNavbar />
-      <div className="wrapper">
-        <IndexNavbar />
-
-
+      <IndexNavbar color="1"/>
         <div className="section section-about-us">
           <Container>
             <Row>
@@ -53,35 +29,23 @@ function LandingPage() {
                   nosotros para realizarnos consultas y realizar alguna compra.
                   ¡Gracias por elegirnos!
                 </h5>
-
-                
               </Col>
             </Row>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="8">
+              <Iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.899541431025!2d-80.08180438574122!3d-2.1917355379009886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d760a423e057d%3A0x79e14862a6fa6a26!2svilla%20espa%C3%B1a%202!5e0!3m2!1sen!2sec!4v1626067387990!5m2!1sen!2sec" 
+              width="600" 
+              height="450" 
+              allowfullscreen="" 
+              loading="lazy"
+              className="mapa" />
+              </Col>
+            </Row> 
           </Container>
         </div>
-        
-        
-          <div>
-            <Map
-              googleMapURL = {mapURL}
-              containerElement = {<div style={{height: '400px'}}/>}
-              mapElement = {<div style={{height: '100%'}}/>}
-              loadingElement = {<p>Cargando</p>}
-            />
-          </div>
-       
-      }
-
-        
-      
-      
-        
-        <Redes />
-
-        <DarkFooter />
-      </div>
     </>
-  );
-}
+       )
+      }
 
 export default LandingPage;

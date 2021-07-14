@@ -92,17 +92,9 @@ function IndexNavbar(props) {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
+                <NavLink>
                   <i className="bi bi-house-door"></i>
-                  <p>Home</p>
+                  <Link to="/index"><p>Home</p></Link>
                 </NavLink>
               </NavItem>
 
