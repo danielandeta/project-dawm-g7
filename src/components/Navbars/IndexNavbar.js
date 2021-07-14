@@ -120,6 +120,7 @@ function IndexNavbar(props) {
                   <p>Recetas</p>
                 </NavLink>
               </NavItem>
+
               <NavItem>
                 <NavLink
                 >
@@ -186,3 +187,18 @@ function IndexNavbar(props) {
 }
 
 export default IndexNavbar;
+
+{/* <NavItem>
+<NavLink
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    document
+      .getElementById("download-section")
+      .scrollIntoView();
+  }}
+>
+  <i className=""></i>
+  <p>Recetas</p>
+</NavLink>
+</NavItem> */}

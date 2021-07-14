@@ -26,7 +26,6 @@ function PaginationSection() {
           <br></br>
           <div className="space"></div>
           <div className="recipe-title">         
-          <h4>Recetas</h4><span></span>
           </div> 
         </Container>
       </div>

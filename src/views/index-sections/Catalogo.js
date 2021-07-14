@@ -1,19 +1,6 @@
-/*import React from 'react';
-import IndexNavbar from 'components/Navbars/IndexNavbar.js';
-import IndexHeader from 'components/Headers/IndexHeader.js';
-import Information from "./Information.js";
-import Images from './Information.js';
-
-function Catalogo(){
-    return (
-        <div>
-            <h1>hello</h1>
-        </div>
-    );
-}
-
-export default Catalogo;*/
 import React from 'react';
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
@@ -31,7 +18,7 @@ import Link from '@material-ui/core/Link';
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import CarouselSection from "./Carousel.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-//import sabor from "assets/img/sabores";
+import Formulario from "views/index-sections/Formulario.js";
 
 
 function Copyright() {
@@ -46,6 +33,7 @@ function Copyright() {
     </Typography>
   );
 }
+
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -79,8 +67,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2];
-const sabores=["Frutimora.jpg", "Frutilla.png"]
+const cards = [1, 2, 3, 4, 5];
+const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
 export default function Catalogo() {
   const classes = useStyles();
 
@@ -111,7 +99,7 @@ export default function Catalogo() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" component={Link} to="/Formulario">
                       Más info
                     </Button>
                   </CardActions>

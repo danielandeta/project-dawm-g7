@@ -16,7 +16,7 @@ import Images from "./index-sections/Images.js";
 import Navbars from "./index-sections/Navbars.js";
 //import Tabs from "./index-sections/Tabs.js";
 import Pagination from "./index-sections/Pagination.js";
-import Receta from "./index-sections/Receta.js";
+//import Receta from "./index-sections/Receta.js";
 //import Typography from "./index-sections/Typography.js";
 //import Javascript from "./index-sections/Javascript.js";
 //import Carousel from "./index-sections/Carousel.js";
@@ -47,7 +47,6 @@ function Index() {
           <Images />
           <Information/>
           <Pagination />
-          <Receta />
           <SignUp />
           <Examples />
           <Download />
