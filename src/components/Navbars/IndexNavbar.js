@@ -114,7 +114,18 @@ function IndexNavbar(props) {
                 </NavLink>
               </NavItem>
 
+
               <NavItem>
+                <NavLink
+                >
+                  <i className="bi bi-newspaper"></i>
+                  <Link to="/RecetaPrincipal"><p>Recetas</p></Link>
+                </NavLink>
+              </NavItem> 
+
+
+
+               {/* <NavItem>
                 <NavLink
                   href="#"
                   onClick={(e) => {
@@ -127,7 +138,7 @@ function IndexNavbar(props) {
                   <i className=""></i>
                   <p>Recetas</p>
                 </NavLink>
-              </NavItem>
+              </NavItem>  */}
 
               <NavItem>
                 <NavLink

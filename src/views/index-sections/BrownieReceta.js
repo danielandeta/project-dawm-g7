@@ -169,21 +169,4 @@ function LandingPage() {
 
 export default LandingPage;
 
- {/* <div class="stepper-wrapper">
-              <div class="stepper-item completed">
-                <div class="step-counter">1</div>
-                <div class="step-name">Paso</div>
-              </div>
-              <div class="stepper-item completed">
-                <div class="step-counter">2</div>
-                <div class="step-name">Paso</div>
-              </div>
-              <div class="stepper-item active">
-                <div class="step-counter">3</div>
-                <div class="step-name">Paso</div>
-              </div>
-              <div class="stepper-item">
-                <div class="step-counter">4</div>
-                <div class="step-name">Paso</div>
-              </div>
-            </div>  */}
+ 

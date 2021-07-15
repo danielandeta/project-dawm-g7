@@ -67,24 +67,26 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/brownie.jpg").default + ")",
+                        "url(" + require("assets/img/cheesecake.jpg").default + ")",
                     }}
                   ></div>
                   <h3>
                     Ingredientes
                   </h3>
                   <p>
-                  -1 tz de harina de avena
+                  -300 ml. Leche
                   <br></br>
-                  -2 bananas en pure
+                  -300 grs. Azúcar
                   <br></br>
-                  -1 tz de leche
+                  -3 Huevos
                   <br></br>
-                  -1 cda de cacao
+                  -2 cucharadas Gelatina sin sabor
                   <br></br>
-                  -1 cda de polvo para hornear
+                  -500 grs. Queso crema 
                   <br></br>
-                  -2 cdas de panela
+                  -300 ml. Crema de leche
+                  <br></br>
+                  Mermelada de Frutilla B’ Natural
                   </p>                
                 </Col>
               </Row>
@@ -124,23 +126,23 @@ function LandingPage() {
                     <div class='progress_inner__tabs'>
                       <div class='tab tab-0'>
                         <h1>Primer Paso</h1>
-                        <p> Mezclar los ingredientes secos: la harina de avena, cacao y el polvo de hornear.</p>
+                        <p> Hervir leche con cáscara de limón. Dejar reposar 15 minutos.</p>
                       </div>
                       <div class='tab tab-1'>
                         <h1>Segundo Paso</h1>
-                        <p> Añadir la leche en la mezcla poco a poco, mientras se sigue batiendo. </p>
+                        <p>	Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada. </p>
                       </div>
                       <div class='tab tab-2'>
                         <h1>Tercer Paso</h1>
-                        <p>	Vaciar el puré de banana en el recipiente y agregar la panela, mezclar hasta que se vuelva una masa homogénea. </p>
+                        <p>	Agregar el queso y mezclar bien. Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.</p>
                       </div>
                       <div class='tab tab-3'>
                         <h1>Cuarto Paso</h1>
-                        <p>	Con el horno previamente precalentado a 180º, horneamos nuestro brownie durante 20-25min.</p>
+                        <p>	Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.</p>
                       </div>
                       <div class='tab tab-4'>
                         <h1>Quinto Paso</h1>
-                        <p>	Dejar enfriar y servir junto con la mermelada de manzana B’ Natural.</p>
+                        <p>	Después de refrigerar como mínimo por 4 horas, ubicar la mermelada B'Natural sobre el cheesecake. Desmoldar y decorar a gusto.</p>
                       </div>
                       
                     </div>
@@ -169,21 +171,4 @@ function LandingPage() {
 
 export default LandingPage;
 
- {/* <div class="stepper-wrapper">
-              <div class="stepper-item completed">
-                <div class="step-counter">1</div>
-                <div class="step-name">Paso</div>
-              </div>
-              <div class="stepper-item completed">
-                <div class="step-counter">2</div>
-                <div class="step-name">Paso</div>
-              </div>
-              <div class="stepper-item active">
-                <div class="step-counter">3</div>
-                <div class="step-name">Paso</div>
-              </div>
-              <div class="stepper-item">
-                <div class="step-counter">4</div>
-                <div class="step-name">Paso</div>
-              </div>
-            </div>  */}
+ 
