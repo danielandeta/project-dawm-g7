@@ -92,23 +92,14 @@ function IndexNavbar(props) {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
+                <NavLink>
                   <i className="bi bi-house-door"></i>
-                  <p>Home</p>
+                  <Link to="/index"><p>Home</p></Link>
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink
-                >
+                <NavLink>
                   <i className=""></i>
                   <Link to="/Catalogo"><p>Catálogo</p></Link>
                 </NavLink>
@@ -155,7 +146,7 @@ function IndexNavbar(props) {
                 >
                   
                   <i className="bi bi-newspaper"></i>
-                  <Link to="/encuentranos"><p>Encuentranos</p></Link>
+                  <Link to="/encuentranos"><p>Encuéntranos</p></Link>
                 </NavLink>
               </NavItem>
               <NavItem>

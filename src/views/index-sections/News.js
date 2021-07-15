@@ -2,6 +2,7 @@ import React from "react";
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import CardTip from "./CardTip.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
+import { Button } from "reactstrap";
 
 
 const nutiTips = [
@@ -40,6 +41,11 @@ function News() {
     <>
       <IndexNavbar color="1"/>
       <h2 className="title_news">B'Saludable</h2>
+      <p className="sub_title">Encuentra el mejor tip con la barra de búsqueda</p>
+      <div className="mt-3 mb-4 search d-flex justify-content-center align-items-center">
+        <input id="busqueda" className="mt-0 mb-0" type="text" placeholder="Buscar..." />
+        <Button color="info" className="mt-0 mb-0 ml-1">Buscar</Button>
+      </div>
       <div className="wrapper_card">
 
         <React.Fragment>
@@ -53,7 +59,6 @@ function News() {
     </>
   );
 }
-
 
 
 export default News;

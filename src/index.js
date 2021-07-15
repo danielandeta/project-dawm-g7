@@ -52,8 +52,8 @@ ReactDOM.render(
           render={(props) => <Encuentranos {...props} />}
         />
         <Route
-          path="/Formulario"
-          render={(props) => <Formulario {...props} />}
+          exact path="/Formulario"
+          component = {Formulario}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
