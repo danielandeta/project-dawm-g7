@@ -79,8 +79,8 @@ export default function Formulario() {
                 </h5>
               </Col>
             </Row>
-
               <form className="ml-auto mr-auto col-center" onSubmit={handleSubmit}>
+                
                 <div className="col-md-3 col-center">
                   <label htmlFor="nombre">Nombre: </label>
                     <input 
