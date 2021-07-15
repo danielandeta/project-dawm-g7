@@ -127,28 +127,26 @@ function IndexNavbar(props) {
                   <Link to="/news"><p>Noticias</p></Link>
                 </NavLink>
               </NavItem>
+
               <NavItem>
                 <NavLink
-                  href="/encuentranos"
-                  target="_blank"
-                  id="twitter-tooltip"
                 >
-                  
                   <i className="bi bi-newspaper"></i>
                   <Link to="/encuentranos"><p>Encuéntranos</p></Link>
                 </NavLink>
               </NavItem>
+              
               <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
                   id="twitter-tooltip"
                 >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
+                  <i class="fab fa-whatsapp"></i>
+                  <p className="d-lg-none d-xl-none">WhatsApp</p>
                 </NavLink>
                 <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
+                  Contactanos en WhatsApp
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
@@ -161,7 +159,7 @@ function IndexNavbar(props) {
                   <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
                 <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
+                  Siguenos en Facebook
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
@@ -171,7 +169,7 @@ function IndexNavbar(props) {
                   id="instagram-tooltip"
                 >
                   <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <p className="d-lg-none d-xl-none">Siguenos en Instagram</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on Instagram
