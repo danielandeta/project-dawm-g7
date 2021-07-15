@@ -16,19 +16,19 @@
 		"title": "Brownie de Banana",
 		"ingredientes": ["1 tz de harina de avena", "2 bananas en pure", "-1 tz de leche", "1 cda de cacao", "1 cda de polvo para hornear","2 cdas de panela", "mermelada de manzana B’ Natural"],
 		"preparacion": ["Mezclar los ingredientes secos: la harina de avena, cacao y el polvo de hornear.","Añadir la leche en la mezcla poco a poco, mientras se sigue batiendo.","Vaciar el puré de banana en el recipiente.", "Agregar la panela y mezclar hasta que se vuelva una masa homogénea." , "Con el horno previamente precalentado a 180º, horneamos nuestro brownie durante 20-25min.","Dejar enfriar y servir junto con la mermelada de manzana B’ Natural."],
-	}
+	},
 	{
 		"id": 2,
 		"title": "Cheesecake de Frutilla",
 		"ingredientes": ["300 ml. Leche","Cáscara de limón a gusto", "3 Huevos", "300 grs. Azúcar", "2 cucharadas Gelatina sin sabor", "500 grs. Queso crema (Talar)", "300 ml. Crema de leche", "Mermelada de Frutilla B’ Natural"],
 		"preparacion": ["Hervir leche con cáscara de limón. Dejar reposar 15 minutos.","Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada.", "Agregar el queso y mezclar bien.","Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.","Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.","Refrigerar como mínimo por 4 horas.", "Ubicar la mermelada de frutilla sobre el cheesecake. Desmoldar y decorar a gusto."],
-	}
+	},
 	{
 		"id": 3,
 		"title": "Queso crema con mermelada",
 		"ingredientes": ["Una tarrina de queso crema 200g","Un bote de mermelada de frutos rojos","20-25 galletas tipo María doradas","Láminas de almendra para decorar","6 vasitos"],
 		"preparacion": ["Trituramos con la ayuda de un tenedor o de una batidora las galletas tipo María dorada en un recipiente.", "Rellenamos el fondo de cada vasito con las galletas bien trituradas, y a continuación le ponemos el queso crema.", "Sobre éste, ponemos una capa de mermelada B’ Natural, galletas de nuevo, queso crema y otra buena capa de mermelada.", "Por último, decoramos nuestros vasitos con unas almendras.", "Dejamos que los vasitos reposen en la nevera aproximadamente una hora y servir"]
-	}
+	},
 	{
 		"id": 4,
 		"title": "Galletas con mermelada",
