@@ -111,8 +111,7 @@ function IndexNavbar(props) {
 
 
               <NavItem>
-                <NavLink
-                >
+                <NavLink>
                   <i className="bi bi-newspaper"></i>
                   <Link to="/RecetaPrincipal"><p>Recetas</p></Link>
                 </NavLink>

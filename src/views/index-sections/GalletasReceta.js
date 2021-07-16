@@ -39,7 +39,7 @@ function LandingPage() {
   }, []);
 
 
-
+  
   return (
     <>
     <IndexNavbar />
@@ -49,7 +49,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Cheesecake de Frutilla</h2>
+                <h2 className="title">Galletas con Mermelada</h2>
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
@@ -76,19 +76,17 @@ function LandingPage() {
                     Ingredientes
                   </h3>
                   <p>
-                  -300 ml. Leche
+                  -120 gramos de mantequilla en pomada.
                   <br></br>
-                  -300 grs. Azúcar
+                  -120 gramos de azúcar.
                   <br></br>
-                  -3 Huevos
+                  -1 huevo.
                   <br></br>
-                  -2 cucharadas Gelatina sin sabor
+                  -275 gramos de harina.
                   <br></br>
-                  -500 grs. Queso crema 
+                  -c/n de extracto de vainilla.
                   <br></br>
-                  -300 ml. Crema de leche
-                  <br></br>
-                  Mermelada de Frutilla B’ Natural
+                  -c/n de mermelada B'Natural preferida.
                   </p>                
                 </Col>
               </Row>
@@ -128,23 +126,23 @@ function LandingPage() {
                     <div class='progress_inner__tabs'>
                       <div class='tab tab-0'>
                         <h1>Primer Paso</h1>
-                        <p> Hervir leche con cáscara de limón. Dejar reposar 15 minutos.</p>
+                        <p>Poner en un bol la mantequilla en pomada (ablandada) y el azúcar, batir hasta que la mantequilla esté muy cremosa. Añadir el huevo y volver a batir hasta que se integre.</p>
                       </div>
                       <div class='tab tab-1'>
                         <h1>Segundo Paso</h1>
-                        <p>	Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada. </p>
+                        <p>Incorporar la harina y añadir también el extracto de vainilla (opcional), empezar a mezclar con una lengua o rasqueta de repostería hasta obtener una masa fina, homogénea y maleable. </p>
                       </div>
                       <div class='tab tab-2'>
                         <h1>Tercer Paso</h1>
-                        <p>	Agregar el queso y mezclar bien. Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.</p>
+                        <p>Preparar la bandeja del horno cubriéndola con papel vegetal o una lámina de teflón y precalentar el horno a 180º C. Haz bolas de unos 20-25 gramos de masa, aplánalas ligeramente y ve colocándolas en la bandeja. A continuación, hunde el dedo pulgar en el centro de las galletas haciendo un agujero para poner el relleno de mermelada.</p>
                       </div>
                       <div class='tab tab-3'>
                         <h1>Cuarto Paso</h1>
-                        <p>	Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.</p>
+                        <p>Preparar la mermelada que quiera utilizar, conviene que no esté muy dura, por lo que quizá es necesario dejarla fuera de la nevera un rato antes. Rellenar con la mermelada B’ Natural de su sabor preferido las galletas antes de introducirlas en el horno.</p>
                       </div>
                       <div class='tab tab-4'>
                         <h1>Quinto Paso</h1>
-                        <p>	Después de refrigerar como mínimo por 4 horas, ubicar la mermelada B'Natural sobre el cheesecake. Desmoldar y decorar a gusto.</p>
+                        <p>Poner la bandeja con las galletas en el horno, a altura media, y hornéalas durante 15-18 minutos, hasta que estén hechas, aunque quedarán algo blancas. Retirar del horno, dejar enfriar y ubicar la mermelada B’ Natural de su preferencia. Ya están listas para servir y disfrutar.</p>
                       </div>
                       
                     </div>

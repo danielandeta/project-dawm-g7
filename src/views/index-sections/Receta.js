@@ -1,5 +1,5 @@
 import React from "react";
-
+import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 // reactstrap components
 //import { Alert, Container } from "reactstrap";
 

@@ -17,7 +17,7 @@ import News from "views/index-sections/News.js";
 import Encuentranos from "views/index-sections/encuentranos.js";
 import Catalogo from "views/index-sections/Catalogo.js";
 import Formulario from "views/index-sections/Formulario.js";
-
+import Receta from "views/index-sections/Receta.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -50,6 +50,10 @@ ReactDOM.render(
         <Route
           path="/encuentranos"
           render={(props) => <Encuentranos {...props} />}
+        />
+        <Route
+          path="/RecetaPrincipal"
+          render={(props) => <Receta {...props} />}
         />
         <Route
           exact path="/Formulario"

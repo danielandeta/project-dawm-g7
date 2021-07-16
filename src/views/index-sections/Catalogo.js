@@ -67,8 +67,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [1, 2, 3, 4, 5];
-const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
+//const cards = [1, 2, 3, 4, 5];
+//const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
+const cards=[];
+const sabores=[];
+fetch("./data/mermeladas.json")
+  .then(response => response.json())
+  .then(data => {
+    //console.log(data);
+    data.mermeladas.forEach( (item, index)=> {
+      cards[index]= item.id;
+      sabores[index]=item.sabor;
+    })
+})
+.catch(console.error);
+//console.log(cards)
 export default function Catalogo() {
   const classes = useStyles();
 
