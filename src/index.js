@@ -18,10 +18,10 @@ import Encuentranos from "views/index-sections/encuentranos.js";
 import Catalogo from "views/index-sections/Catalogo.js";
 import Formulario from "views/index-sections/Formulario.js";
 import RecetaPrincipal from "views/index-sections/RecetaPrincipal.js";
-import BrownieReceta from "views/index-sections/BrownieReceta";
-import CheesecakeReceta from "views/index-sections/CheesecakeReceta";
-import GalletasReceta from "views/index-sections/GalletasReceta";
-import QuesoCremaReceta from "views/index-sections/QuesoCremaReceta";
+import BrownieReceta from "views/index-sections/BrownieReceta.js";
+import CheesecakeReceta from "views/index-sections/CheesecakeReceta.js";
+import GalletasReceta from "views/index-sections/GalletasReceta.js";
+import QuesoCremaReceta from "views/index-sections/QuesoCremaReceta.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -61,16 +61,16 @@ ReactDOM.render(
            render={(props) => <RecetaPrincipal {...props} />}
            
         />
-        <Route path="/RecetaPrincipal/BrownieReceta"
+        <Route path="/BrownieReceta"
           component={BrownieReceta} exact/>
 
-        <Route path="/RecetaPrincipal/CheesecakeReceta"
+        <Route path="/CheesecakeReceta"
           component={CheesecakeReceta} exact/>
 
-          <Route path="/RecetaPrincipal/QuesoCremaReceta"
+          <Route path="/QuesoCremaReceta"
           component={QuesoCremaReceta} exact/>
 
-          <Route path="/RecetaPrincipal/GalletasReceta"
+          <Route path="/GalletasReceta"
           component={GalletasReceta} exact/>  
 
         <Route
