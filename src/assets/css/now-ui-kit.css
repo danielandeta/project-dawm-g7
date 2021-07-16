@@ -3863,7 +3863,9 @@ img {
         .footer ul li a:hover {
           text-decoration: none; }
   .footer .copyright {
-    font-size: 0.8571em; }
+    font-size: 10px; 
+    margin-top: 20px;
+  }
   .footer:after {
     display: table;
     clear: both;

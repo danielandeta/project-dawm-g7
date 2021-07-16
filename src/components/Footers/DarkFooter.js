@@ -1,55 +1,59 @@
 /*eslint-disable*/
 import React from "react";
 
+
 // reactstrap components
 import { Container } from "reactstrap";
 
 function DarkFooter() {
   return (
-    <footer className="footer" data-background-color="black">
+    <footer className="footer" data-background-color="black" >
       <Container>
         <nav>
           <ul>
             <li>
-              <a
-                href="https://www.creative-tim.com?ref=nukr-dark-footer"
+            <a
+                href="https://wa.me/593959474311"
                 target="_blank"
               >
-                Creative Tim
-              </a>
+            <i class='fab fa-whatsapp fa-fw fa-3x'></i><br/>
+            <p className="d-lg-none d-xl-none">WhatsApp</p>
+            </a>
             </li>
             <li>
-              <a
-                href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
+            <a
+                href="https://www.facebook.com/mermeladabnatural"
                 target="_blank"
               >
-                About Us
-              </a>
+            <i class='fab fa-facebook-square fa-fw fa-3x'></i><br/>
+            <p className="d-lg-none d-xl-none">Facebook</p>
+            </a>
             </li>
             <li>
-              <a
-                href="http://blog.creative-tim.com?ref=nukr-dark-footer"
+            <a
+                href="https://www.instagram.com/bnatural_ec/"
                 target="_blank"
               >
-                Blog
-              </a>
+            <i class='fab fa-instagram fa-fw fa-3x'></i><br/>
+            <p className="d-lg-none d-xl-none">Instagram</p>
+            </a>
             </li>
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
+          © {new Date().getFullYear()}, Diseñado por{" "}
           <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
+            href="AQUI CONECTA LA PARTE DE DESARROLLADORES DE LA PAGINA"
             target="_blank"
           >
-            Invision
+            Erro404
           </a>
-          . Coded by{" "}
+          . Código hecho por{" "}
           <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
+            href="AQUI CONECTA LA PARTE DE DESARROLLADORES DE LA PAGINA"
             target="_blank"
           >
-            Creative Tim
+            Error404
           </a>
           .
         </div>

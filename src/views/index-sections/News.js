@@ -1,8 +1,8 @@
 import React from "react";
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import CardTip from "./CardTip.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
 import { Button } from "reactstrap";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 
 const nutiTips = [
@@ -57,7 +57,7 @@ function News() {
         </React.Fragment>
       </div>
       </div>
-      <DefaultFooter />
+      <DarkFooter />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
@@ -16,6 +16,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link } from "react-router-dom";
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 import CarouselSection from "./Carousel.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import Formulario from "views/index-sections/Formulario.js";
@@ -67,21 +68,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-//const cards = [1, 2, 3, 4, 5];
-//const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
-const cards=[];
-const sabores=[];
-fetch("./data/mermeladas.json")
-  .then(response => response.json())
-  .then(data => {
-    //console.log(data);
-    data.mermeladas.forEach( (item, index)=> {
-      cards[index]= item.id;
-      sabores[index]=item.sabor;
+const cards = [1, 2, 3, 4, 5];
+const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
+/*function listaMermeladas(){
+  const [mermeladas, setMermeladas]=useState({
+    "id": null,
+    "sabor": ''
+  })
+
+  useEffect(()=>{
+    fetch("./data/mermeladas.json")
+    .then(response=> response.json())
+    .then(datos=>{
+      setMermeladas(datos.mermeladas)
     })
-})
-.catch(console.error);
-//console.log(cards)
+  },[])
+  return mermeladas
+}
+
+const mermeladas= listaMermeladas()*/
+
+
 export default function Catalogo() {
   const classes = useStyles();
 
@@ -122,17 +129,7 @@ export default function Catalogo() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
+      <DarkFooter />
     </React.Fragment>
   </>
   );
