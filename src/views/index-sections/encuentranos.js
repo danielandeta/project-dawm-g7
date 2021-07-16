@@ -4,11 +4,6 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 
 // reactstrap components
 import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,

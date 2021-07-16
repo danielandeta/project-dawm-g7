@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
@@ -68,21 +68,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-//const cards = [1, 2, 3, 4, 5];
-//const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
-const cards=[];
-const sabores=[];
-fetch("./data/mermeladas.json")
-  .then(response => response.json())
-  .then(data => {
-    //console.log(data);
-    data.mermeladas.forEach( (item, index)=> {
-      cards[index]= item.id;
-      sabores[index]=item.sabor;
+const cards = [1, 2, 3, 4, 5];
+const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
+/*function listaMermeladas(){
+  const [mermeladas, setMermeladas]=useState({
+    "id": null,
+    "sabor": ''
+  })
+
+  useEffect(()=>{
+    fetch("./data/mermeladas.json")
+    .then(response=> response.json())
+    .then(datos=>{
+      setMermeladas(datos.mermeladas)
     })
-})
-.catch(console.error);
-//console.log(cards)
+  },[])
+  return mermeladas
+}
+
+const mermeladas= listaMermeladas()*/
+
+
 export default function Catalogo() {
   const classes = useStyles();
 
