@@ -139,13 +139,7 @@ function IndexNavbar(props) {
                   <Link to="/encuentranos"><p>Encuéntranos</p></Link>
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink
-                >
-                  <i className="bi bi-newspaper"></i>
-                  <Link to="/Desarrolladores"><p>Desarrolladores</p></Link>
-                </NavLink>
-              </NavItem>
+              
               <NavItem>
                 <NavLink
                   href="https://wa.me/593959474311"
