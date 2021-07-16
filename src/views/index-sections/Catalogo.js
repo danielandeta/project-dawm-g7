@@ -88,7 +88,7 @@ export default function Catalogo() {
   return( <>
     <IndexNavbar color='1' />
     <React.Fragment>
-      <main className="navbar_separation">
+      <main className="navbar_separation section">
         {/* Hero unit */}
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
