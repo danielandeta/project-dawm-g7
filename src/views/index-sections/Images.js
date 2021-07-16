@@ -14,9 +14,11 @@ function Images() {
             <Col md="12">
               <div className="hero-images-container">
                 <img
-                  src={require("assets/img/merm_principal.png").default}
+                  src={require("assets/img/merm2.jpg").default}
                   class="img-fluid"
                   height="auto"
+  
+
                 ></img>
               </div>
             </Col>
