@@ -43,14 +43,14 @@ function DarkFooter() {
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}, Diseñado por{" "}
           <a
-            href="AQUI CONECTA LA PARTE DE DESARROLLADORES DE LA PAGINA"
+            href="\Desarrolladores"
             target="_blank"
           >
             Erro404
           </a>
           . Código hecho por{" "}
           <a
-            href="AQUI CONECTA LA PARTE DE DESARROLLADORES DE LA PAGINA"
+            href="\Desarrolladores"
             target="_blank"
           >
             Error404

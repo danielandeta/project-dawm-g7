@@ -27,6 +27,7 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import DarkFooter from "components/Footers/DarkFooter";
 
 
 function ProfilePage() {
@@ -50,7 +51,7 @@ function ProfilePage() {
         <ProfilePageHeader />
         <div className="section">
           <Container>
-            <h3 className="title">Recetas</h3>
+            <h3 className="titleReceta">Recetas</h3>
             <h5 className="description">
             Descubre las mejores recetas usando nuestras mermeladas B' Natural 
             — Puedes seleccionar el nombre de la mermelada para que te indique su ubicación dentro de nuestro Catálogo. 
@@ -139,7 +140,7 @@ function ProfilePage() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );

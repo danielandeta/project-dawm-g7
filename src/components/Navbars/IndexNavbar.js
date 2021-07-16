@@ -139,20 +139,14 @@ function IndexNavbar(props) {
                   <Link to="/encuentranos"><p>Encuéntranos</p></Link>
                 </NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink
-                >
-                  <i className="bi bi-newspaper"></i>
-                  <Link to="/Desarrolladores"><p>Desarrolladores</p></Link>
-                </NavLink>
-              </NavItem>
+              
               <NavItem>
                 <NavLink
                   href="https://wa.me/593959474311"
                   target="_blank"
                   id="twitter-tooltip"
                 >
-                  <i class="fab fa-whatsapp"></i>
+                  <i class="fab fa-whatsapp fa-3x"></i>
                   
                   <p className="d-lg-none d-xl-none">WhatsApp</p>
                 </NavLink>
@@ -166,7 +160,7 @@ function IndexNavbar(props) {
                   target="_blank"
                   id="facebook-tooltip"
                 >
-                  <i className="fab fa-facebook-square"></i>
+                  <i className="fab fa-facebook-square fa-3x"></i>
                   <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
                 <UncontrolledTooltip target="#facebook-tooltip">
@@ -179,7 +173,7 @@ function IndexNavbar(props) {
                   target="_blank"
                   id="instagram-tooltip"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <i className="fab fa-instagram fa-3x"></i>
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
                 <UncontrolledTooltip target="#instagram-tooltip">
