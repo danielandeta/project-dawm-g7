@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import CardTip from "./CardTip.js";
 import { Button } from "reactstrap";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 
-const GetData = async() => {
-  try{
-    const res = await fetch('../../data/mermeladas.json')
-    const data = await res.json()
-    return data
-  } catch(error) {
-    console.error(error)
-  }
-}
 function News() {
+  const [data, setData] = useState([]);
+  
+  const fetchData = async() => {
+    const res = await fetch('src/data/mermeladas.json')
+    const result = await res.json()
+    console.log(result)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+  
+
   return (
     <>
       <IndexNavbar color="1"/>
@@ -26,13 +30,7 @@ function News() {
         <Button color="info" className="mt-0 mb-0 ml-1">Buscar</Button>
       </div>
       <div className="wrapper_card">
-
-        <React.Fragment>
-          { fetch('../../data/mermeladas.json').json().tips.map((item, index) => 
-            <CardTip img={item.img} title={item.title} desc={item.desc}/>
-          )
-          }
-        </React.Fragment>
+        
       </div>
       </div>
       <DarkFooter />
