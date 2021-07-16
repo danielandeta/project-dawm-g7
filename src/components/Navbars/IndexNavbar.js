@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/img/logo_natural.png';
+import ReactWhatsapp from 'react-whatsapp';
 // reactstrap components
 import {
   Button,
@@ -61,13 +62,15 @@ function IndexNavbar(props) {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
+          <Link to="/index">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
+              
               target="_blank"
               id="navbar-brand"
             >
             <img className="logo_natural" src={Logo} alt="Logo" />
             </NavbarBrand>
+            </Link>
             <UncontrolledTooltip target="#navbar-brand">
               Designed by Invision. Coded by Creative Tim
             </UncontrolledTooltip>
@@ -85,6 +88,7 @@ function IndexNavbar(props) {
               <span className="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
+          
           <Collapse
             className="justify-content-end"
             isOpen={collapseOpen}
@@ -146,14 +150,15 @@ function IndexNavbar(props) {
                   <Link to="/encuentranos"><p>Encuéntranos</p></Link>
                 </NavLink>
               </NavItem>
-              
+
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                  href="https://wa.me/593993289816"
                   target="_blank"
                   id="twitter-tooltip"
                 >
                   <i class="fab fa-whatsapp"></i>
+                  
                   <p className="d-lg-none d-xl-none">WhatsApp</p>
                 </NavLink>
                 <UncontrolledTooltip target="#twitter-tooltip">
@@ -162,7 +167,7 @@ function IndexNavbar(props) {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/mermeladabnatural"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -175,7 +180,7 @@ function IndexNavbar(props) {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.instagram.com/bnatural_ec/"
                   target="_blank"
                   id="instagram-tooltip"
                 >
