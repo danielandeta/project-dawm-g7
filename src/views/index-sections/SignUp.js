@@ -28,12 +28,16 @@ function SignUp() {
       <div
         className="section section-signup"
         style={{
-          marginTop:"100px",
           backgroundImage:
-            "url(" + require("assets/img/merm.jpeg").default + ")",
+            "url(" + require("assets/img/merm2.jpg").default + ")",
           backgroundSize: "cover",
           backgroundPosition: "top center",
-          minHeight: "700px",
+          minHeight: "auto",
+          width: "100%",
+          position: "fixed",
+          left:"0",
+          bottom: "0",
+
         }}
       >
         

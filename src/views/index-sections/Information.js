@@ -2,6 +2,7 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 // core components
 
@@ -75,7 +76,15 @@ function Images() {
             </Col>
           </Row>
         </Container>
+        <div>
+          <div className="d-flex justify-content-center">
+          <img className='mermelada2' src={require("assets/img/merm2.jpg").default} /> 
+        </div>
+         
+        <DarkFooter />
       </div>
+      </div>
+     
     </>
   );
 }
