@@ -46,10 +46,9 @@ function Index() {
         <div className="main">
           <Images />
           <Information/>
-          <Pagination />
+          
           <SignUp />
-          <Examples />
-          <Download />
+          
         </div>
         <DarkFooter />
       </div>

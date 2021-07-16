@@ -79,9 +79,9 @@ export default function Formulario() {
                 </h5>
               </Col>
             </Row>
+            <div class="row justify-content-center">
               <form className="ml-auto mr-auto col-center" onSubmit={handleSubmit}>
-                
-                <div className="col-md-3 col-center">
+                <div className="col-lg-100 col-center">
                   <label htmlFor="nombre">Nombre: </label>
                     <input 
                       type="text" 
@@ -91,7 +91,7 @@ export default function Formulario() {
                       onChange={handleChange}
                     />
                 </div>
-                <div className="col-md-3">
+                <div className="col-lg-100">
                   <label htmlFor="apellidos">Apellidos: </label>
                     <input 
                       type="text" 
@@ -101,7 +101,7 @@ export default function Formulario() {
                       onChange={handleChange}
                     />
                 </div>
-                <div className="col-md-3">
+                <div className="col-lg-100">
                   <label htmlFor="email">Email: </label>
                     <input 
                       type="text" 
@@ -111,7 +111,7 @@ export default function Formulario() {
                       onChange={handleChange}
                     />
                 </div>
-                <div className="col-md-3">
+                <div className="col-lg-100">
                   <label htmlFor="celular">Celular: </label>
                     <input 
                       type="text" 
@@ -121,15 +121,16 @@ export default function Formulario() {
                       onChange={handleChange}
                     />
                 </div>
-                <div className="col-md-3">
+                <div className="col-lg-100">
                   <label>
                     ¿Qué información le gustaría conocer?:
                     <textarea className="form-control my-2" value={datos.descripcion} onChange={handleChange} />
                   </label>
                 </div>
                 <button type="submit" className="btn btn-primary">Enviar</button>
+                
               </form>
-
+              </div>
           </Container>
         </div>
     </>
