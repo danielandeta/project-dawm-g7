@@ -4420,13 +4420,18 @@ img {
   top: 6%;
   left: 40%; }
 
+.section section-images{
+  max-height: 670px;
+  height: 0px;
+}
+
 .section-images {
   max-height: 670px;
   height: 670px; }
   .section-images .hero-images-container,
   .section-images .hero-images-container-1,
   .section-images .hero-images-container-2 {
-    margin-top: -38vh; }
+    margin-top: 0; }
   .section-images .hero-images-container {
     max-width: 670px; }
   .section-images .hero-images-container-1 {

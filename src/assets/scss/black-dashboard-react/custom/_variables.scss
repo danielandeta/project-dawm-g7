@@ -65,7 +65,7 @@ $opacity-gray-8:             rgba(222,222,222, .8) !default;
 $opacity-5:                  rgba(255,255,255, .5) !default;
 $opacity-6:                  rgba(255,255,255, .6) !default;
 $opacity-8:                  rgba(255,255,255, .8) !default;
-
+$nav-color:                   #65c59d !default;
 
 
 $opacity-1:                  rgba(255,255,255, .1) !default;
@@ -379,7 +379,7 @@ $general-transition-time:     300ms             !default;
 $font-family-base:            'Poppins', sans-serif !default;
 $font-family-alt:             'Poppins', sans-serif !default;
 
-$font-size-dash:              .875rem !default;
+$font-size-dash:              .975rem !default;
 
 $font-size-base:              $font-size-dash !default; // Assumes the browser default, typically `16px`
 $font-size-xl:                ($font-size-base * 1.428);

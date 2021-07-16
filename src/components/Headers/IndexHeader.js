@@ -1,6 +1,6 @@
 /*eslint-disable*/
 import React from "react";
-
+import './estilo.css';
 // reactstrap components
 import { Container } from "reactstrap";
 // core components
@@ -25,6 +25,7 @@ function IndexHeader() {
   return (
     <>
       <div className="page-header clear-filter" filter-color="blue">
+        
         <div
           className="page-header-image"
           style={{

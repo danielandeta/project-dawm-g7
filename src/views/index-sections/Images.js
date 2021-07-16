@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css';
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
@@ -9,18 +10,17 @@ function Images() {
   return (
     <>
       <div className="section section-images">
-        <Container>
           <Row>
             <Col md="12">
               <div className="hero-images-container">
                 <img
-                  alt="..."
-                  src={require("assets/img/m_dos.png").default}
+                  src={require("assets/img/merm_principal.png").default}
+                  class="img-fluid"
+                  height="auto"
                 ></img>
               </div>
             </Col>
           </Row>
-        </Container>
       </div>
     </>
   );
