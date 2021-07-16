@@ -7,6 +7,10 @@ import "assets/css/bootstrap.min.css";
 import "assets/scss/now-ui-kit.scss?v=1.5.0";
 import "assets/demo/demo.css?v=1.5.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
+
+import "assets/demo/demo.css";
+import "assets/css/nucleo-icons.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 // pages for this kit
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
@@ -18,10 +22,21 @@ import Encuentranos from "views/index-sections/encuentranos.js";
 import Catalogo from "views/index-sections/Catalogo.js";
 import Formulario from "views/index-sections/Formulario.js";
 import RecetaPrincipal from "views/index-sections/RecetaPrincipal.js";
+<<<<<<< HEAD
 import BrownieReceta from "views/index-sections/BrownieReceta.js";
 import CheesecakeReceta from "views/index-sections/CheesecakeReceta.js";
 import GalletasReceta from "views/index-sections/GalletasReceta.js";
 import QuesoCremaReceta from "views/index-sections/QuesoCremaReceta.js";
+=======
+import BrownieReceta from "views/index-sections/BrownieReceta";
+import CheesecakeReceta from "views/index-sections/CheesecakeReceta";
+import GalletasReceta from "views/index-sections/GalletasReceta";
+import QuesoCremaReceta from "views/index-sections/QuesoCremaReceta";
+import AdminLayout from "./layouts/Admin/Admin.js";
+import Receta from "views/index-sections/Receta.js";
+import ThemeContextWrapper from "./components/ThemeWrapper/ThemeWrapper";
+import BackgroundColorWrapper from "./components/BackgroundColorWrapper/BackgroundColorWrapper";
+>>>>>>> 8ac6dfc4d966708d733a7f7f4e17d6e7b56c209a
 
 ReactDOM.render(
   <BrowserRouter>
@@ -76,6 +91,10 @@ ReactDOM.render(
         <Route
           exact path="/Formulario"
           component = {Formulario}
+        />
+        <Route
+          path="/admin/dashboard"
+          render={(props) => <AdminLayout {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" /> 

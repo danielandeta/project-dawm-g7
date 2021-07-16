@@ -28,7 +28,7 @@
     "react-notification-alert": "0.0.13",
     "react-perfect-scrollbar": "^1.5.8",
     "react-router": "5.2.0",
-    "react-router-dom": "5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-whatsapp": "^0.2.1",
     "reactstrap": "8.9.0"
