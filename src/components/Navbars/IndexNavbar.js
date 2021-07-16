@@ -72,7 +72,7 @@ function IndexNavbar(props) {
             </NavbarBrand>
             </Link>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              B'natural
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
