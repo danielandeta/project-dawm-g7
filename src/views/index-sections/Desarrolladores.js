@@ -7,6 +7,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 import Danie from "../../assets/img/Daniela Landeta.jpg"
 import Ed from "../../assets/img/Edwin Veloz.jpeg"
 import Wil from "../../assets/img/William Venegas.png"
+import Ana from "../../assets/img/Ana Maria.jpg"
 import Grid from '@material-ui/core/Grid';
 import {
   Button,
@@ -140,7 +141,7 @@ export default function Desarroladores() {
           <Row>
             <Col md="6">
                 <div className="d-flex justify-content-center">
-                  <img className='perfil_gaby' src={require("assets/img/Annie.jpg").default} alt="Logo" />  
+                  <img className='perfil_gaby' src={require("assets/img/Ana Maria.jpg").default} alt="Logo" />  
                 </div>
               </Col>
             <Col md="6">
