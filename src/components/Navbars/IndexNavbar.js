@@ -60,20 +60,10 @@ function IndexNavbar(props) {
         />
       ) : null}
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
-        <Container>
+        <Container className="d-flex">
           <div className="navbar-translate">
-          <Link to="/index">
-            <NavbarBrand
-              
-              target="_blank"
-              id="navbar-brand"
-            >
+          <Link to="/index"></Link>
             <img className="logo_natural" src={Logo} alt="Logo" />
-            </NavbarBrand>
-            </Link>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {

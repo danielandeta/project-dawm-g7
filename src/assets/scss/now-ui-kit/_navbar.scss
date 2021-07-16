@@ -105,6 +105,7 @@
         padding-top: $padding-base-vertical;
         padding-bottom: $padding-base-vertical;
         line-height: $line-height-nav-link;
+        
     }
 
     .navbar-toggler{
@@ -186,7 +187,7 @@
 }
 
 .bg-info{
-    background-color: $info-color !important;
+    background-color: $nav-color !important;
 }
 
 .bg-success{

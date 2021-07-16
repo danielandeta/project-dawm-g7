@@ -19,7 +19,7 @@ function Images() {
                     <span className="badge badge-pill badge-success title_info" id="queesnatural">¿Qué es B'natural?</span>
                   </div> 
                 </div>
-                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+                <p className="color-texto">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
                 Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
                 (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
                 manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó 
@@ -38,7 +38,7 @@ function Images() {
                     <span className="badge badge-pill badge-info title_info" id="queesnatural">Acerca de mi</span>
                   </div> 
                 </div>
-              <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+              <p className="color-texto">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
               Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
                 cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
                 galería de textos y los mezcló de tal manera que logró hacer un libro de textos 
@@ -64,7 +64,7 @@ function Images() {
                     <span className="badge badge-pill badge-success title_info" id="queesnatural">Mas información</span>
                   </div> 
                 </div>
-                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                <p className="color-texto">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
                 Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
                 cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una 
                 galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. 

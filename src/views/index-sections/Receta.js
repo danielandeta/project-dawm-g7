@@ -93,7 +93,7 @@ function Notifications() {
 function Receta(){
   return(
 
-    <div className="section-recipe"
+    <div className="section-recipe section"
       
        style={{
           backgroundImage:

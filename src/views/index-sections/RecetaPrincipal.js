@@ -1,5 +1,4 @@
 import React from "react";
-
 // reactstrap components
 import {
   NavItem,
@@ -18,7 +17,17 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
+import Index from "views/Index";
+
 import "assets/demo/demo.css?v=1.5.0";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+
 
 function ProfilePage() {
   const [pills, setPills] = React.useState("2");
@@ -33,6 +42,7 @@ function ProfilePage() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+  
   return (
     <>
       <IndexNavbar />
@@ -57,10 +67,10 @@ function ProfilePage() {
                       <NavLink
                         className={pills === "1" ? "active" : ""}
                         href="#pablo"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setPills("1");
-                        }}
+                         onClick={(e) => {
+                           e.preventDefault();
+                           setPills("1");
+                         }}
                       >
                         <i className="now-ui-icons ui-2_favourite-28"></i>
                       </NavLink>
@@ -74,14 +84,19 @@ function ProfilePage() {
                     <Row className="collections">
                       <Col md="6">
                         <div className="img_cont">
-                        <img
-                          alt="..."
-                          className="img-raised" className="img-recipe"
-                          src={require("assets/img/brownie.jpg").default}
-                        ></img>
-                         <div className="overlay">
-                          <figcaption className="texto">Brownie de Banana</figcaption>
-                          </div>
+                        
+                            <img
+                            alt="..."
+                            className="img-raised" className="img-recipe"
+                            src={require("assets/img/brownie.jpg").default}
+                          ></img>
+                       
+                    
+                        <div className="overlay">
+                         <Link to="/BrownieReceta"><figcaption className="texto">Brownie de Banana</figcaption></Link>
+                        </div>
+                       
+                        
                       </div>
                       <div className="img_cont">
                         <img
@@ -90,7 +105,7 @@ function ProfilePage() {
                           src={require("assets/img/cheesecake.jpg").default}
                         ></img> 
                         <div className="overlay">
-                          <figcaption className="texto1">Cheescake de Frutilla</figcaption>
+                        <Link to="/CheesecakeReceta"><figcaption className="texto1">Cheescake de Frutilla</figcaption></Link>
                         </div>
                         </div>
                       </Col>
@@ -102,7 +117,7 @@ function ProfilePage() {
                           src={require("assets/img/quesocrema.jpg").default}
                         ></img>
                         <div className="overlay">
-                          <figcaption className="texto2">Queso crema con mermelada</figcaption>
+                        <Link to="/QuesoCremaReceta"><figcaption className="texto2">Queso crema con mermelada</figcaption> </Link>
                         </div>
                          </div>
                         <div className="img_cont">
@@ -112,7 +127,7 @@ function ProfilePage() {
                           src={require("assets/img/cookies.jpg").default}
                         ></img>
                          <div className="overlay">
-                             <figcaption className="texto3">Galletas con Mermelada</figcaption>
+                         <Link to="/GalletasReceta"> <figcaption className="texto3">Galletas con Mermelada</figcaption></Link>
                          </div>
                         </div>
                       </Col>
