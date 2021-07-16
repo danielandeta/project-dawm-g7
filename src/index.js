@@ -17,7 +17,12 @@ import News from "views/index-sections/News.js";
 import Encuentranos from "views/index-sections/encuentranos.js";
 import Catalogo from "views/index-sections/Catalogo.js";
 import Formulario from "views/index-sections/Formulario.js";
-import Receta from "views/index-sections/Receta.js";
+import RecetaPrincipal from "views/index-sections/RecetaPrincipal.js";
+import BrownieReceta from "views/index-sections/BrownieReceta";
+import CheesecakeReceta from "views/index-sections/CheesecakeReceta";
+import GalletasReceta from "views/index-sections/GalletasReceta";
+import QuesoCremaReceta from "views/index-sections/QuesoCremaReceta";
+
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -53,14 +58,27 @@ ReactDOM.render(
         />
         <Route
           path="/RecetaPrincipal"
-          render={(props) => <Receta {...props} />}
+           render={(props) => <RecetaPrincipal {...props} />}
+           
         />
+        <Route path="/RecetaPrincipal/BrownieReceta"
+          component={BrownieReceta} exact/>
+
+        <Route path="/RecetaPrincipal/CheesecakeReceta"
+          component={CheesecakeReceta} exact/>
+
+          <Route path="/RecetaPrincipal/QuesoCremaReceta"
+          component={QuesoCremaReceta} exact/>
+
+          <Route path="/RecetaPrincipal/GalletasReceta"
+          component={GalletasReceta} exact/>  
+
         <Route
           exact path="/Formulario"
           component = {Formulario}
         />
         <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
+        <Redirect from="/" to="/index" /> 
       </Switch>
     </Switch>
   </BrowserRouter>,

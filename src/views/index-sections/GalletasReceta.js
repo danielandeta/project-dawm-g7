@@ -19,7 +19,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 //import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
-import "assets/demo/demo.css?v=1.5.0";
+import "assets/demo/demo2.css?v=1.5.0";
 
 
 
