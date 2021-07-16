@@ -36,7 +36,7 @@ function IndexHeader() {
         <Container>
           <div className="content-center brand">
             <h1 className="h1-seo">B' Natural</h1>
-            <h3>Te enseño a cuidar tu alimentación, endulzantes 100% orgánicos.</h3>
+            <h3>Te enseño a cuidar tu alimentación, endulzantes 100% artesanales.</h3>
           </div>
         </Container>
       </div>
