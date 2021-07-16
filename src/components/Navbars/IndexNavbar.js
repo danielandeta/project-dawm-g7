@@ -152,7 +152,7 @@ function IndexNavbar(props) {
 
               <NavItem>
                 <NavLink
-                  href="https://wa.me/593993289816"
+                  href="https://wa.me/593959474311"
                   target="_blank"
                   id="twitter-tooltip"
                 >

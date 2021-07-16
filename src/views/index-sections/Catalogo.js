@@ -16,6 +16,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Link } from "react-router-dom";
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 import CarouselSection from "./Carousel.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import Formulario from "views/index-sections/Formulario.js";
@@ -122,17 +123,7 @@ export default function Catalogo() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </footer>
-      {/* End footer */}
+      <DarkFooter />
     </React.Fragment>
   </>
   );

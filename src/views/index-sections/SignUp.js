@@ -30,7 +30,7 @@ function SignUp() {
         style={{
           marginTop:"100px",
           backgroundImage:
-            "url(" + require("assets/img/bg11.jpg").default + ")",
+            "url(" + require("assets/img/merm.jpeg").default + ")",
           backgroundSize: "cover",
           backgroundPosition: "top center",
           minHeight: "700px",

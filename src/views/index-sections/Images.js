@@ -18,8 +18,6 @@ function Images() {
                   src={require("assets/img/mermelada.png").default}
                 ></img>
               </div>
-              
-              
             </Col>
           </Row>
         </Container>
