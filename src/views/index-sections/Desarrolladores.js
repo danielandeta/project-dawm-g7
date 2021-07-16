@@ -78,14 +78,81 @@ export default function Desarroladores() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Desarroladores de B'natural</h2>
+                <h2 className="tituloDev">Desarrolladores de B'natural</h2>
                 <h5 className="description">
                 Aquí conocerás quiénes están detrás de la página web B'natural.
                 ¡Gracias por elegirnos!
                 </h5>
               </Col>
             </Row>
-
+            <hr></hr>
+            <Row>
+            <Col md="6">
+            <div className="d-flex flex-column">
+                <div className="d-flex justify-content-start">
+                </div>
+              <p className="info-devep1">Nombres: <b>Daniela Landeta</b></p>
+              <p className="info-devep1">Edad: <b>21 años</b></p>
+              <p className="info-devep1">Carrera: <b>Ingeniería en Ciencias Computacionales</b></p>
+              </div>
+              </Col>
+              <Col md="6">
+                <div className="d-flex justify-content-center">
+                  <img className='perfil_gaby' src={require("assets/img/Daniela Landeta.jpg").default} alt="Logo" />  
+                </div>
+              </Col>
+          </Row>
+            <hr></hr>
+          <Row>
+            <Col md="6">
+                <div className="d-flex justify-content-center">
+                  <img className='perfil_gaby' src={require("assets/img/Edwin Veloz.jpeg").default} alt="Logo" />  
+                </div>
+              </Col>
+            <Col md="6">
+            <div className="d-flex flex-column">
+                <div className="d-flex justify-content-start">
+                </div>
+              <p className="info-devep">Nombres: <b>Edwin Veloz</b></p>
+              <p className="info-devep">Edad: <b>22 años</b></p>
+              <p className="info-devep">Carrera: <b>Ingeniería en Ciencias Computacionales</b></p>
+              </div>
+              </Col>
+          </Row>
+          <hr></hr>
+          <Row>
+            <Col md="6">
+            <div className="d-flex flex-column">
+                <div className="d-flex justify-content-start">
+                </div>
+                <p className="info-devep1">Nombres: <b>William Venegas</b></p>
+              <p className="info-devep1">Edad: <b>21 años</b></p>
+              <p className="info-devep1">Carrera: <b>Ingeniería en Ciencias Computacionales</b></p>
+              </div>
+              </Col>
+              <Col md="6">
+                <div className="d-flex justify-content-center">
+                  <img className='perfil_gaby' src={require("assets/img/William Venegas.png").default} alt="Logo" />  
+                </div>
+              </Col>
+          </Row>
+          <hr></hr>
+          <Row>
+            <Col md="6">
+                <div className="d-flex justify-content-center">
+                  <img className='perfil_gaby' src={require("assets/img/Annie.jpg").default} alt="Logo" />  
+                </div>
+              </Col>
+            <Col md="6">
+            <div className="d-flex flex-column">
+                <div className="d-flex justify-content-start">
+                </div>
+                <p className="info-devep">Nombres: <b>Ana</b></p>
+              <p className="info-devep">Edad: <b>21 años</b></p>
+              <p className="info-devep">Carrera: <b>Ingeniería en Ciencias Computacionales</b></p>
+              </div>
+              </Col>
+          </Row>
               {/*<div>
                 <img className= classes.img src={Danie} alt="Daniela Landeta" />
                 <img src={Wil} alt="Daniela Landeta" />

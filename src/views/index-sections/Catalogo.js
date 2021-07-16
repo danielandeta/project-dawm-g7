@@ -58,8 +58,10 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
+    
   },
   cardContent: {
+    
     flexGrow: 1,
   },
   footer: {
@@ -114,7 +116,7 @@ export default function Catalogo() {
                     <Typography gutterBottom variant="h5" component="h2">
                       {sabores[card-1].slice(0, sabores[card-1].length - 4)}
                     </Typography>
-                    <Typography>
+                    <Typography className="tipoclas">
                       Mermelada de {sabores[card-1].slice(0, sabores[card-1].length - 4)} con endulzante orgánico, sin preservantes ni colorante artificial.
                     </Typography>
                   </CardContent>

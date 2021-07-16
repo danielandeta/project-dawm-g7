@@ -17,7 +17,8 @@ import {
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
+
 //import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
 import "assets/demo/demo2.css?v=1.5.0";
 
@@ -165,7 +166,7 @@ function LandingPage() {
              </body>
           </Container>
         </div>
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );
