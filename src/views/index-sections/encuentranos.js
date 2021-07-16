@@ -2,11 +2,6 @@ import React from "react";
 import Iframe from "react-iframe";
 // reactstrap components
 import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
