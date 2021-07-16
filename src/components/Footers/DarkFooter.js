@@ -40,19 +40,19 @@ function DarkFooter() {
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
+          © {new Date().getFullYear()}, Diseñado por{" "}
           <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
+            href="AQUI CONECTA LA PARTE DE DESARROLLADORES DE LA PAGINA"
             target="_blank"
           >
-            Invision
+            Erro404
           </a>
-          . Coded by{" "}
+          . Código hecho por{" "}
           <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
+            href="AQUI CONECTA LA PARTE DE DESARROLLADORES DE LA PAGINA"
             target="_blank"
           >
-            Creative Tim
+            Error404
           </a>
           .
         </div>

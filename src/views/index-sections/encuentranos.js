@@ -1,5 +1,7 @@
 import React from "react";
 import Iframe from "react-iframe";
+import DarkFooter from "components/Footers/DarkFooter.js";
+
 // reactstrap components
 import {
   Button,
@@ -44,6 +46,7 @@ function LandingPage() {
             </Row> 
           </Container>
         </div>
+        <DarkFooter />
     </>
        )
       }
