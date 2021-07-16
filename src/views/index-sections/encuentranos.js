@@ -22,7 +22,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Encuentranos</h2>
+                <h2 className="color-texto">Encuentranos</h2>
                 <h5 className="description">
                   Aquí podrás encontrar la dirección donde estamos ubicados
                   y te mostramos las maneras de ponerte en contacto con
