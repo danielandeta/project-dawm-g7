@@ -15,7 +15,7 @@ function Images() {
               <div className="hero-images-container">
                 <img
                   alt="..."
-                  src={require("assets/img/mermelada.png").default}
+                  src={require("assets/img/m_dos.png").default}
                 ></img>
               </div>
             </Col>
