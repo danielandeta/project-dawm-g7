@@ -39,7 +39,7 @@ function LandingPage() {
   }, []);
 
 
-
+  
   return (
     <>
     <IndexNavbar />
@@ -49,7 +49,7 @@ function LandingPage() {
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Cheesecake de Frutilla</h2>
+                <h2 className="title">Queso Crema con Mermelada</h2>
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
@@ -76,19 +76,16 @@ function LandingPage() {
                     Ingredientes
                   </h3>
                   <p>
-                  -300 ml. Leche
+                  -Una tarrina de queso crema 200g
                   <br></br>
-                  -300 grs. Azúcar
+                  -Un bote de mermelada B'Natural de su preferencia.
                   <br></br>
-                  -3 Huevos
+                  -20~25 galletas tipo María doradas
                   <br></br>
-                  -2 cucharadas Gelatina sin sabor
+                  -Láminas de almendra para decorar
                   <br></br>
-                  -500 grs. Queso crema 
-                  <br></br>
-                  -300 ml. Crema de leche
-                  <br></br>
-                  Mermelada de Frutilla B’ Natural
+                  -6 vasitos
+                
                   </p>                
                 </Col>
               </Row>
@@ -128,23 +125,23 @@ function LandingPage() {
                     <div class='progress_inner__tabs'>
                       <div class='tab tab-0'>
                         <h1>Primer Paso</h1>
-                        <p> Hervir leche con cáscara de limón. Dejar reposar 15 minutos.</p>
+                        <p> Trituramos con la ayuda de un tenedor o de una batidora las galletas tipo María dorada en un recipiente.</p>
                       </div>
                       <div class='tab tab-1'>
                         <h1>Segundo Paso</h1>
-                        <p>	Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada. </p>
+                        <p>Rellenamos el fondo de cada vasito con las galletas bien trituradas, y a continuación le ponemos el queso crema. </p>
                       </div>
                       <div class='tab tab-2'>
                         <h1>Tercer Paso</h1>
-                        <p>	Agregar el queso y mezclar bien. Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.</p>
+                        <p>Sobre éste, ponemos una capa de mermelada B’ Natural, galletas de nuevo, queso crema y otra buena capa de mermelada.</p>
                       </div>
                       <div class='tab tab-3'>
                         <h1>Cuarto Paso</h1>
-                        <p>	Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.</p>
+                        <p>	Por último, decoramos nuestros vasitos con unas almendras.</p>
                       </div>
                       <div class='tab tab-4'>
                         <h1>Quinto Paso</h1>
-                        <p>	Después de refrigerar como mínimo por 4 horas, ubicar la mermelada B'Natural sobre el cheesecake. Desmoldar y decorar a gusto.</p>
+                        <p>	Dejamos que los vasitos reposen en la nevera aproximadamente una hora y servir.</p>
                       </div>
                       
                     </div>
