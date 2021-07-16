@@ -64,6 +64,9 @@ function IndexNavbar(props) {
           <div className="navbar-translate">
           <Link to="/index"></Link>
             <img className="logo_natural" src={Logo} alt="Logo" />
+            <UncontrolledTooltip target="#navbar-brand">
+              B'natural
+            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
