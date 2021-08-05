@@ -1,14 +1,12 @@
 
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Step from './Step';
+
 
 
 // reactstrap components
 import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
   Col,
@@ -17,11 +15,9 @@ import {
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
 //import { ProgressSteps, ProgressStep } from 'react-native-progress-steps';
 import "assets/demo/demo2.css?v=1.5.0";
 import DarkFooter from 'components/Footers/DarkFooter';
-
 
 
 function LandingPage() {
@@ -39,6 +35,24 @@ function LandingPage() {
     };
   }, []);
 
+  
+function getStepContent(step) {
+  switch (step) {
+    case 0:
+      return "Poner en un bol la mantequilla en pomada (ablandada) y el azúcar, batir hasta que la mantequilla esté muy cremosa. Añadir el huevo y volver a batir hasta que se integre.";
+    case 1:
+      return "Incorporar la harina y añadir también el extracto de vainilla (opcional), empezar a mezclar con una lengua o rasqueta de repostería hasta obtener una masa fina, homogénea y maleable.";
+    case 2:
+      return "Preparar la bandeja del horno cubriéndola con papel vegetal o una lámina de teflón y precalentar el horno a 180º C. Haz bolas de unos 20-25 gramos de masa, aplánalas ligeramente y ve colocándolas en la bandeja. A continuación, hunde el dedo pulgar en el centro de las galletas haciendo un agujero para poner el relleno de mermelada.";
+    case 3:
+      return "Preparar la mermelada que quiera utilizar, conviene que no esté muy dura, por lo que quizá es necesario dejarla fuera de la nevera un rato antes. Rellenar con la mermelada B’ Natural de su sabor preferido las galletas antes de introducirlas en el horno.";
+    case 4:
+      return "Poner la bandeja con las galletas en el horno, a altura media, y hornéalas durante 15-18 minutos, hasta que estén hechas, aunque quedarán algo blancas. Retirar del horno, dejar enfriar y ubicar la mermelada B’ Natural de su preferencia. Ya están listas para servir y disfrutar.";
+
+    default:
+      return "Paso desconocido";
+  }
+}
 
   
   return (
@@ -57,12 +71,14 @@ function LandingPage() {
             <div className="section-story-overview">
               <Row>
                 <Col md="6">
-                  <div>
+                  <div className="image-container image-left">
                     <p className="blockquote blockquote-info">
                       "Invierte en productos naturales, ahorra en medicinas." <br></br>
                       <br></br>
                       <small>-B' Natural</small>
                     </p>
+                  </div>
+                  <div className="image-container">
                   </div>
                 </Col>
                 <Col md="5">
@@ -90,85 +106,25 @@ function LandingPage() {
                   -c/n de mermelada B'Natural preferida.
                   </p>                
                 </Col>
+                <Container>
+                     <h3 className="text-left">Preparación</h3>
+                      <Step getStepContent={getStepContent}/>                       
+                  </Container>
               </Row>
+                
             </div>
-          </Container>
-        </div>
-        <div className="section section-team text-center">
-          <Container>
-          <body> 
-            
-              <div class='progress'>
-                  <div class='progress_inner'>
-                    <div class='progress_inner__step'>
-                      <label for='step-1'>Primer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-2'>Segundo Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-3'>Tercer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-4'>Cuarto Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-5'>Quinto Paso</label>
-                    </div>
-                   
-                    <input checked='checked' id='step-1' name='step' type='radio'/>
-                    <input id='step-2' name='step' type='radio'/>
-                    <input id='step-3' name='step' type='radio'/>
-                    <input id='step-4' name='step' type='radio'/>
-                    <input id='step-5' name='step' type='radio'/>
-                   
-                    <div class='progress_inner__bar'></div>
-                    <div class='progress_inner__bar--set'></div>
-                    <div class='progress_inner__tabs'>
-                      <div class='tab tab-0'>
-                        <h1>Primer Paso</h1>
-                        <p>Poner en un bol la mantequilla en pomada (ablandada) y el azúcar, batir hasta que la mantequilla esté muy cremosa. Añadir el huevo y volver a batir hasta que se integre.</p>
-                      </div>
-                      <div class='tab tab-1'>
-                        <h1>Segundo Paso</h1>
-                        <p>Incorporar la harina y añadir también el extracto de vainilla (opcional), empezar a mezclar con una lengua o rasqueta de repostería hasta obtener una masa fina, homogénea y maleable. </p>
-                      </div>
-                      <div class='tab tab-2'>
-                        <h1>Tercer Paso</h1>
-                        <p>Preparar la bandeja del horno cubriéndola con papel vegetal o una lámina de teflón y precalentar el horno a 180º C. Haz bolas de unos 20-25 gramos de masa, aplánalas ligeramente y ve colocándolas en la bandeja. A continuación, hunde el dedo pulgar en el centro de las galletas haciendo un agujero para poner el relleno de mermelada.</p>
-                      </div>
-                      <div class='tab tab-3'>
-                        <h1>Cuarto Paso</h1>
-                        <p>Preparar la mermelada que quiera utilizar, conviene que no esté muy dura, por lo que quizá es necesario dejarla fuera de la nevera un rato antes. Rellenar con la mermelada B’ Natural de su sabor preferido las galletas antes de introducirlas en el horno.</p>
-                      </div>
-                      <div class='tab tab-4'>
-                        <h1>Quinto Paso</h1>
-                        <p>Poner la bandeja con las galletas en el horno, a altura media, y hornéalas durante 15-18 minutos, hasta que estén hechas, aunque quedarán algo blancas. Retirar del horno, dejar enfriar y ubicar la mermelada B’ Natural de su preferencia. Ya están listas para servir y disfrutar.</p>
-                      </div>
-                      
-                    </div>
-                    <div class='progress_inner__status'>
-                      <div class='box_base'></div>
-                      <div class='box_lid'></div>
-                      <div class='box_ribbon'></div>
-                      <div class='box_bow'>
-                        <div class='box_bow__left'></div>
-                        <div class='box_bow__right'></div>
-                      </div>
-                      <div class='box_item'></div>
-                      <div class='box_tag'></div>
-                      <div class='box_string'></div>
-                    </div>
-                  </div>
-               </div>                
-             </body>
-          </Container>
+          </Container>  
         </div>
         <DarkFooter />
       </div>
     </>
   );
 }
+
+
+
+
+
 
 export default LandingPage;
 

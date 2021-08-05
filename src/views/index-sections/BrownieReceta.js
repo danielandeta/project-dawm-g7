@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import Step from './Step';
 
 // reactstrap components
 import {
@@ -38,6 +38,26 @@ function LandingPage() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+  
+
+
+  function getStepContent(step) {
+    switch (step) {
+      case 0:
+        return "Mezclar los ingredientes secos: la harina de avena, cacao y el polvo de hornear.";
+      case 1:
+        return "Añadir la leche en la mezcla poco a poco, mientras se sigue batiendo.";
+      case 2:
+        return "Vaciar el puré de banana en el recipiente y agregar la panela, mezclar hasta que se vuelva una masa homogénea.";
+      case 3:
+        return "Con el horno previamente precalentado a 180º, horneamos nuestro brownie durante 20-25min.";
+      case 4:
+        return "Dejar enfriar y servir junto con la mermelada de manzana B’ Natural.";
+  
+      default:
+        return "Paso desconocido";
+    }
+  }
 
   return (
     <>
@@ -53,14 +73,16 @@ function LandingPage() {
             </Row>
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
-              <Row>
-                <Col md="6">
-                  <div>
+            <Row>
+              <Col md="6">
+                  <div className="image-container image-left">
                     <p className="blockquote blockquote-info">
                       "Invierte en productos naturales, ahorra en medicinas." <br></br>
                       <br></br>
                       <small>-B' Natural</small>
                     </p>
+                  </div>
+                  <div className="image-container">
                   </div>
                 </Col>
                 <Col md="5">
@@ -86,88 +108,22 @@ function LandingPage() {
                   -1 cda de polvo para hornear
                   <br></br>
                   -2 cdas de panela
-                  </p>                
-                </Col>
+                  </p> 
+                  </Col>
+                <Container>
+                     <h3 className="text-left">Preparación</h3>
+                      <Step getStepContent={getStepContent}/>                       
+                  </Container>
               </Row>
+                
             </div>
-          </Container>
-        </div>
-        <div className="section section-team text-center">
-          <Container>
-          <body> 
-            
-              <div class='progress'>
-                  <div class='progress_inner'>
-                    <div class='progress_inner__step'>
-                      <label for='step-1'>Primer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-2'>Segundo Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-3'>Tercer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-4'>Cuarto Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-5'>Quinto Paso</label>
-                    </div>
-                   
-                    <input checked='checked' id='step-1' name='step' type='radio'/>
-                    <input id='step-2' name='step' type='radio'/>
-                    <input id='step-3' name='step' type='radio'/>
-                    <input id='step-4' name='step' type='radio'/>
-                    <input id='step-5' name='step' type='radio'/>
-                   
-                    <div class='progress_inner__bar'></div>
-                    <div class='progress_inner__bar--set'></div>
-                    <div class='progress_inner__tabs'>
-                      <div class='tab tab-0'>
-                        <h1>Primer Paso</h1>
-                        <p> Mezclar los ingredientes secos: la harina de avena, cacao y el polvo de hornear.</p>
-                      </div>
-                      <div class='tab tab-1'>
-                        <h1>Segundo Paso</h1>
-                        <p> Añadir la leche en la mezcla poco a poco, mientras se sigue batiendo. </p>
-                      </div>
-                      <div class='tab tab-2'>
-                        <h1>Tercer Paso</h1>
-                        <p>	Vaciar el puré de banana en el recipiente y agregar la panela, mezclar hasta que se vuelva una masa homogénea. </p>
-                      </div>
-                      <div class='tab tab-3'>
-                        <h1>Cuarto Paso</h1>
-                        <p>	Con el horno previamente precalentado a 180º, horneamos nuestro brownie durante 20-25min.</p>
-                      </div>
-                      <div class='tab tab-4'>
-                        <h1>Quinto Paso</h1>
-                        <p>	Dejar enfriar y servir junto con la mermelada de manzana B’ Natural.</p>
-                      </div>
-                      
-                    </div>
-                    <div class='progress_inner__status'>
-                      <div class='box_base'></div>
-                      <div class='box_lid'></div>
-                      <div class='box_ribbon'></div>
-                      <div class='box_bow'>
-                        <div class='box_bow__left'></div>
-                        <div class='box_bow__right'></div>
-                      </div>
-                      <div class='box_item'></div>
-                      <div class='box_tag'></div>
-                      <div class='box_string'></div>
-                    </div>
-                  </div>
-               </div>                
-             </body>
-          </Container>
+          </Container>  
         </div>
         <DarkFooter />
       </div>
     </>
   );
 }
-
 export default LandingPage;
 
  

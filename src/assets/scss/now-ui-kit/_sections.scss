@@ -117,11 +117,11 @@
     padding: 50px 0;
 
     .image-container{
-        height: 335px;
+        height: 205px;
         position: relative;
         background-position: center center;
         background-size: cover;
-        box-shadow: $box-shadow-raised;
+        // box-shadow: $box-shadow-raised;
         border-radius: .25rem;
 
         & + .category{

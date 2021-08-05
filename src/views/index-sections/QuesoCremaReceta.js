@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import Step from './Step';
 
 // reactstrap components
 import {
@@ -39,6 +39,23 @@ function LandingPage() {
     };
   }, []);
 
+function getStepContent(step) {
+  switch (step) {
+    case 0:
+      return "Trituramos con la ayuda de un tenedor o de una batidora las galletas tipo María dorada en un recipiente.";
+    case 1:
+      return "Rellenamos el fondo de cada vasito con las galletas bien trituradas, y a continuación le ponemos el queso crema.";
+    case 2:
+      return "Sobre éste, ponemos una capa de mermelada B’ Natural, galletas de nuevo, queso crema y otra buena capa de mermelada.";
+    case 3:
+      return "Por último, decoramos nuestros vasitos con unas almendras";
+    case 4:
+      return "Dejamos que los vasitos reposen en la nevera aproximadamente una hora y servir.";
+
+    default:
+      return "Paso desconocido";
+  }
+}
 
   
   return (
@@ -56,13 +73,15 @@ function LandingPage() {
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
               <Row>
-                <Col md="6">
-                  <div>
+              <Col md="6">
+                  <div className="image-container image-left">
                     <p className="blockquote blockquote-info">
                       "Invierte en productos naturales, ahorra en medicinas." <br></br>
                       <br></br>
                       <small>-B' Natural</small>
                     </p>
+                  </div>
+                  <div className="image-container">
                   </div>
                 </Col>
                 <Col md="5">
@@ -88,86 +107,22 @@ function LandingPage() {
                   -6 vasitos
                 
                   </p>                
-                </Col>
+               </Col>
+                <Container>
+                     <h3 className="text-left">Preparación</h3>
+                      <Step getStepContent={getStepContent}/>                       
+                  </Container>
               </Row>
+                
             </div>
-          </Container>
-        </div>
-        <div className="section section-team text-center">
-          <Container>
-          <body> 
-            
-              <div class='progress'>
-                  <div class='progress_inner'>
-                    <div class='progress_inner__step'>
-                      <label for='step-1'>Primer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-2'>Segundo Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-3'>Tercer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-4'>Cuarto Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-5'>Quinto Paso</label>
-                    </div>
-                   
-                    <input checked='checked' id='step-1' name='step' type='radio'/>
-                    <input id='step-2' name='step' type='radio'/>
-                    <input id='step-3' name='step' type='radio'/>
-                    <input id='step-4' name='step' type='radio'/>
-                    <input id='step-5' name='step' type='radio'/>
-                   
-                    <div class='progress_inner__bar'></div>
-                    <div class='progress_inner__bar--set'></div>
-                    <div class='progress_inner__tabs'>
-                      <div class='tab tab-0'>
-                        <h1>Primer Paso</h1>
-                        <p> Trituramos con la ayuda de un tenedor o de una batidora las galletas tipo María dorada en un recipiente.</p>
-                      </div>
-                      <div class='tab tab-1'>
-                        <h1>Segundo Paso</h1>
-                        <p>Rellenamos el fondo de cada vasito con las galletas bien trituradas, y a continuación le ponemos el queso crema. </p>
-                      </div>
-                      <div class='tab tab-2'>
-                        <h1>Tercer Paso</h1>
-                        <p>Sobre éste, ponemos una capa de mermelada B’ Natural, galletas de nuevo, queso crema y otra buena capa de mermelada.</p>
-                      </div>
-                      <div class='tab tab-3'>
-                        <h1>Cuarto Paso</h1>
-                        <p>	Por último, decoramos nuestros vasitos con unas almendras.</p>
-                      </div>
-                      <div class='tab tab-4'>
-                        <h1>Quinto Paso</h1>
-                        <p>	Dejamos que los vasitos reposen en la nevera aproximadamente una hora y servir.</p>
-                      </div>
-                      
-                    </div>
-                    <div class='progress_inner__status'>
-                      <div class='box_base'></div>
-                      <div class='box_lid'></div>
-                      <div class='box_ribbon'></div>
-                      <div class='box_bow'>
-                        <div class='box_bow__left'></div>
-                        <div class='box_bow__right'></div>
-                      </div>
-                      <div class='box_item'></div>
-                      <div class='box_tag'></div>
-                      <div class='box_string'></div>
-                    </div>
-                  </div>
-               </div>                
-             </body>
-          </Container>
+          </Container>  
         </div>
         <DarkFooter />
       </div>
     </>
   );
 }
+
 
 export default LandingPage;
 
