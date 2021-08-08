@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import Step from './Step';
 
 // reactstrap components
 import {
@@ -39,7 +39,44 @@ function LandingPage() {
     };
   }, []);
 
+                      //   <h1>Primer Paso</h1>
+                      //   <p> Hervir leche con cáscara de limón. Dejar reposar 15 minutos.</p>
+                      // </div>
+                      // <div class='tab tab-1'>
+                      //   <h1>Segundo Paso</h1>
+                      //   <p>	Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada. </p>
+                      // </div>
+                      // <div class='tab tab-2'>
+                      //   <h1>Tercer Paso</h1>
+                      //   <p>	Agregar el queso y mezclar bien. Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.</p>
+                      // </div>
+                      // <div class='tab tab-3'>
+                      //   <h1>Cuarto Paso</h1>
+                      //   <p>	Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.</p>
+                      // </div>
+                      // <div class='tab tab-4'>
+                      //   <h1>Quinto Paso</h1>
+                      //   <p>	Después de refrigerar como mínimo por 4 horas, ubicar la mermelada B'Natural sobre el cheesecake. Desmoldar y decorar a gusto.</p>
+                      // </div>
 
+
+function getStepContent(step) {
+     switch (step) {
+    case 0:
+      return "Hervir leche con cáscara de limón. Dejar reposar 15 minutos.";
+    case 1:
+      return "Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada.";
+    case 2:
+      return "Agregar el queso y mezclar bien. Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.";
+    case 3:
+      return "Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde";
+    case 4:
+      return "Después de refrigerar como mínimo por 4 horas, ubicar la mermelada B'Natural sobre el cheesecake. Desmoldar y decorar a gusto.";
+
+    default:
+      return "Paso desconocido";
+  }
+}
 
   return (
     <>
@@ -55,14 +92,17 @@ function LandingPage() {
             </Row>
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
-              <Row>
-                <Col md="6">
-                  <div>
+            
+            <Row>
+              <Col md="6">
+                  <div className="image-container image-left">
                     <p className="blockquote blockquote-info">
                       "Invierte en productos naturales, ahorra en medicinas." <br></br>
                       <br></br>
                       <small>-B' Natural</small>
                     </p>
+                  </div>
+                  <div className="image-container">
                   </div>
                 </Col>
                 <Col md="5">
@@ -92,80 +132,15 @@ function LandingPage() {
                   Mermelada de Frutilla B’ Natural
                   </p>                
                 </Col>
+                 <Container>
+                     <h3 className="text-left">Preparación</h3>
+                      <Step getStepContent={getStepContent}/>                       
+                  </Container>
               </Row>
             </div>
           </Container>
         </div>
-        <div className="section section-team text-center">
-          <Container>
-          <body> 
-            
-              <div class='progress'>
-                  <div class='progress_inner'>
-                    <div class='progress_inner__step'>
-                      <label for='step-1'>Primer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-2'>Segundo Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-3'>Tercer Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-4'>Cuarto Paso</label>
-                    </div>
-                    <div class='progress_inner__step'>
-                      <label for='step-5'>Quinto Paso</label>
-                    </div>
-                   
-                    <input checked='checked' id='step-1' name='step' type='radio'/>
-                    <input id='step-2' name='step' type='radio'/>
-                    <input id='step-3' name='step' type='radio'/>
-                    <input id='step-4' name='step' type='radio'/>
-                    <input id='step-5' name='step' type='radio'/>
-                   
-                    <div class='progress_inner__bar'></div>
-                    <div class='progress_inner__bar--set'></div>
-                    <div class='progress_inner__tabs'>
-                      <div class='tab tab-0'>
-                        <h1>Primer Paso</h1>
-                        <p> Hervir leche con cáscara de limón. Dejar reposar 15 minutos.</p>
-                      </div>
-                      <div class='tab tab-1'>
-                        <h1>Segundo Paso</h1>
-                        <p>	Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada. </p>
-                      </div>
-                      <div class='tab tab-2'>
-                        <h1>Tercer Paso</h1>
-                        <p>	Agregar el queso y mezclar bien. Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.</p>
-                      </div>
-                      <div class='tab tab-3'>
-                        <h1>Cuarto Paso</h1>
-                        <p>	Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.</p>
-                      </div>
-                      <div class='tab tab-4'>
-                        <h1>Quinto Paso</h1>
-                        <p>	Después de refrigerar como mínimo por 4 horas, ubicar la mermelada B'Natural sobre el cheesecake. Desmoldar y decorar a gusto.</p>
-                      </div>
-                      
-                    </div>
-                    <div class='progress_inner__status'>
-                      <div class='box_base'></div>
-                      <div class='box_lid'></div>
-                      <div class='box_ribbon'></div>
-                      <div class='box_bow'>
-                        <div class='box_bow__left'></div>
-                        <div class='box_bow__right'></div>
-                      </div>
-                      <div class='box_item'></div>
-                      <div class='box_tag'></div>
-                      <div class='box_string'></div>
-                    </div>
-                  </div>
-               </div>                
-             </body>
-          </Container>
-        </div>
+        
         <DarkFooter />
       </div>
     </>

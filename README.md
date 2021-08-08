@@ -23,6 +23,13 @@ Es importante resaltar que nuestro grupo selecciono determinadas plantillas de I
 una de ellas les hicimos los respectivos cambios para adaptarlas a nuestro estilo y necesidades. A continuacion de detallara cada  
 pagina con sus respectivas caracteristicas y funciones:
 
+## Instalar
+- npm install
+- npm i react-whatsapp
+- npm install @material-ui/icons
+- npm install @material-ui/core
+- npm install react-iframe
+
 ## Contenido
 
 * [Principal](#principal)
