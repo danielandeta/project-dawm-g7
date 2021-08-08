@@ -62,12 +62,7 @@ function News() {
             <button class="card_tip__btn">Ver Tip</button>
           </div>
             `
-          } else {
-            document.getElementsByClassName('wrapper_card')[0].innerHTML = 
-            `
-              <p class="color-texto text-center">No se encontraron coincidencias</p>
-            `
-          }
+          } 
         }
       )
     } else {
