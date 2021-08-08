@@ -24,11 +24,11 @@ una de ellas les hicimos los respectivos cambios para adaptarlas a nuestro estil
 pagina con sus respectivas caracteristicas y funciones:
 
 ## Instalar
--npm install
--npm i react-whatsapp
--npm install @material-ui/icons
--npm install @material-ui/core
--npm install react-iframe
+- npm install
+- npm i react-whatsapp
+- npm install @material-ui/icons
+- npm install @material-ui/core
+- npm install react-iframe
 
 ## Contenido
 
