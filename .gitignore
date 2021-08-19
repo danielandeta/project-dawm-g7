@@ -5,18 +5,29 @@
 /client/.pnp
 /client/.pnp.js
 
+/server/node_modules
+/server/.pnp
+/server/.pnp.js
+
 # testing
 /client/coverage
+/server/coverage
 
 # production
 /client/build
+/server/build
 
 # misc
 /client/.DS_Store
+/server/.DS_Store
 /client/.env.local
+/server/.env.local
 /client/.env.development.local
+/server/.env.development.local
 /client/.env.test.local
+/server/.env.test.local
 /client/.env.production.local 
+/server/.env.production.local 
 
 /client/npm-debug.log*
 /client/yarn-debug.log*
