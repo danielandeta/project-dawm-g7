@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
@@ -18,6 +19,7 @@ import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import News from "views/index-sections/News.js";
+import SignUp from "views/index-sections/SignUp.js";
 import Encuentranos from "views/index-sections/encuentranos.js";
 import Catalogo from "views/index-sections/Catalogo.js";
 import Formulario from "views/index-sections/Formulario.js";
@@ -52,6 +54,10 @@ ReactDOM.render(
         <Route
           path="/login-page"
           render={(props) => <LoginPage {...props} />}
+        />
+        <Route
+          path="/sign-up"
+          render={(props) => <SignUp {...props} />}
         />
         <Route
           path="/news"

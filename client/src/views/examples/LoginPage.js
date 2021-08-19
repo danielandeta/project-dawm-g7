@@ -18,7 +18,9 @@ import {
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import TransparentFooter from "components/Footers/TransparentFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
+import Logo from '../../assets/img/logo_natural.png';
+//import TransparentFooter from "components/Footers/TransparentFooter.js";
 
 function LoginPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -43,7 +45,7 @@ function LoginPage() {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/login.jpg").default + ")",
+              "url(" + require("assets/img/mermeladas.jpeg").default + ")",
           }}
         ></div>
         <div className="content">
@@ -55,7 +57,7 @@ function LoginPage() {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png").default}
+                        src={Logo}
                       ></img>
                     </div>
                   </CardHeader>
@@ -72,7 +74,7 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="First Name..."
+                        placeholder="Email..."
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
@@ -90,7 +92,7 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="Last Name..."
+                        placeholder="Contraseña..."
                         type="text"
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
@@ -106,7 +108,7 @@ function LoginPage() {
                       onClick={(e) => e.preventDefault()}
                       size="lg"
                     >
-                      Get Started
+                      Iniciar
                     </Button>
                     <div className="pull-left">
                       <h6>
@@ -136,7 +138,7 @@ function LoginPage() {
             </Col>
           </Container>
         </div>
-        <TransparentFooter />
+        <DarkFooter />
       </div>
     </>
   );
