@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Andrew05",
+    "password": "your pass :)",
     "database": "bnatural",
     "host": "127.0.0.1",
     "dialect": "mysql"
