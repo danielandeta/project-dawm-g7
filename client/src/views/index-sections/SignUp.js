@@ -1,5 +1,6 @@
 import React from "react";
-
+import axios from "axios";
+import { useHistory } from 'react-router-dom'
 // reactstrap components
 import {
   Button,
@@ -23,6 +24,11 @@ import Logo from '../../assets/img/logo_natural.png';
 //import TransparentFooter from "components/Footers/TransparentFooter.js";
 
 function SignUp() {
+  let history = useHistory()
+  const [names, setNames] = React.useState("")
+  const [email, setEmail] = React.useState("")
+  const [password, setPassword] = React.useState("")
+
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
@@ -36,7 +42,14 @@ function SignUp() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
-
+  const onSubmit = () => {
+    const data = {names: names, email: email, password: password}
+    if (names !== "" && email !== "" && password !=="") {
+      axios.post("http://localhost:3001/auth", data).then(() => {
+      history.push("/")
+    })
+    }
+  }
   return (
     <>
     <IndexNavbar />
@@ -53,14 +66,6 @@ function SignUp() {
             <Col className="ml-auto mr-auto" md="4">
               <Card className="card-login card-plain">
                 <Form action="" className="form" method="">
-                  <CardHeader className="text-center">
-                    <div className="logo-container">
-                      <img
-                        alt="..."
-                        src={Logo}
-                      ></img>
-                    </div>
-                  </CardHeader>
                   <CardBody>
                     <InputGroup
                       className={
@@ -78,6 +83,7 @@ function SignUp() {
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
+                        onChange={(event) => {setNames(event.target.value)}}
                       ></Input>
                     </InputGroup>
                     <InputGroup
@@ -114,6 +120,7 @@ function SignUp() {
                         type="text"
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
+                        onChange={(event) => {setEmail(event.target.value)}}
                       ></Input>
                     </InputGroup>
                     <InputGroup
@@ -168,6 +175,7 @@ function SignUp() {
                         type="text"
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
+                        onChange={(event) => {setPassword(event.target.value)}}
                       ></Input>
                     </InputGroup>
                   </CardBody>
@@ -176,8 +184,7 @@ function SignUp() {
                       block
                       className="btn-round"
                       color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
+                      onClick={onSubmit}
                       size="lg"
                     >
                       Registrarse
