@@ -1,0 +1,64 @@
+.search {
+  text-align: center;
+  input {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 40px;
+  }
+}
+.title_news{
+  margin-top: 8rem;
+  text-align: center;
+  font-weight: bold;
+}
+.card_tip {
+  overflow: hidden;
+  box-shadow: 5px 5px 20px $clr-gray300;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  width: 110%;
+
+  &__image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &__description {
+    padding: 0 1rem;
+  }
+  &__btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid;
+    background: transparent;
+    color: $primary-color;
+    border-radius: $radius;
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:hover &__btn {
+    background: $primary-color;
+    color: white;
+  } 
+}
+
+clearCard {
+  display: none;
+}

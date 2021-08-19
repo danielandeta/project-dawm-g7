@@ -1,0 +1,66 @@
+.section-images{
+    margin-top: -230px;
+}
+
+#queesnatural{
+    font-size: 30px;
+}
+
+.badge{
+    border-radius: 40px;
+    padding: 20px 20px 20px 20px;
+}
+
+.mermelada2{
+    min-width: auto;
+    min-height: auto;
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.perfil_gaby{
+    border-radius: 150px;;
+}
+
+.info-devep{
+    text-align: right;
+    padding-right: 100px;
+    
+}
+
+.info-devep1{
+    text-align: left;
+    padding-left: 100px;
+}
+.tituloDev{
+    color: black;
+    font-weight: bold;
+}
+
+.title{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+#tituloPrincipal{
+    color: white;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+body{
+    background-color: white;
+}
+
+.tipoclas{
+    color: black;
+}

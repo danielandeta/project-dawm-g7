@@ -1,0 +1,66 @@
+{
+	"mermeladas": [{
+	"id": 1,
+	"sabor": "Frutilla"},
+	{"id": 2,
+	"sabor":"Frutimora"},
+	{"id": 3,
+	"sabor": "Manzana"},
+	{"id": 4,
+	"sabor": "Piña"},
+	{"id": 5,
+	"sabor": "Sandía"}],
+
+	"recetas" : [{
+		"id": 1,
+		"title": "Brownie de Banana",
+		"ingredientes": ["1 tz de harina de avena", "2 bananas en pure", "-1 tz de leche", "1 cda de cacao", "1 cda de polvo para hornear","2 cdas de panela", "mermelada de manzana B’ Natural"],
+		"preparacion": ["Mezclar los ingredientes secos: la harina de avena, cacao y el polvo de hornear.","Añadir la leche en la mezcla poco a poco, mientras se sigue batiendo.","Vaciar el puré de banana en el recipiente.", "Agregar la panela y mezclar hasta que se vuelva una masa homogénea." , "Con el horno previamente precalentado a 180º, horneamos nuestro brownie durante 20-25min.","Dejar enfriar y servir junto con la mermelada de manzana B’ Natural."]
+	},
+	{
+		"id": 2,
+		"title": "Cheesecake de Frutilla",
+		"ingredientes": ["300 ml. Leche","Cáscara de limón a gusto", "3 Huevos", "300 grs. Azúcar", "2 cucharadas Gelatina sin sabor", "500 grs. Queso crema (Talar)", "300 ml. Crema de leche", "Mermelada de Frutilla B’ Natural"],
+		"preparacion": ["Hervir leche con cáscara de limón. Dejar reposar 15 minutos.","Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada.", "Agregar el queso y mezclar bien.","Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.","Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.","Refrigerar como mínimo por 4 horas.", "Ubicar la mermelada de frutilla sobre el cheesecake. Desmoldar y decorar a gusto."]
+	},
+	{
+		"id": 3,
+		"title": "Queso crema con mermelada",
+		"ingredientes": ["Una tarrina de queso crema 200g","Un bote de mermelada de frutos rojos","20-25 galletas tipo María doradas","Láminas de almendra para decorar","6 vasitos"],
+		"preparacion": ["Trituramos con la ayuda de un tenedor o de una batidora las galletas tipo María dorada en un recipiente.", "Rellenamos el fondo de cada vasito con las galletas bien trituradas, y a continuación le ponemos el queso crema.", "Sobre éste, ponemos una capa de mermelada B’ Natural, galletas de nuevo, queso crema y otra buena capa de mermelada.", "Por último, decoramos nuestros vasitos con unas almendras.", "Dejamos que los vasitos reposen en la nevera aproximadamente una hora y servir"]
+	},
+	{
+		"id": 4,
+		"title": "Galletas con mermelada",
+		"ingredientes":["120 gramos de mantequilla en pomada", "120 gramos de azúcar", "1 huevo (L)", "275 gramos de harina", "c/n de extracto de vainilla", "c/n de mermelada al gusto."],
+		"preparacion": ["Poner en un bol la mantequilla en pomada (ablandada) y el azúcar, batir hasta que la mantequilla esté muy cremosa. Añadir el huevo y volver a batir hasta que se integre.", "Incorporar la harina y añadir también el extracto de vainilla (opcional), empezar a mezclar con una lengua o rasqueta de repostería hasta obtener una masa fina, homogénea y maleable.", "Preparar la bandeja del horno cubriéndola con papel vegetal o una lámina de teflón y precalentar el horno a 180º C. Haz bolas de unos 20-25 gramos de masa, aplánalas ligeramente y ve colocándolas en la bandeja. A continuación, hunde el dedo pulgar en el centro de las galletas haciendo un agujero para poner el relleno de mermelada.", "Preparar la mermelada que quiera utilizar, conviene que no esté muy dura, por lo que quizá es necesario dejarla fuera de la nevera un rato antes. Rellenar con la mermelada B’ Natural de su sabor preferido las galletas antes de introducirlas en el horno.", "Poner la bandeja con las galletas en el horno, a altura media, y hornéalas durante 15-18 minutos, hasta que estén hechas, aunque quedarán algo blancas. Entonces retíralas del horno y pásalas a una rejilla para que se enfríen.", "Las galletas con la mermelada B’ Natural de su preferencia ya están listas para servir y disfrutar."]
+	}], 
+	"tips" : [{
+	    "id": 1,
+	    "title": "Ingiere suficiente agua",
+	    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pc1cK_EaD18wlTmM0U4CjXcoxmICCzLJmxuQllozOm1BcikMLOYZDqAS5bC1P7w0qUA&usqp=CAU",
+	    "desc": "Todas las células del cuerpo necesitan de agua para funcionar.",
+	    "descTotal": "Una adecuada hidratación ayuda a (Boilesen, 2017): Evitar el estreñimiento. Favorecer la digestión y producción de la saliva. Mejorar el funcionamiento del riñón, pues por medio de la orina se expulsan las toxinas del cuerpo. Mantener la piel hidratada, elástica, tersa y suave. Para gozar de todos estos beneficios debes tomar entre 2,7 a 3,7 litros de agua potable por día. También puedes tomar infusiones o agua saborizada, eso sí, sin agregar azúcar."
+  		},
+  		{
+	    "id": 2,
+	    "title": "Vigila la porción de grasas saturadas",
+	    "img": "https://www.ejemplos.co/wp-content/uploads/2016/09/grasas-sanas-buenas-lipidos-min-e1475434109998.jpg",
+	    "desc": "Todas las células del cuerpo necesitan de agua para funcionar.",
+	    "descTotal": "Una adecuada hidratación ayuda a (Boilesen, 2017): Evitar el estreñimiento. Favorecer la digestión y producción de la saliva. Mejorar el funcionamiento del riñón, pues por medio de la orina se expulsan las toxinas del cuerpo. Mantener la piel hidratada, elástica, tersa y suave. Para gozar de todos estos beneficios debes tomar entre 2,7 a 3,7 litros de agua potable por día. También puedes tomar infusiones o agua saborizada, eso sí, sin agregar azúcar."
+	  	},
+	  	{
+	    "id": 3,
+	    "title": "Ingiere suficiente agua",
+	    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6pc1cK_EaD18wlTmM0U4CjXcoxmICCzLJmxuQllozOm1BcikMLOYZDqAS5bC1P7w0qUA&usqp=CAU",
+	    "desc": "Todas las células del cuerpo necesitan de agua para funcionar.",
+	    "descTotal": "Una adecuada hidratación ayuda a (Boilesen, 2017): Evitar el estreñimiento. Favorecer la digestión y producción de la saliva. Mejorar el funcionamiento del riñón, pues por medio de la orina se expulsan las toxinas del cuerpo. Mantener la piel hidratada, elástica, tersa y suave. Para gozar de todos estos beneficios debes tomar entre 2,7 a 3,7 litros de agua potable por día. También puedes tomar infusiones o agua saborizada, eso sí, sin agregar azúcar."
+	  },
+	  {
+	    "id": 4,
+	    "title": "Vigila la porción de grasas saturadas",
+	    "img": "https://www.ejemplos.co/wp-content/uploads/2016/09/grasas-sanas-buenas-lipidos-min-e1475434109998.jpg",
+	    "desc": "Todas las células del cuerpo necesitan de agua para funcionar.",
+	    "descTotal": "Una adecuada hidratación ayuda a (Boilesen, 2017): Evitar el estreñimiento. Favorecer la digestión y producción de la saliva. Mejorar el funcionamiento del riñón, pues por medio de la orina se expulsan las toxinas del cuerpo. Mantener la piel hidratada, elástica, tersa y suave. Para gozar de todos estos beneficios debes tomar entre 2,7 a 3,7 litros de agua potable por día. También puedes tomar infusiones o agua saborizada, eso sí, sin agregar azúcar."
+	  }]
+}
