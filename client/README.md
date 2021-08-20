@@ -29,6 +29,7 @@ pagina con sus respectivas caracteristicas y funciones:
 - npm install @material-ui/icons
 - npm install @material-ui/core
 - npm install react-iframe
+- npm install axios --save
 
 ## Contenido
 
