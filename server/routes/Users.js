@@ -5,9 +5,9 @@ const bcrypt = require('bcrypt')
 
 // Para el registro de usuarios
 router.post('/', async(req, res) => {
-  const {names, email, password} = req.body
+  const {id, nombres, apellidos, username, email, password, celular, nacimiento} = req.body
   bcrypt.hash(password, 10).then((hash) => {
-    Users.create({names: names, email: email, password: hash})
+    Users.create({id:id,nombres: nombres, apellidos:apellidos, username:username, email: email, password: hash, celular:celular, nacimiento:nacimiento})
   })
   res.json("Success")
 })
