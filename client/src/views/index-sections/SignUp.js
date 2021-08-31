@@ -48,7 +48,7 @@ function SignUp() {
     };
   }, []);
   const onSubmit = () => {
-    const data = {id:id,nombres: nombres, apellidos:apellidos, username:username, email: email, password: password, celular:celular, nacimiento:nacimiento}
+    const data = {cedula:id,nombres: nombres, apellidos:apellidos, username:username, email: email, password: password, celular:celular, nacimiento:nacimiento}
     if (id !== "" && nombres !== "" && apellidos !== "" && username !== "" && email !== "" && password !=="" && nacimiento !== "") {
       axios.post("http://localhost:3001/auth", data).then(() => {
       history.push("/")
@@ -58,7 +58,7 @@ function SignUp() {
   return (
     <>
     <IndexNavbar />
-      <div className="page-header clear-filter" filter-color="blue">
+      <div className="page-header clear-filter overflow-auto" filter-color="blue">
         <div
           className="page-header-image"
           style={{
@@ -218,14 +218,14 @@ function SignUp() {
                       </InputGroupAddon>
                       <Input
                         placeholder="Ingrese contraseña"
-                        type="text"
+                        type="password"
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
                         onChange={(event) => {setPassword(event.target.value)}}
                       ></Input>
                     </InputGroup>
                   </CardBody>
-                  <CardFooter className="text-center">
+                  <CardFooter className="text-center mt-0">
                     <Button
                       block
                       className="btn-round"
@@ -241,7 +241,6 @@ function SignUp() {
             </Col>
           </Container>
         </div>
-        
       </div>
     </>
   );
