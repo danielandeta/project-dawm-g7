@@ -17,6 +17,7 @@
     "mysql2": "^2.3.0",
     "nodemon": "^2.0.12",
     "sequelize": "^6.6.5",
+    "sequelize-auto": "^0.8.4",
     "sequelize-cli": "^6.2.0"
   }
 }
