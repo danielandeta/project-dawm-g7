@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom'
 import {
   Button,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   Form,
@@ -19,8 +18,6 @@ import {
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import DarkFooter from "components/Footers/DarkFooter.js";
-import Logo from '../../assets/img/logo_natural.png';
 //import TransparentFooter from "components/Footers/TransparentFooter.js";
 
 function SignUp() {
