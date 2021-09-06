@@ -28,7 +28,7 @@ import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routes from "routes.js";
 
-import logo from "assets/img/react-logo.png";
+import logo_natural from "assets/img/logo_natural.png";
 import { BackgroundColorContext } from "contexts/BackgroundColorContext";
 
 var ps;
@@ -109,9 +109,9 @@ function Admin(props) {
             <Sidebar
               routes={routes}
               logo={{
-                outterLink: "https://www.creative-tim.com/",
-                text: "Creative Tim",
-                imgSrc: logo,
+                outterLink: "/index",
+                text: "B' Natural",
+                imgSrc: logo_natural,
               }}
               toggleSidebar={toggleSidebar}
             />

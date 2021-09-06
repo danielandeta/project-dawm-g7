@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Andrew05",
+    "password": "",
     "database": "bnatural",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -15,7 +15,7 @@
   },
   "production": {
     "username": "root",
-    "password": null,
+    "password": "",
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"

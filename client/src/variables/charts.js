@@ -73,6 +73,7 @@ let chart1_2_options = {
 // #########################################
 // // // used inside src/views/Dashboard.js
 // #########################################
+//frutilla frutimora guayaba manzana piña mermeladas
 let chartExample1 = {
   data1: (canvas) => {
     let ctx = canvas.getContext("2d");
@@ -85,18 +86,18 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
+        "ENE",
+        "FEBR",
+        "MZO",
+        "ABR",
         "MAY",
         "JUN",
         "JUL",
-        "AUG",
+        "AGT",
         "SEP",
         "OCT",
         "NOV",
-        "DEC",
+        "DIC",
       ],
       datasets: [
         {
@@ -130,18 +131,18 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
+        "ENE",
+        "FEBR",
+        "MZO",
+        "ABR",
         "MAY",
         "JUN",
         "JUL",
-        "AUG",
+        "AGT",
         "SEP",
         "OCT",
         "NOV",
-        "DEC",
+        "DIC",
       ],
       datasets: [
         {
@@ -159,7 +160,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120],
+          data: [80, 120, 105, 110, 95, 105, 90, 100, 80, 95, 70, 120], //informacion de base de datos 
         },
       ],
     };
@@ -175,18 +176,18 @@ let chartExample1 = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
+        "ENE",
+        "FEBR",
+        "MZO",
+        "ABR",
         "MAY",
         "JUN",
         "JUL",
-        "AUG",
+        "AGT",
         "SEP",
         "OCT",
         "NOV",
-        "DEC",
+        "DIC",
       ],
       datasets: [
         {
@@ -265,7 +266,7 @@ let chartExample3 = {
     gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
     return {
-      labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
+      labels: ["Frutilla", "Frutimora", "Guayaba", "Manzana", "Piña"],
       datasets: [
         {
           label: "Countries",

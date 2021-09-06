@@ -39,6 +39,8 @@ import {
   ModalHeader,
 } from "reactstrap";
 
+
+
 function AdminNavbar(props) {
   const [collapseOpen, setcollapseOpen] = React.useState(false);
   const [modalSearch, setmodalSearch] = React.useState(false);
@@ -98,12 +100,12 @@ function AdminNavbar(props) {
           </NavbarToggler>
           <Collapse navbar isOpen={collapseOpen}>
             <Nav className="ml-auto" navbar>
-              <InputGroup className="search-bar">
+              {/* <InputGroup className="search-bar">
                 <Button color="link" onClick={toggleModalSearch}>
                   <i className="tim-icons icon-zoom-split" />
                   <span className="d-lg-none d-md-block">Search</span>
                 </Button>
-              </InputGroup>
+              </InputGroup> */}
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -111,9 +113,9 @@ function AdminNavbar(props) {
                   data-toggle="dropdown"
                   nav
                 >
-                  <div className="notification d-none d-lg-block d-xl-block" />
+                  {/* <div className="notification d-none d-lg-block d-xl-block" />
                   <i className="tim-icons icon-sound-wave" />
-                  <p className="d-lg-none">Notifications</p>
+                  <p className="d-lg-none">Notifications</p> */}
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-navbar" right tag="ul">
                   <NavLink tag="li">

@@ -10,12 +10,16 @@
   "author": "William Venegas",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.3",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql2": "^2.3.0",
     "nodemon": "^2.0.12",
+    "react-iframe": "^1.8.0",
+    "react-whatsapp": "^0.2.1",
     "sequelize": "^6.6.5",
     "sequelize-auto": "^0.8.4",
     "sequelize-cli": "^6.2.0"

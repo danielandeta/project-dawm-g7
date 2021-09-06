@@ -39,27 +39,6 @@ function LandingPage() {
     };
   }, []);
 
-                      //   <h1>Primer Paso</h1>
-                      //   <p> Hervir leche con cáscara de limón. Dejar reposar 15 minutos.</p>
-                      // </div>
-                      // <div class='tab tab-1'>
-                      //   <h1>Segundo Paso</h1>
-                      //   <p>	Mezclar las yemas con 250 gr de azúcar e incorporar a la leche. Volver al fuego la mezcla hasta hervir y agregar la gelatina previamente hidratada. </p>
-                      // </div>
-                      // <div class='tab tab-2'>
-                      //   <h1>Tercer Paso</h1>
-                      //   <p>	Agregar el queso y mezclar bien. Batir las claras a nieve con 50 gr de azúcar e incorporar a la mezcla anterior en 2 veces, con movimientos envolventes.</p>
-                      // </div>
-                      // <div class='tab tab-3'>
-                      //   <h1>Cuarto Paso</h1>
-                      //   <p>	Agregar la crema batida a 3/4 parte (o sea que no esté montada) y ubicarlo en un molde.</p>
-                      // </div>
-                      // <div class='tab tab-4'>
-                      //   <h1>Quinto Paso</h1>
-                      //   <p>	Después de refrigerar como mínimo por 4 horas, ubicar la mermelada B'Natural sobre el cheesecake. Desmoldar y decorar a gusto.</p>
-                      // </div>
-
-
 function getStepContent(step) {
      switch (step) {
     case 0:

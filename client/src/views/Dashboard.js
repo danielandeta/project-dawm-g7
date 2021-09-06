@@ -65,7 +65,7 @@ function Dashboard(props) {
                 <Row>
                   <Col className="text-left" sm="6">
                     <h5 className="card-category">Total Ventas</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
+                    <CardTitle tag="h2">B' NATURAL</CardTitle>
                   </Col>
                   <Col sm="6">
                     <ButtonGroup
@@ -83,7 +83,7 @@ function Dashboard(props) {
                         onClick={() => setBgChartData("data1")}
                       >
                         <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Cuentas
+                          Ingreso de Usuarios 
                         </span>
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-single-02" />
@@ -106,7 +106,7 @@ function Dashboard(props) {
                           <i className="tim-icons icon-gift-2" />
                         </span>
                       </Button>
-                      <Button
+                      {/* <Button
                         color="info"
                         id="2"
                         size="sm"
@@ -122,7 +122,7 @@ function Dashboard(props) {
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-tap-02" />
                         </span>
-                      </Button>
+                      </Button> */}
                     </ButtonGroup>
                   </Col>
                 </Row>
@@ -139,7 +139,7 @@ function Dashboard(props) {
           </Col>
         </Row>
         <Row>
-          <Col lg="4">
+          {/* <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">Total Envios</h5>
@@ -156,14 +156,14 @@ function Dashboard(props) {
                 </div>
               </CardBody>
             </Card>
-          </Col>
+          </Col> */}
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Ventas diarias</h5>
+                <h5 className="card-category">Sabor de Mermeladas</h5>
                 <CardTitle tag="h3">
                   <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                  3,500€ (referencia)
+                  Ventas de Mermeladas
                 </CardTitle>
               </CardHeader>
               <CardBody>
@@ -176,7 +176,7 @@ function Dashboard(props) {
               </CardBody>
             </Card>
           </Col>
-          <Col lg="4">
+          {/* <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">Tareas completadas</h5>
@@ -193,9 +193,9 @@ function Dashboard(props) {
                 </div>
               </CardBody>
             </Card>
-          </Col>
+          </Col> */}
         </Row>
-        <Row>
+        {/* <Row>
           <Col lg="6" md="12">
             <Card className="card-tasks">
               <CardHeader>
@@ -526,7 +526,7 @@ function Dashboard(props) {
               </CardBody>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </>
   );
