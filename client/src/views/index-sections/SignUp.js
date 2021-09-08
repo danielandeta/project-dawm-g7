@@ -46,7 +46,7 @@ function SignUp() {
   }, []);
   const onSubmit = () => {
     const data = {cedula:id,nombres: nombres, apellidos:apellidos, username:username, email: email, password: password, celular:celular, nacimiento:nacimiento}
-    if (id !== "" && nombres !== "" && apellidos !== "" && username !== "" && email !== "" && password !=="" && nacimiento !== "") {
+    if (id && nombres && apellidos && username && email && password && nacimiento) {
       axios.post("http://localhost:3001/auth", data).then(() => {
       history.push("/")
     })
