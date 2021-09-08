@@ -28,6 +28,7 @@ import BrownieReceta from "views/index-sections/BrownieReceta.js";
 import CheesecakeReceta from "views/index-sections/CheesecakeReceta.js";
 import GalletasReceta from "views/index-sections/GalletasReceta.js";
 import QuesoCremaReceta from "views/index-sections/QuesoCremaReceta.js";
+import Mermelada from "views/index-sections/Mermelada";
 import Desarrolladores from "views/index-sections/Desarrolladores.js"
 import AdminLayout from "./layouts/Admin/Admin.js";
 import Receta from "views/index-sections/Receta.js";
@@ -59,6 +60,9 @@ ReactDOM.render(
           path="/sign-up"
           render={(props) => <SignUp {...props} />}
         />
+        <Route 
+          path="/Catalogo/:id" 
+          component={Mermelada} />
         <Route
           path="/news"
           render={(nutiTips) => <News {...nutiTips} />}
@@ -96,6 +100,7 @@ ReactDOM.render(
           path="/admin/dashboard"
           render={(props) => <AdminLayout {...props} />}
         />
+        
         <Route
           path="/Desarrolladores"
           component = {Desarrolladores}

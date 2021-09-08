@@ -12,4 +12,12 @@ router.get('/', async (req, res, next) => {  // Solo incluyo el "/" porque la ru
   .catch(error => res.status(400).send(error))
 })
 
+router.get('/byId/:id', async(req, res) => {
+  const saborMermelada = req.params.id  //obtengo los parametros de la url con params
+  const mermelada = await models.mermelada.findOne({
+    where: {sabor: saborMermelada}
+  })
+  res.json(mermelada)
+})
+
 module.exports = router
