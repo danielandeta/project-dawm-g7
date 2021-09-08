@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/img/logo_natural.png';
 import ReactWhatsapp from 'react-whatsapp';
+
 // reactstrap components
 import {
   Button,
@@ -17,7 +18,9 @@ import {
   Nav,
   Container,
   UncontrolledTooltip,
+
 } from "reactstrap";
+
 
 function IndexNavbar(props) {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -48,8 +51,10 @@ function IndexNavbar(props) {
       
     
   });
+
   return (
     <>
+      
       {collapseOpen ? (
         <div
           id="bodyClick"
@@ -107,23 +112,6 @@ function IndexNavbar(props) {
                 </NavLink>
               </NavItem> 
 
-
-
-               {/* <NavItem>
-                <NavLink
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className=""></i>
-                  <p>Recetas</p>
-                </NavLink>
-              </NavItem>  */}
-
               <NavItem>
                 <NavLink
                 >
@@ -133,7 +121,8 @@ function IndexNavbar(props) {
               </NavItem>
 
               <NavItem>
-                <NavLink>
+                <NavLink
+                >
                   <i className="bi bi-newspaper"></i>
                   <Link to="/encuentranos"><p>Encuéntranos</p></Link>
                 </NavLink>
@@ -183,10 +172,11 @@ function IndexNavbar(props) {
               <NavItem>
                 <NavLink>
                   <i className="bi bi-newspaper"></i>
-                  <Link to="/Carrito"><i className="fas fa-shopping-cart fa-3x"></i></Link>
+                  <Link to="/carrito"><i className="fas fa-shopping-cart fa-3x"></i></Link>
                 </NavLink>
               </NavItem>
 
+             
             </Nav>
           </Collapse>
         </Container>
