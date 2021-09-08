@@ -80,6 +80,11 @@ function Mermelada() {
                 <p>
                   {mermeladaObject.descripcion}
                 </p>                
+                <button>
+                  <a href="/Formulario">
+                  Comprar
+                  </a>
+                </button>
               </Col>
             </Row>
               
