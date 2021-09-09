@@ -22,7 +22,10 @@ import CarouselSection from "./Carousel.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import Formulario from "views/index-sections/Formulario.js";
 import { useHistory } from 'react-router-dom'
-
+import {
+  Row,
+  Col,
+} from "reactstrap";
 
 function Copyright() {
   return (
@@ -72,6 +75,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+
 const cards = [1, 2, 3, 4, 5];
 const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Guayaba.jpg"]
 /*function listaMermeladas(){
@@ -99,8 +104,15 @@ export default function Catalogo() {
   let history = useHistory()
   return( <>
     <IndexNavbar color='1' />
+          
+        
     <React.Fragment>
-      <main className="navbar_separation section">
+
+      <main className="section mt-5">
+      <h2 className="color-texto text-center ">Catálogo de mermeladas</h2>
+          <h5 className="description text-center">
+            Aquí puedes obtener mas información y comprar tus mermeladas preferidas.
+          </h5>
         {/* Hero unit */}
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}

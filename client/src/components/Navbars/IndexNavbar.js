@@ -140,45 +140,17 @@ function IndexNavbar(props) {
               </NavItem>
               
               <NavItem>
-                <NavLink
-                  href="https://wa.me/593959474311"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i class="fab fa-whatsapp fa-3x"></i>
-                  
-                  <p className="d-lg-none d-xl-none">WhatsApp</p>
+                <NavLink>
+                  <i className="bi bi-newspaper"></i>
+                  <Link to="/sign-up"><p>Registrarse</p></Link>
                 </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Contáctanos en WhatsApp
-                </UncontrolledTooltip>
               </NavItem>
+
               <NavItem>
-                <NavLink
-                  href="https://www.facebook.com/mermeladabnatural"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square fa-3x"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
+                <NavLink>
+                  <i className="bi bi-newspaper"></i>
+                  <Link to="/login-page"><p>Iniciar Sesión</p></Link>
                 </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Síguenos en Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              
-              <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/bnatural_ec/"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram fa-3x"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                Síguenos en Instagram
-                </UncontrolledTooltip>
               </NavItem>
 
               <NavItem>
