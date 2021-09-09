@@ -12,4 +12,5 @@ router.get('/', async (req, res, next) => {  // Solo incluyo el "/" porque la ru
   .catch(error => res.status(400).send(error))
 })
 
+
 module.exports = router

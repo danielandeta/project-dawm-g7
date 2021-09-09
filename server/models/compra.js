@@ -3,12 +3,16 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define('compra', {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: true,
+      allowNull: false,
       primaryKey: true
     },
     id_factura: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      references: {
+        model: 'factura',
+        key: 'id'
+      }
     },
     total: {
       type: DataTypes.FLOAT,
@@ -17,6 +21,23 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     sequelize,
     tableName: 'compra',
-    timestamps: false
+    timestamps: false,
+    indexes: [
+      {
+        name: "PRIMARY",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "id" },
+        ]
+      },
+      {
+        name: "id_factura",
+        using: "BTREE",
+        fields: [
+          { name: "id_factura" },
+        ]
+      },
+    ]
   });
 };

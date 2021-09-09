@@ -18,6 +18,12 @@ function initModels(sequelize) {
   var tip = _tip(sequelize, DataTypes);
   var users = _users(sequelize, DataTypes);
 
+  compra.belongsTo(factura, { as: "id_factura_factura", foreignKey: "id_factura"});
+  factura.hasMany(compra, { as: "compras", foreignKey: "id_factura"});
+  factura_detalle.belongsTo(factura, { as: "id_factura_factura", foreignKey: "id_factura"});
+  factura.hasMany(factura_detalle, { as: "factura_detalles", foreignKey: "id_factura"});
+  factura_detalle.belongsTo(mermelada, { as: "id_merme_mermelada", foreignKey: "id_merme"});
+  mermelada.hasMany(factura_detalle, { as: "factura_detalles", foreignKey: "id_merme"});
 
   return {
     compra,
