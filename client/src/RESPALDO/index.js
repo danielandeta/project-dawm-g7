@@ -21,15 +21,15 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import News from "views/index-sections/News.js";
 import SignUp from "views/index-sections/SignUp.js";
 import Encuentranos from "views/index-sections/encuentranos.js";
-import Carrito from "views/index-sections/Carrito.js";
 import Catalogo from "views/index-sections/Catalogo.js";
+import Carrito from "views/index-sections/carrito.js";
+import NavBar from "views/index-sections/NavBar";
 import Formulario from "views/index-sections/Formulario.js";
 import RecetaPrincipal from "views/index-sections/RecetaPrincipal.js";
 import BrownieReceta from "views/index-sections/BrownieReceta.js";
 import CheesecakeReceta from "views/index-sections/CheesecakeReceta.js";
 import GalletasReceta from "views/index-sections/GalletasReceta.js";
 import QuesoCremaReceta from "views/index-sections/QuesoCremaReceta.js";
-import Mermelada from "views/index-sections/Mermelada";
 import Desarrolladores from "views/index-sections/Desarrolladores.js"
 import AdminLayout from "./layouts/Admin/Admin.js";
 import Receta from "views/index-sections/Receta.js";
@@ -61,9 +61,6 @@ ReactDOM.render(
           path="/sign-up"
           render={(props) => <SignUp {...props} />}
         />
-        <Route 
-          path="/Catalogo/:id" 
-          component={Mermelada} />
         <Route
           path="/news"
           render={(nutiTips) => <News {...nutiTips} />}
@@ -77,12 +74,18 @@ ReactDOM.render(
           render={(props) => <Encuentranos {...props} />}
         />
         <Route
-          path="/Carrito"
-          render={(props) => <Carrito {...props} />}
-        />
-        <Route
           path="/RecetaPrincipal"
            render={(props) => <RecetaPrincipal {...props} />}
+           
+        />
+        <Route
+          path="/carrito"
+           render={(props) => <Carrito {...props} />}
+           
+        />
+        <Route
+          path="/NavBar"
+           render={(props) => <NavBar {...props} />}
            
         />
         <Route path="/BrownieReceta"
@@ -105,7 +108,6 @@ ReactDOM.render(
           path="/admin/dashboard"
           render={(props) => <AdminLayout {...props} />}
         />
-        
         <Route
           path="/Desarrolladores"
           component = {Desarrolladores}

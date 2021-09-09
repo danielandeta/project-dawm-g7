@@ -1,6 +1,7 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {Fragment, useEffect, useState, hashHistory} from 'react';
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
@@ -20,6 +21,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 import CarouselSection from "./Carousel.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import Formulario from "views/index-sections/Formulario.js";
+import { useHistory } from 'react-router-dom'
 
 
 function Copyright() {
@@ -71,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const cards = [1, 2, 3, 4, 5];
-const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Sandía.jpg"]
+const sabores=["Frutilla.jpg", "Frutimora.jpg", "Manzana.jpg", "Piña.jpg", "Guayaba.jpg"]
 /*function listaMermeladas(){
   const [mermeladas, setMermeladas]=useState({
     "id": null,
@@ -94,6 +96,7 @@ const mermeladas= listaMermeladas()*/
 export default function Catalogo() {
   const classes = useStyles();
 
+  let history = useHistory()
   return( <>
     <IndexNavbar color='1' />
     <React.Fragment>
@@ -108,7 +111,7 @@ export default function Catalogo() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-
+                  
                     image={require("assets/img/"+sabores[card-1]).default}
                     title={"Mermelada de "+sabores[card-1].slice(0, sabores[card-1].length - 4)}
                   />
@@ -121,8 +124,8 @@ export default function Catalogo() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary" >
-                      <Link to="/Formulario"><p>Más info</p></Link>
+                    <Button size="small" color="primary" type="submit" onClick={()=> {history.push(`/Catalogo/${sabores[card-1].slice(0, sabores[card-1].length - 4)}`)}}>
+                      Más info
                     </Button>
                   </CardActions>
                 </Card>

@@ -56,33 +56,9 @@
   <body>
     <div id="root"></div>  
     <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
-    <script>
-      introJs().setOptions({
-        steps:[
-          {intro:"Hola, bienvenido a B'Natural, esta es una navegación guiada."},
-          {element: document.querySelector('.root'),
-           intro:'<p>En la parte de arriba podrá interacturar con la barra de navegación.</p>',
-           position: "top"},
-
-           {element: document.querySelector('.root'),
-           intro:'<p>Está dividida por secciones, cada una se abrirá en una nueva página.</p>',
-           position: "top"},
-
-           {element: document.querySelector('.root'),
-           intro:'<p>Desde cada página podrá regresar a esta página principal haciendo clic en el logo superior izquierdo.</p>',
-           position: "top"},
-
-           {element: document.querySelector('.root'),
-           intro:'<p>Síguenos en nuestras redes sociales y contáctanos para realizar tu compra.</p>',
-           position: "top"}
-
-        ],
-        tooltipClass: "LOL",
-        showProgress: true,
-        showBullets: true,
-        disableInteraction: true
-      }).start();
-      introJs().addHints();
-    </script>  
+    <!--
+      PANTALLA FLOTANTE
+    -->
+    
   </body>
 </html>
