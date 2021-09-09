@@ -15,6 +15,19 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
 function LandingPage() {
 
+  let { id } = useParams()
+  const [mermeladaObject, setMermeladaObject] = useState({})
+  const [cantidad, setCantidad] = useState("")
+  const url = window.location.pathname.split("/")
+  const len = url.length
+  const sabor = url[len - 1]
+  useEffect(() => {
+    axios.get(`http://localhost:3001/mermeladas/byId/${id}`).then((response) => {
+      setMermeladaObject(response.data)
+    })
+  }, [])
+  
+
   return (
     <>
       <IndexNavbar color="1" />
@@ -40,14 +53,11 @@ function LandingPage() {
           <button id="boton-comprar" class="btn btn-green">Comprar</button>
         </aside>
       </Container>
-
-
-
-
       <DarkFooter />
     </>
   )
 }
+
 
 
 window.onload = function () {
@@ -134,7 +144,9 @@ window.onload = function () {
       miNodoCardBody.appendChild(miNodoPrecio);
       miNodoCardBody.appendChild(miNodoBoton);
       miNodo.appendChild(miNodoCardBody);
-      DOMitems.appendChild(miNodo);
+      if(DOMitems){
+        DOMitems.appendChild(miNodo)
+      };
     });
   }
 
@@ -157,7 +169,9 @@ window.onload = function () {
   */
   function renderizarCarrito() {
     // Vaciamos todo el html
-    DOMcarrito.textContent = '';
+    if(DOMcarrito){
+      DOMcarrito.textContent = '';
+    }    
     // Quitamos los duplicados
     const carritoSinDuplicados = [...new Set(carrito)];
     // Generamos los Nodos a partir de carrito
@@ -185,8 +199,11 @@ window.onload = function () {
       miBoton.addEventListener('click', borrarItemCarrito);
       // Mezclamos nodos
       miNodo.appendChild(miBoton);
-      DOMcarrito.appendChild(miNodo);
+      if(DOMcarrito){
+        DOMcarrito.appendChild(miNodo);
+      }      
     });
+
   }
 
   /**
@@ -222,7 +239,9 @@ window.onload = function () {
       total = total + miItem[0].precio;
     });
     // Renderizamos el precio en el HTML
-    DOMtotal.textContent = total.toFixed(2);
+    if(DOMtotal){
+      DOMtotal.textContent = total.toFixed(2);
+    }    
   }
 
   function vaciarCarrito() {
@@ -249,21 +268,28 @@ window.onload = function () {
   }
 
   // Eventos
-  DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
-  DOMbotonComprar.addEventListener('click', function (event) {
-    event.preventDefault(); //esto cancela el comportamiento del click
-    window.location.href = "/Formulario";
-  });
+  if(DOMbotonVaciar)
+  {
+    DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+  }
+  if(DOMbotonComprar)
+  {
+    DOMbotonComprar.addEventListener('click', function (event) {
+      event.preventDefault(); //esto cancela el comportamiento del click
+      window.location.href = "/Formulario";
+    });  
+  }
 
+  
 
   // Inicio
   cargarCarritoDeLocalStorage();
   renderizarProductos();
   calcularTotal();
   renderizarCarrito();
-
 }
+
 
 export default LandingPage;
 
