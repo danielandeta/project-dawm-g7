@@ -27,7 +27,7 @@ router.post('/', validateToken, async(req, res) => {
 
 router.post('/verificar', validateToken, async(req, res) => {
   const username = req.user.username
-  const user = await models.users.find({
+  const user = await models.users.findOne({
     where: {
       username : username
     }
