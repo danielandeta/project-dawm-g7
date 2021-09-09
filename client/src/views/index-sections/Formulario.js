@@ -54,7 +54,6 @@ export default function Formulario() {
     celular: '',
     email: '',
     descripcion: '',
-    //monto: a
   })
 
   const handleChange = (e) => {
@@ -71,6 +70,9 @@ export default function Formulario() {
     })
   };
   
+
+  /////////////////////      PARTE DEL EMAIL              ////////////////////////////
+
   var TEMPLATE_ID = "template_6tgyc86"
   var SERVICE_ID = "service_id50ucq"
   var USER_ID = "user_9sVBfThibEZgnu8R2JbhO"
@@ -87,6 +89,8 @@ export default function Formulario() {
       });
   }
 
+  
+  ///////////////////////////////////////////////////////////////////////
   return (
     <>
       <IndexNavbar color="1" />
