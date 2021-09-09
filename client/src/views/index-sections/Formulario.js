@@ -1,9 +1,12 @@
 import React, { Fragment, useState } from 'react';
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
+import Carrito from "../../views/index-sections/Carrito.js";
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import emailjs from 'emailjs-com';
+import  { Redirect } from 'react-router-dom'
+
 
 //import Grid from '@material-ui/core/Grid';
 import {
@@ -16,7 +19,8 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import{ init } from 'emailjs-com';
+import { init } from 'emailjs-com';
+import LandingPage from 'RESPALDO/carrito.js';
 init("user_9sVBfThibEZgnu8R2JbhO");
 
 <script src="https://smtpjs.com/v3/smtp.js">
@@ -49,9 +53,9 @@ export default function Formulario() {
     apellidos: '',
     celular: '',
     email: '',
-    descripcion: ''
+    descripcion: '',
   })
-  
+
   const handleChange = (e) => {
     setDatos({
       ...datos,
@@ -65,6 +69,9 @@ export default function Formulario() {
       [e.target.nombre]: e.target.checked,
     })
   };
+  
+
+  /////////////////////      PARTE DEL EMAIL              ////////////////////////////
 
   var TEMPLATE_ID = "template_6tgyc86"
   var SERVICE_ID = "service_id50ucq"
@@ -72,19 +79,20 @@ export default function Formulario() {
 
   function sendEmail(e) {
     e.preventDefault();
-
-    emailjs.sendForm(SERVICE_ID,TEMPLATE_ID, e.target,USER_ID)
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
+        alert("Se ha enviado su formulario");
+
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
   }
+
   
+  ///////////////////////////////////////////////////////////////////////
   return (
     <>
-
-    
       <IndexNavbar color="1" />
       <div className="section section-about-us">
         <Container>
@@ -153,7 +161,7 @@ export default function Formulario() {
               <button type="submit" className="btn btn-primary">Enviar</button>
             </form>
           </div>
-          
+
         </Container>
       </div>
     </>

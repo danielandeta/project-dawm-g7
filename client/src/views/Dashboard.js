@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import classNames from "classnames";
 // react plugin used to create charts
 import { Line, Bar } from "react-chartjs-2";
-
+import axios from 'axios'
+import { useHistory } from 'react-router-dom'
 // reactstrap components
 import {
   Button,
@@ -35,12 +36,39 @@ import {
   chartExample4,
 } from "variables/charts.js";
 
+
+
+
+
 function Dashboard(props) {
+  let history = useHistory()
   const [bigChartData, setbigChartData] = useState("data1");
   const [labels, setlabels] = useState([]);
   const [datas, setdatas] = useState([]);
   const [labelsCantidad, setlabelsCantidad] = useState([]);
   const [datasCantidad, setdatasCantidad] = useState([]);
+  function preloadFunc()
+  { 
+    
+    axios.post("http://localhost:3001/comments/verificar", {}, {
+      headers: {
+        accessToken: sessionStorage.getItem("accessToken")
+      }
+      }
+      ).then((response)=>{
+        if (response.data.err) {
+          history.push('/login-page')
+        } else {
+          if (response.data.admin) {history.push('/admin/dashboard')}
+          else if (response.data.client){
+            history.push('/')
+            alert("No tiene permisos")
+          }
+        }
+      })
+    }
+  window.onload = preloadFunc()
+
   const setBgChartData = (name) => {
     setbigChartData(name);
   };
@@ -48,6 +76,8 @@ function Dashboard(props) {
     'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)',
     'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)'
   ]
+
+  
 
   useEffect(() => {
     var url = new URL("http://localhost:3001/compra");

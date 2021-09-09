@@ -4,6 +4,7 @@ import axios from 'axios'
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import DarkFooter from 'components/Footers/DarkFooter';
 import { Comment, Form, Header } from 'semantic-ui-react'
+import { useHistory } from 'react-router-dom'
 import {
   Button,
   CardBody,
@@ -17,6 +18,7 @@ import {
 } from "reactstrap";
 
 function Mermelada() {
+  let history = useHistory()
   let {id} = useParams()
   const [mermeladaObject, setMermeladaObject] = useState({})
   const [comments, setComments] = useState([])
@@ -44,10 +46,27 @@ function Mermelada() {
       console.log(response.data)
       if (response.data.err) {
         alert("User doesn't logged")
+        history.push('/login-page')
       } else {
         const commentToAdded = {commentBody: newComment, username: response.data.username}
         setComments([...comments, commentToAdded]) // agrego el nuevo comentario a la lista de comentarios para que se renderizen todos los comentarios
         setNewComment("") // Limpio el input del nuevo comentario
+      }
+    })
+  }
+
+  const verificar = () => {
+    axios.post("http://localhost:3001/comments/verificar", {}, {
+      headers: {
+        accessToken: sessionStorage.getItem("accessToken")
+      }
+    }
+    ).then((response)=>{
+      if (response.data.err) {
+        alert("User doesn't logged")
+        history.push('/login-page')
+      } else {
+        history.push('/Carrito')
       }
     })
   }
@@ -101,10 +120,8 @@ function Mermelada() {
                   <option value="6">Mas de 6</option>
                 </select>
                 </label>
-                <button>
-                  <a href="/Carrito">
+                <button type="submit" onClick={verificar}>
                   Agregar al carrito
-                  </a>
                 </button>
               </Col>
             </Row>
