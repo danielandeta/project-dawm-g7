@@ -11,11 +11,8 @@
     "bootstrap": "^4.5.3",
     "bootstrap-icons": "^1.5.0",
     "chart.js": "^2.9.4",
-<<<<<<< HEAD
     "emailjs": "^3.6.0",
-=======
     "emailjs-com": "^3.2.0",
->>>>>>> 44809e32567121aee555ae5621c4c80b1d2b6bfe
     "formik": "^2.2.9",
     "google-maps-react": "^2.0.6",
     "gulp": "4.0.2",
