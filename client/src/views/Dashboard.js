@@ -40,7 +40,9 @@ function Dashboard(props) {
   const [labels, setlabels] = useState([]);
   const [datas, setdatas] = useState([]);
   const [labelsCantidad, setlabelsCantidad] = useState([]);
+  const [labelsMes, setlabelsMes] = useState([]);
   const [datasCantidad, setdatasCantidad] = useState([]);
+  const [datasMes, setdatasMes] = useState([]);
   const setBgChartData = (name) => {
     setbigChartData(name);
   };
@@ -52,6 +54,7 @@ function Dashboard(props) {
   useEffect(() => {
     var url = new URL("http://localhost:3001/compra");
     var url2 = new URL("http://localhost:3001/compra/mermeladas");
+    var url3 = new URL("http://localhost:3001/compra/mes");
     const controller = new AbortController();
     const signal = controller.signal;
 
@@ -89,6 +92,31 @@ function Dashboard(props) {
             console.log("Error en la llamada fetch");
         }
     })
+
+    fetch (url3, {
+      method: "GET",
+      signal: signal,
+      headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+      },
+    }).then(function(response) {
+        if(response.ok) {
+            return response.json().then(function(jsonText) {
+              setlabelsMes(jsonText.labels);
+              setdatasMes(jsonText.data);
+            });
+        } else{
+            console.log("Error en la llamada fetch");
+        }
+    })
+
+
+
+
+
+
+
   }, [])
 
   var chartDataSales = {
@@ -97,10 +125,12 @@ function Dashboard(props) {
           {
               label:'Venta',
               data: datas,
+             
               backgroundColor: listBackgroundColor
           }
       ]
   };
+  console.log(labels)
 
   var chartDataCantidad = {
     labels: labelsCantidad,
@@ -113,6 +143,19 @@ function Dashboard(props) {
     ]
 };
 
+var chartDataMes= {
+  labels: labelsMes,
+  datasets:[
+      {
+          label:'Venta',
+          data: datasMes,
+          backgroundColor: listBackgroundColor
+      }
+  ]
+};
+
+//console.log(labelsCantidad)
+
   return (
     <>
       <div className="content">
@@ -123,7 +166,7 @@ function Dashboard(props) {
                 <CardHeader>
                   <Row>
                     <Col className="text-left" sm="6">
-                      <h5 className="card-category">Ventas de los ultimos 3 meses</h5>
+                      <h5 className="card-category">ID de facturas con monto más alto</h5>
                       <CardTitle tag="h2">Monto</CardTitle>
                     </Col>
                     <Col sm="6">
@@ -131,7 +174,7 @@ function Dashboard(props) {
                         className="btn-group-toggle float-right"
                         data-toggle="buttons"
                       >
-                        <Button
+                        {/* <Button
                           tag="label"
                           className={classNames("btn-simple", {
                             active: bigChartData === "data1",
@@ -147,7 +190,7 @@ function Dashboard(props) {
                           <span className="d-block d-sm-none">
                             <i className="tim-icons icon-single-02" />
                           </span>
-                        </Button>
+                        </Button> */}
                         <Button
                           color="info"
                           id="1"
@@ -165,7 +208,6 @@ function Dashboard(props) {
                             <i className="tim-icons icon-gift-2" />
                           </span>
                         </Button>
-                    
                       </ButtonGroup>
                     </Col>
                   </Row>
@@ -183,6 +225,7 @@ function Dashboard(props) {
               </Container>
             </Card>
           </Col>
+                            
         </Row>
         <Row>
           
@@ -209,7 +252,25 @@ function Dashboard(props) {
               </Container>
             </Card>
           </Col>
-       
+        <Col lg="4">
+            <Card className="card-chart">
+              <CardHeader>
+                <h5 className="card-category">Cantidad de ventas por mes </h5>
+                <CardTitle tag="h3">
+                  <i className="tim-icons icon-send text-success" /> Compras
+                </CardTitle>
+              </CardHeader>
+              <CardBody>
+                <div className="chart-area">
+                  <Line
+                    //data={chartExample4.data}
+                    data={chartDataMes}
+                    options={chartExample4.options}
+                  />
+                </div>
+              </CardBody>
+            </Card>
+          </Col> 
         </Row>
         
       </div>
