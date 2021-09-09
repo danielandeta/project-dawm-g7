@@ -12,6 +12,8 @@ const tipRouter = require('./routes/tips')
 app.use("/tip", tipRouter)
 const mermeladaRouter = require('./routes/mermeladas')
 app.use("/mermeladas", mermeladaRouter)
+const commentsRouter = require('./routes/comments')
+app.use("/comments", commentsRouter)
 
 db.sequelize.sync().then(() => {  // Cargo los tablas cuando se ejecute el server
   app.listen(3001, () => {

@@ -3,11 +3,17 @@ import {useParams} from 'react-router-dom'  // usar parametros en la url
 import axios from 'axios'
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import DarkFooter from 'components/Footers/DarkFooter';
-
+import { Comment, Form, Header } from 'semantic-ui-react'
 import {
+  Button,
+  CardBody,
   Container,
   Row,
   Col,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
 } from "reactstrap";
 
 function Mermelada() {
@@ -16,24 +22,27 @@ function Mermelada() {
   const [comments, setComments] = useState([])
   const [newComment, setNewComment] = useState("")
   const [cantidad, setCantidad] = useState("")
-
+  const url = window.location.pathname.split("/")
+  const len = url.length
+  const sabor = url[len - 1]
   useEffect( ()=> {
     axios.get(`http://localhost:3001/mermeladas/byId/${id}`).then((response)=>{
       setMermeladaObject(response.data)
     })
-    // axios.get(`http://localhost:3001/comments/${id}`).then((response)=>{
-    //   setComments(response.data)
-    // })
+    axios.get(`http://localhost:3001/comments/${sabor}`).then((response)=>{
+      setComments(response.data)
+    })
   }, [])
 
   const addComment = () => {
-    axios.post("http://localhost:3001/comments", {commentBody: newComment, PostId: id}, {
+    axios.post("http://localhost:3001/comments", {commentBody: newComment, sabor: sabor}, {
       headers: {
         accessToken: sessionStorage.getItem("accessToken")
       }
     }
     ).then((response)=>{
-      if (response.data.error) {
+      console.log(response.data)
+      if (response.data.err) {
         alert("User doesn't logged")
       } else {
         const commentToAdded = {commentBody: newComment, username: response.data.username}
@@ -99,10 +108,73 @@ function Mermelada() {
                 </button>
               </Col>
             </Row>
-              
           </div>
         </Container>  
       </div>
+      <div className="rightSide">
+      <div className="addCommentContainer">
+    
+        <Col className="ml-auto mr-auto" md="4">  
+            <label>Inserta comentario</label>
+            <br></br>
+            <InputGroup
+                    >
+                      <InputGroupAddon addonType="prepend">
+                        <InputGroupText>
+                          <i className="now-ui-icons users_circle-08"></i>
+                        </InputGroupText>
+                      </InputGroupAddon>
+                      <Input
+                        placeholder="Ingrese un comentario"
+                        type="text"
+        
+                        value={newComment}
+                        autoComplete="off"
+                        onChange={(event)=>{setNewComment(event.target.value)}}
+                      ></Input>
+            </InputGroup>
+            <Button
+              className="btn-round"
+              color="info"
+              type="submit" 
+              onClick={addComment}> 
+              Add comment
+          
+            </Button>
+       
+          
+        </Col>
+            
+
+      </div>
+      <div className="listOfComments">
+  
+        <Col className="ml-auto mr-auto" md="4">  
+          <Comment.Group>
+            {comments.map( (value, key) => {
+              return <div className="comment">
+            <Comment>
+              <Comment.Avatar as='a' src='https://react.semantic-ui.com/images/avatar/small/joe.jpg' />
+              <Comment.Content>
+                <Comment.Author>{value.username}</Comment.Author>
+          
+                <Comment.Text>
+                  <p>
+                  {value.commentBody}
+                  </p>
+
+                </Comment.Text>
+              </Comment.Content>
+            </Comment>
+            </div>
+            })}
+          </Comment.Group>
+ 
+              
+        </Col>
+
+      </div>
+    </div>
       <DarkFooter />
     </div>
 

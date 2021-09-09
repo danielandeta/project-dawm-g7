@@ -60,8 +60,9 @@ function LoginPage() {
           <input type="text" onChange={(event) => {setEmail(event.target.value)}} />
           <label> Password: </label>
           <input type="password" onChange={(event) => {setPassword(event.target.value)}} />
-
-          <button type="submit" onClick={login}>Login</button>
+          <div>
+            <button className="btn-round" color="info" size="lg" type="submit" onClick={login}>Login</button>
+          </div>
         </div>
         <DarkFooter />
       </div>
