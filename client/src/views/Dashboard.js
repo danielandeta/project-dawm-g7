@@ -59,11 +59,15 @@ function Dashboard(props) {
         if (response.data.err) {
           history.push('/login-page')
         } else {
-          history.push('/admin/dashboard')
+          if (response.data.admin) {history.push('/admin/dashboard')}
+          else if (response.data.client){
+            history.push('/')
+            alert("No tiene permisos")
+          }
         }
       })
     }
-    window.onpaint = preloadFunc()
+  window.onload = preloadFunc()
 
   const setBgChartData = (name) => {
     setbigChartData(name);
