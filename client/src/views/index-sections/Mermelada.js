@@ -3,14 +3,22 @@ import {useParams} from 'react-router-dom'  // usar parametros en la url
 import axios from 'axios'
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import DarkFooter from 'components/Footers/DarkFooter';
-
+import { Comment, Form, Header } from 'semantic-ui-react'
+import { useHistory } from 'react-router-dom'
 import {
+  Button,
+  CardBody,
   Container,
   Row,
   Col,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
 } from "reactstrap";
 
 function Mermelada() {
+  let history = useHistory()
   let {id} = useParams()
   const [mermeladaObject, setMermeladaObject] = useState({})
   const [comments, setComments] = useState([])
@@ -38,10 +46,27 @@ function Mermelada() {
       console.log(response.data)
       if (response.data.err) {
         alert("User doesn't logged")
+        history.push('/login-page')
       } else {
         const commentToAdded = {commentBody: newComment, username: response.data.username}
         setComments([...comments, commentToAdded]) // agrego el nuevo comentario a la lista de comentarios para que se renderizen todos los comentarios
         setNewComment("") // Limpio el input del nuevo comentario
+      }
+    })
+  }
+
+  const verificar = () => {
+    axios.post("http://localhost:3001/comments/verificar", {}, {
+      headers: {
+        accessToken: sessionStorage.getItem("accessToken")
+      }
+    }
+    ).then((response)=>{
+      if (response.data.err) {
+        alert("User doesn't logged")
+        history.push('/login-page')
+      } else {
+        history.push('/Carrito')
       }
     })
   }
@@ -95,10 +120,8 @@ function Mermelada() {
                   <option value="6">Mas de 6</option>
                 </select>
                 </label>
-                <button>
-                  <a href="/Carrito">
+                <button type="submit" onClick={verificar}>
                   Agregar al carrito
-                  </a>
                 </button>
               </Col>
             </Row>
@@ -107,16 +130,66 @@ function Mermelada() {
       </div>
       <div className="rightSide">
       <div className="addCommentContainer">
-        <input type="text" value={newComment} placeholder="Comment..." autoComplete="off" onChange={(event)=>{setNewComment(event.target.value)}} />
-        <button type="submit" onClick={addComment}> Add comment</button>
+    
+        <Col className="ml-auto mr-auto" md="4">  
+            <label>Inserta comentario</label>
+            <br></br>
+            <InputGroup
+                    >
+                      <InputGroupAddon addonType="prepend">
+                        <InputGroupText>
+                          <i className="now-ui-icons users_circle-08"></i>
+                        </InputGroupText>
+                      </InputGroupAddon>
+                      <Input
+                        placeholder="Ingrese un comentario"
+                        type="text"
+        
+                        value={newComment}
+                        autoComplete="off"
+                        onChange={(event)=>{setNewComment(event.target.value)}}
+                      ></Input>
+            </InputGroup>
+            <Button
+              className="btn-round"
+              color="info"
+              type="submit" 
+              onClick={addComment}> 
+              Add comment
+          
+            </Button>
+       
+          
+        </Col>
+            
+
       </div>
       <div className="listOfComments">
-        {comments.map( (value, key) => {
-          return <div className="comment">
-              {value.commentBody}
-              <label> Username: {value.username}</label>
+  
+        <Col className="ml-auto mr-auto" md="4">  
+          <Comment.Group>
+            {comments.map( (value, key) => {
+              return <div className="comment">
+            <Comment>
+              <Comment.Avatar as='a' src='https://react.semantic-ui.com/images/avatar/small/joe.jpg' />
+              <Comment.Content>
+                <Comment.Author>{value.username}</Comment.Author>
+          
+                <Comment.Text>
+                  <p>
+                  {value.commentBody}
+                  </p>
+
+                </Comment.Text>
+              </Comment.Content>
+            </Comment>
             </div>
-        })}
+            })}
+          </Comment.Group>
+ 
+              
+        </Col>
+
       </div>
     </div>
       <DarkFooter />
