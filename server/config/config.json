@@ -1,15 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "Andrew05",
-=======
-<<<<<<< HEAD
-    "password": "gdgm328910",
-=======
-    "password": "",
->>>>>>> a89447c3d296468531261a2762c3e1c761f64ed3
->>>>>>> 3569bb4e6498e494c15a48f029dd5180c113f4d5
     "database": "bnatural",
     "host": "127.0.0.1",
     "dialect": "mysql"
