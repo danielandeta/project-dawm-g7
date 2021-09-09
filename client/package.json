@@ -11,17 +11,27 @@
     "bootstrap": "^4.5.3",
     "bootstrap-icons": "^1.5.0",
     "chart.js": "^2.9.4",
+<<<<<<< HEAD
     "emailjs": "^3.6.0",
     "emailjs-com": "^3.2.0",
+=======
+<<<<<<< HEAD
+    "emailjs": "^3.6.0",
+=======
+    "emailjs-com": "^3.2.0",
+>>>>>>> 44809e32567121aee555ae5621c4c80b1d2b6bfe
+>>>>>>> 3569bb4e6498e494c15a48f029dd5180c113f4d5
     "formik": "^2.2.9",
     "google-maps-react": "^2.0.6",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
+    "jsonwebtoken": "^8.5.1",
     "material-ui": "^0.20.2",
     "moment": "2.29.1",
     "node-sass": "^6.0.1",
     "nouislider": "15.1.0",
     "react": "17.0.2",
+    "react-bootstrap": "^1.6.3",
     "react-bootstrap-switch": "15.5.3",
     "react-chartjs-2": "^2.11.1",
     "react-datetime": "3.0.4",
@@ -37,7 +47,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-whatsapp": "^0.2.1",
-    "reactstrap": "8.9.0"
+    "reactstrap": "8.9.0",
+    "semantic-ui-react": "^2.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

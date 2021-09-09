@@ -3,11 +3,17 @@ import {useParams} from 'react-router-dom'  // usar parametros en la url
 import axios from 'axios'
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
 import DarkFooter from 'components/Footers/DarkFooter';
-
+import { Comment, Form, Header } from 'semantic-ui-react'
 import {
+  Button,
+  CardBody,
   Container,
   Row,
   Col,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
 } from "reactstrap";
 
 function Mermelada() {
@@ -107,16 +113,66 @@ function Mermelada() {
       </div>
       <div className="rightSide">
       <div className="addCommentContainer">
-        <input type="text" value={newComment} placeholder="Comment..." autoComplete="off" onChange={(event)=>{setNewComment(event.target.value)}} />
-        <button type="submit" onClick={addComment}> Add comment</button>
+    
+        <Col className="ml-auto mr-auto" md="4">  
+            <label>Inserta comentario</label>
+            <br></br>
+            <InputGroup
+                    >
+                      <InputGroupAddon addonType="prepend">
+                        <InputGroupText>
+                          <i className="now-ui-icons users_circle-08"></i>
+                        </InputGroupText>
+                      </InputGroupAddon>
+                      <Input
+                        placeholder="Ingrese un comentario"
+                        type="text"
+        
+                        value={newComment}
+                        autoComplete="off"
+                        onChange={(event)=>{setNewComment(event.target.value)}}
+                      ></Input>
+            </InputGroup>
+            <Button
+              className="btn-round"
+              color="info"
+              type="submit" 
+              onClick={addComment}> 
+              Add comment
+          
+            </Button>
+       
+          
+        </Col>
+            
+
       </div>
       <div className="listOfComments">
-        {comments.map( (value, key) => {
-          return <div className="comment">
-              {value.commentBody}
-              <label> Username: {value.username}</label>
+  
+        <Col className="ml-auto mr-auto" md="4">  
+          <Comment.Group>
+            {comments.map( (value, key) => {
+              return <div className="comment">
+            <Comment>
+              <Comment.Avatar as='a' src='https://react.semantic-ui.com/images/avatar/small/joe.jpg' />
+              <Comment.Content>
+                <Comment.Author>{value.username}</Comment.Author>
+          
+                <Comment.Text>
+                  <p>
+                  {value.commentBody}
+                  </p>
+
+                </Comment.Text>
+              </Comment.Content>
+            </Comment>
             </div>
-        })}
+            })}
+          </Comment.Group>
+ 
+              
+        </Col>
+
       </div>
     </div>
       <DarkFooter />

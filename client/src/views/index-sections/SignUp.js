@@ -18,6 +18,7 @@ import {
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 //import TransparentFooter from "components/Footers/TransparentFooter.js";
 
 function SignUp() {
@@ -60,13 +61,12 @@ function SignUp() {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/mermeladas.jpeg").default + ")",
+              "url(" + require("assets/img/merm2.jpg").default + ")",
           }}
         ></div>
         <div className="content">
           <Container>
-            <Col className="ml-auto mr-auto" md="4">
-              <Card className="card-login card-plain">
+            <Col className="ml-auto mr-auto" md="4">  
                 <Form action="" className="form" method="">
                   <CardBody>
                     <InputGroup
@@ -221,23 +221,22 @@ function SignUp() {
                         onChange={(event) => {setPassword(event.target.value)}}
                       ></Input>
                     </InputGroup>
-                  </CardBody>
-                  <CardFooter className="text-center mt-0">
+
                     <Button
-                      block
                       className="btn-round"
                       color="info"
                       onClick={onSubmit}
-                      size="lg"
                     >
                       Registrarse
                     </Button>
-                  </CardFooter>
-                </Form>
-              </Card>
+                  </CardBody>
+                </Form>    
             </Col>
+            
           </Container>
+         
         </div>
+        
       </div>
     </>
   );
