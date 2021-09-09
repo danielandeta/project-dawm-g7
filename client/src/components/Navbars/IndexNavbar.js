@@ -182,6 +182,7 @@ function IndexNavbar(props) {
               </NavItem>
 
               <NavItem>
+                
                 <NavLink href="/Carrito"><i class="fas fa-shopping-cart fa-3x"></i>
                 </NavLink>
               </NavItem>

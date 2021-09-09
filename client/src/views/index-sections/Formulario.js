@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import emailjs from 'emailjs-com';
+import  { Redirect } from 'react-router-dom'
+
 
 //import Grid from '@material-ui/core/Grid';
 import {
@@ -16,7 +18,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
-import{ init } from 'emailjs-com';
+import { init } from 'emailjs-com';
 init("user_9sVBfThibEZgnu8R2JbhO");
 
 <script src="https://smtpjs.com/v3/smtp.js">
@@ -51,7 +53,7 @@ export default function Formulario() {
     email: '',
     descripcion: ''
   })
-  
+
   const handleChange = (e) => {
     setDatos({
       ...datos,
@@ -65,26 +67,25 @@ export default function Formulario() {
       [e.target.nombre]: e.target.checked,
     })
   };
-
+  
   var TEMPLATE_ID = "template_6tgyc86"
   var SERVICE_ID = "service_id50ucq"
   var USER_ID = "user_9sVBfThibEZgnu8R2JbhO"
 
   function sendEmail(e) {
     e.preventDefault();
-
-    emailjs.sendForm(SERVICE_ID,TEMPLATE_ID, e.target,USER_ID)
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
+        alert("Se ha enviado su formulario");
+
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
   }
-  
+
   return (
     <>
-
-    
       <IndexNavbar color="1" />
       <div className="section section-about-us">
         <Container>
@@ -153,7 +154,7 @@ export default function Formulario() {
               <button type="submit" className="btn btn-primary">Enviar</button>
             </form>
           </div>
-          
+
         </Container>
       </div>
     </>
