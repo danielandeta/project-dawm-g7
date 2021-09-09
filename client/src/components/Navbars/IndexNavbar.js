@@ -166,6 +166,7 @@ function IndexNavbar(props) {
                   Síguenos en Facebook
                 </UncontrolledTooltip>
               </NavItem>
+              
               <NavItem>
                 <NavLink
                   href="https://www.instagram.com/bnatural_ec/"
@@ -181,9 +182,7 @@ function IndexNavbar(props) {
               </NavItem>
 
               <NavItem>
-                <NavLink>
-                  <i className="bi bi-newspaper"></i>
-                  <Link to="/Carrito"><i className="fas fa-shopping-cart fa-3x"></i></Link>
+                <NavLink href="/Carrito"><i class="fas fa-shopping-cart fa-3x"></i>
                 </NavLink>
               </NavItem>
 
