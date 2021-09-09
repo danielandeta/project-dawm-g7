@@ -93,8 +93,8 @@ function Mermelada() {
                 </select>
                 </label>
                 <button>
-                  <a href="/Formulario">
-                  Comprar
+                  <a href="/Carrito">
+                  Agregar al carrito
                   </a>
                 </button>
               </Col>
