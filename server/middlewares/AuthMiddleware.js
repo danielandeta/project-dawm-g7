@@ -1,6 +1,5 @@
 // Recursos para validar el token
 const { verify } = require("jsonwebtoken");
-const { Model } = require("sequelize/types");
 
 // Funcion que valida el token
 const validateToken = (req, res, next) => {
