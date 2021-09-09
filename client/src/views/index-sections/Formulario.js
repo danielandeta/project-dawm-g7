@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import IndexNavbar from "../../components/Navbars/IndexNavbar.js";
+import Carrito from "../../views/index-sections/Carrito.js";
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
@@ -19,6 +20,7 @@ import {
   Col,
 } from "reactstrap";
 import { init } from 'emailjs-com';
+import LandingPage from 'RESPALDO/carrito.js';
 init("user_9sVBfThibEZgnu8R2JbhO");
 
 <script src="https://smtpjs.com/v3/smtp.js">
@@ -51,7 +53,8 @@ export default function Formulario() {
     apellidos: '',
     celular: '',
     email: '',
-    descripcion: ''
+    descripcion: '',
+    //monto: a
   })
 
   const handleChange = (e) => {

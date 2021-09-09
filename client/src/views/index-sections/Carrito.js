@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DarkFooter from "components/Footers/DarkFooter.js";
-import {useParams} from 'react-router-dom'  // usar parametros en la url
+import { useParams } from 'react-router-dom'  // usar parametros en la url
 import axios from 'axios'
 
 
@@ -14,7 +14,7 @@ import {
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
 function LandingPage() {
-  
+
   return (
     <>
       <IndexNavbar color="1" />
@@ -30,14 +30,17 @@ function LandingPage() {
           </Row>
         </Container>
       </div>
+      <Container>
+        <main id="items" class="ml-auto mr-auto text-center"></main>
+        <aside class="ml-auto mr-auto text-center">
+          <h2>Carrito</h2>
+          <ul id="carrito" class="list-group"></ul>
+          <p class="text-center">Total: <span id="total"></span>&euro;</p>
+          <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+          <button id="boton-comprar" class="btn btn-green">Comprar</button>
+        </aside>
+      </Container>
 
-      <main id="items" class="ml-auto mr-auto text-center"></main>
-      <aside class="ml-auto mr-auto text-center">
-        <h2>Carrito</h2>
-        <ul id="carrito" class="list-group"></ul>
-        <p class="text-center">Total: <span id="total"></span>&euro;</p>
-        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-      </aside>
 
 
 
@@ -47,8 +50,8 @@ function LandingPage() {
 }
 
 
-window.onload = function () { 
-  
+window.onload = function () {
+
   // Variables
   const baseDeDatos = [
     {
@@ -56,7 +59,7 @@ window.onload = function () {
       nombre: 'Frutilla',
       precio: 4.5,
       imagen: 'https://i.imgur.com/TFYgb1Q.jpg'
-        
+
     },
     {
       id: 2,
@@ -81,7 +84,7 @@ window.onload = function () {
       nombre: 'Piña',
       precio: 4.5,
       imagen: 'https://i.imgur.com/APMzKLr.jpg'
-        
+
     }
   ];
 
@@ -91,6 +94,7 @@ window.onload = function () {
   const DOMcarrito = document.querySelector('#carrito');
   const DOMtotal = document.querySelector('#total');
   const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+  const DOMbotonComprar = document.querySelector('#boton-comprar');
   const miLocalStorage = window.localStorage;
 
   // Funciones
@@ -246,6 +250,12 @@ window.onload = function () {
 
   // Eventos
   DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+
+  DOMbotonComprar.addEventListener('click', function (event) {
+    event.preventDefault(); //esto cancela el comportamiento del click
+    window.location.href = "/Formulario";
+  });
+
 
   // Inicio
   cargarCarritoDeLocalStorage();
