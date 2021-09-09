@@ -1,7 +1,11 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "gdgm328910",
+=======
+    "password": "",
+>>>>>>> a89447c3d296468531261a2762c3e1c761f64ed3
     "database": "bnatural",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -9,7 +13,7 @@
   "test": {
     "username": "root",
     "password": "",
-    "database": "",
+    "database": "bnatural_t",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

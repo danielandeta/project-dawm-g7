@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useEffect, useState } from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react plugin used to create charts
@@ -40,6 +40,7 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
+  Container,
 } from "reactstrap";
 
 // core components
@@ -51,90 +52,136 @@ import {
 } from "variables/charts.js";
 
 function Dashboard(props) {
-  const [bigChartData, setbigChartData] = React.useState("data1");
+  const [bigChartData, setbigChartData] = useState("data1");
+  const [labels, setlabels] = useState([]);
+  const [datas, setdatas] = useState([]);
   const setBgChartData = (name) => {
     setbigChartData(name);
   };
+  var listBackgroundColor = [ '#f2e259', '#0DABF1', '#d61620', '#EA1779', '#000000', '#f2e3598f', '#aeadb3', '#ffb35a',
+    'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)',
+    'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)'
+  ]
+
+  useEffect(() => {
+    var url = new URL("http://localhost:3001/compra");
+    const controller = new AbortController();
+    const signal = controller.signal;
+
+    fetch (url, {
+      method: "GET",
+      signal: signal,
+      headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+      },
+    }).then(function(response) {
+        if(response.ok) {
+            return response.json().then(function(jsonText) {
+              setlabels(jsonText.labels);
+              setdatas(jsonText.data);
+            });
+        } else{
+            console.log("Error en la llamada fetch");
+        }
+    })
+  }, [])
+
+  var chartDataSales = {
+      labels: labels,
+      datasets:[
+          {
+              label:'Venta',
+              data: datas,
+              backgroundColor: listBackgroundColor
+          }
+      ]
+  };
+
   return (
     <>
       <div className="content">
         <Row>
           <Col xs="12">
             <Card className="card-chart">
-              <CardHeader>
-                <Row>
-                  <Col className="text-left" sm="6">
-                    <h5 className="card-category">Total Ventas</h5>
-                    <CardTitle tag="h2">B' NATURAL</CardTitle>
-                  </Col>
-                  <Col sm="6">
-                    <ButtonGroup
-                      className="btn-group-toggle float-right"
-                      data-toggle="buttons"
-                    >
-                      <Button
-                        tag="label"
-                        className={classNames("btn-simple", {
-                          active: bigChartData === "data1",
-                        })}
-                        color="info"
-                        id="0"
-                        size="sm"
-                        onClick={() => setBgChartData("data1")}
+              <Container>
+                <CardHeader>
+                  <Row>
+                    <Col className="text-left" sm="6">
+                      <h5 className="card-category">Ventas de los ultimos 3 meses</h5>
+                      <CardTitle tag="h2">B' NATURAL</CardTitle>
+                    </Col>
+                    <Col sm="6">
+                      <ButtonGroup
+                        className="btn-group-toggle float-right"
+                        data-toggle="buttons"
                       >
-                        <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Ingreso de Usuarios 
-                        </span>
-                        <span className="d-block d-sm-none">
-                          <i className="tim-icons icon-single-02" />
-                        </span>
-                      </Button>
-                      <Button
-                        color="info"
-                        id="1"
-                        size="sm"
-                        tag="label"
-                        className={classNames("btn-simple", {
-                          active: bigChartData === "data2",
-                        })}
-                        onClick={() => setBgChartData("data2")}
-                      >
-                        <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Compras
-                        </span>
-                        <span className="d-block d-sm-none">
-                          <i className="tim-icons icon-gift-2" />
-                        </span>
-                      </Button>
-                      {/* <Button
-                        color="info"
-                        id="2"
-                        size="sm"
-                        tag="label"
-                        className={classNames("btn-simple", {
-                          active: bigChartData === "data3",
-                        })}
-                        onClick={() => setBgChartData("data3")}
-                      >
-                        <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Sesiones
-                        </span>
-                        <span className="d-block d-sm-none">
-                          <i className="tim-icons icon-tap-02" />
-                        </span>
-                      </Button> */}
-                    </ButtonGroup>
-                  </Col>
-                </Row>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={chartExample1[bigChartData]}
-                    options={chartExample1.options}
-                  />
-                </div>
-              </CardBody>
+                        <Button
+                          tag="label"
+                          className={classNames("btn-simple", {
+                            active: bigChartData === "data1",
+                          })}
+                          color="info"
+                          id="0"
+                          size="sm"
+                          onClick={() => setBgChartData("data1")}
+                        >
+                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            Ingreso de Usuarios 
+                          </span>
+                          <span className="d-block d-sm-none">
+                            <i className="tim-icons icon-single-02" />
+                          </span>
+                        </Button>
+                        <Button
+                          color="info"
+                          id="1"
+                          size="sm"
+                          tag="label"
+                          className={classNames("btn-simple", {
+                            active: bigChartData === "data2",
+                          })}
+                          onClick={() => setBgChartData("data2")}
+                        >
+                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            Compras
+                          </span>
+                          <span className="d-block d-sm-none">
+                            <i className="tim-icons icon-gift-2" />
+                          </span>
+                        </Button>
+                        {/* <Button
+                          color="info"
+                          id="2"
+                          size="sm"
+                          tag="label"
+                          className={classNames("btn-simple", {
+                            active: bigChartData === "data3",
+                          })}
+                          onClick={() => setBgChartData("data3")}
+                        >
+                          <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            Sesiones
+                          </span>
+                          <span className="d-block d-sm-none">
+                            <i className="tim-icons icon-tap-02" />
+                          </span>
+                        </Button> */}
+                      </ButtonGroup>
+                    </Col>
+                  </Row>
+                </CardHeader>
+              </Container>
+              <Container>
+                <CardBody>
+                  <div className="chart-area">
+                    <Line
+                      data={chartDataSales}
+                      options={chartExample1.options}
+                    />
+                  </div>
+                </CardBody>
+              </Container>
             </Card>
           </Col>
         </Row>

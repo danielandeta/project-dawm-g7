@@ -34,4 +34,14 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+db.factura = require('../models/factura')(sequelize, Sequelize);
+db.compra = require('../models/compra')(sequelize, Sequelize);
+db.factura_detalle = require('../models/factura_detalle')(sequelize, Sequelize);
+
+// 1:1
+db.compra.belongsTo(db.factura);
+db.factura.hasOne(db.compra);
+db.factura_detalle.belongsTo(db.factura);
+db.factura.hasOne(db.factura_detalle);
+
 module.exports = db;

@@ -12,6 +12,8 @@ const tipRouter = require('./routes/tips')
 app.use("/tip", tipRouter)
 const mermeladaRouter = require('./routes/mermeladas')
 app.use("/mermeladas", mermeladaRouter)
+const compraRouter = require('./routes/compras')
+app.use("/compra", compraRouter)
 const commentsRouter = require('./routes/comments')
 app.use("/comments", commentsRouter)
 

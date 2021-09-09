@@ -3,7 +3,7 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define('factura', {
     id: {
       type: DataTypes.INTEGER,
-      allowNull: true,
+      allowNull: false,
       primaryKey: true
     },
     id_user: {
@@ -25,6 +25,16 @@ module.exports = function(sequelize, DataTypes) {
   }, {
     sequelize,
     tableName: 'factura',
-    timestamps: false
+    timestamps: false,
+    indexes: [
+      {
+        name: "PRIMARY",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "id" },
+        ]
+      },
+    ]
   });
 };
