@@ -15,6 +15,7 @@ function Mermelada() {
   const [mermeladaObject, setMermeladaObject] = useState({})
   const [comments, setComments] = useState([])
   const [newComment, setNewComment] = useState("")
+  const [cantidad, setCantidad] = useState("")
 
   useEffect( ()=> {
     axios.get(`http://localhost:3001/mermeladas/byId/${id}`).then((response)=>{
@@ -79,7 +80,18 @@ function Mermelada() {
                 </h3>
                 <p>
                   {mermeladaObject.descripcion}
-                </p>                
+                </p>
+                <label>
+                Cantidad:
+                <select value={cantidad} onChange={(event) => {setCantidad(event.target.value)}}>           
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">Mas de 6</option>
+                </select>
+                </label>
                 <button>
                   <a href="/Formulario">
                   Comprar
