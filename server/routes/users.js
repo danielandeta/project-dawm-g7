@@ -26,7 +26,7 @@ router.post('/login', async(req, res) => {
   if (!user) res.json({error: "El usuario no existe"})
   bcrypt.compare(password, user.password).then((match) => {
     if (!match) res.json( {error: "Combinación incorrecta de nombre de usuario y contraseña"} )
-    const accessToken = sign({email: user.email, id_cedula:user.id_cedula}, "importansecret")
+    const accessToken = sign({username: user.username, id_cedula:user.id_cedula}, "importansecret")
     res.json(accessToken)
   })
 })
